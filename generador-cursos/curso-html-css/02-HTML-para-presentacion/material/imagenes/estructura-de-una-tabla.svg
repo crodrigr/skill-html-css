@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Estructura de una tabla</title>
+<desc id="d">Una tabla tiene un caption arriba, un thead con los encabezados th, un tbody con las filas de datos td y un tfoot con una celda que ocupa tres columnas con colspan.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="898" height="438" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="450" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Estructura de una tabla</text>
+<rect x="60" y="56" width="540" height="36" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="330.0" y="78.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">&lt;caption&gt;  Tarifas 2026</text>
+<rect x="60" y="104" width="180" height="40" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="150.0" y="128.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Servicio</text>
+<rect x="240" y="104" width="180" height="40" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="330.0" y="128.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Páginas</text>
+<rect x="420" y="104" width="180" height="40" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="510.0" y="128.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Precio en USD</text>
+<rect x="60" y="160" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="150.0" y="184.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">Sitio personal</text>
+<rect x="240" y="160" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="330.0" y="184.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">3</text>
+<rect x="420" y="160" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="510.0" y="184.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">150</text>
+<rect x="60" y="208" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="150.0" y="232.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">Sitio para negocio</text>
+<rect x="240" y="208" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="330.0" y="232.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">5</text>
+<rect x="420" y="208" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="510.0" y="232.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">300</text>
+<rect x="60" y="256" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="150.0" y="280.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">Blog</text>
+<rect x="240" y="256" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="330.0" y="280.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">4</text>
+<rect x="420" y="256" width="180" height="40" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="510.0" y="280.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">200</text>
+<rect x="60" y="314" width="540" height="40" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="330.0" y="338.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">&lt;td colspan="3"&gt;  Todos los precios incluyen una revisión</text>
+<rect x="650" y="104" width="200" height="40" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="750.0" y="128.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">&lt;thead&gt;  &lt;th&gt;</text>
+<rect x="650" y="160" width="200" height="136" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="750.0" y="232.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">&lt;tbody&gt;  &lt;td&gt;</text>
+<rect x="650" y="314" width="200" height="40" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="750.0" y="338.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">&lt;tfoot&gt;</text>
+<line x1="602" y1="124" x2="648" y2="124" stroke="#64748b" stroke-width="2"/>
+<line x1="602" y1="228" x2="648" y2="228" stroke="#64748b" stroke-width="2"/>
+<line x1="602" y1="334" x2="648" y2="334" stroke="#64748b" stroke-width="2"/>
+<text x="450" y="392" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">th = encabezado · td = dato · colspan junta columnas · rowspan junta filas</text>
+</svg>

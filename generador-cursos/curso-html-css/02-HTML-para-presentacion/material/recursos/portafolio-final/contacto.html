@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Contacto | Lucía Fernández</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contacto</h1>
+      <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="sobre-mi.html">Sobre mí</a> |
+        <a href="proyectos.html">Proyectos</a> |
+        <a href="servicios.html">Servicios</a> |
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <p>Completá el formulario para contarme qué sitio necesitás. Usá datos de prueba: este formulario no se envía a ningún servidor.</p>
+
+      <!-- method="get" y sin action: al enviar, la página se recarga y los datos aparecen en la dirección -->
+      <form method="get">
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+        </p>
+        <p>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo">
+        </p>
+        <p>
+          <label for="paginas">Cantidad de páginas</label>
+          <input type="number" id="paginas" name="paginas" value="3">
+        </p>
+        <p>Tipo de sitio:</p>
+        <p>
+          <input type="radio" id="tipo-personal" name="tipo" value="personal">
+          <label for="tipo-personal">Personal</label>
+          <input type="radio" id="tipo-negocio" name="tipo" value="negocio">
+          <label for="tipo-negocio">Negocio</label>
+          <input type="radio" id="tipo-blog" name="tipo" value="blog">
+          <label for="tipo-blog">Blog</label>
+        </p>
+        <p>
+          <input type="checkbox" id="novedades" name="novedades" value="si">
+          <label for="novedades">Quiero recibir novedades</label>
+        </p>
+        <p>
+          <input type="submit" value="Enviar">
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p><small>© 2026 Lucía Fernández. Sitio de ejemplo del curso.</small></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Tipos de input | Lucía Fernández</title>
+  </head>
+  <body>
+    <h1>Tipos de input</h1>
+    <p>Datos de prueba: no escribas datos reales.</p>
+
+    <form method="get">
+      <p>
+        <label for="usuario">Texto (text)</label>
+        <input type="text" id="usuario" name="usuario" value="ana">
+      </p>
+      <p>
+        <label for="correo">Correo (email)</label>
+        <input type="email" id="correo" name="correo">
+      </p>
+      <p>
+        <label for="edad">Número (number)</label>
+        <input type="number" id="edad" name="edad" value="30">
+      </p>
+      <p>
+        <label for="clave">Contraseña (password)</label>
+        <input type="password" id="clave" name="clave">
+      </p>
+      <p>
+        <input type="checkbox" id="acepto" name="acepto" value="si">
+        <label for="acepto">Casilla (checkbox)</label>
+      </p>
+      <p>Opción (radio):</p>
+      <p>
+        <input type="radio" id="color-azul" name="color" value="azul">
+        <label for="color-azul">Azul</label>
+        <input type="radio" id="color-verde" name="color" value="verde">
+        <label for="color-verde">Verde</label>
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+    </form>
+  </body>
+</html>
