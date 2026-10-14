@@ -1,0 +1,40 @@
+/* Una caja de práctica */
+.caja {
+  width: 400px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #1e3a8a;
+}
+
+/* Gradientes: se escriben en background-image */
+.lineal {
+  background-image: linear-gradient(90deg, #1e3a8a, #2563eb);
+}
+
+.radial {
+  background-image: radial-gradient(circle, #f59e0b, #1e3a8a);
+}
+
+/* Imágenes de fondo: la ruta es relativa a este archivo CSS */
+.patron {
+  color: #1f2937;
+  background-image: url("../imagenes/patron.png");
+  background-repeat: repeat;
+}
+
+.portada {
+  color: #1f2937;
+  background-image: url("../imagenes/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Opacidad frente a color con alfa */
+.con-opacidad {
+  opacity: 0.5;
+}
+
+.con-alfa {
+  background-color: rgb(30 58 138 / 0.5);
+}

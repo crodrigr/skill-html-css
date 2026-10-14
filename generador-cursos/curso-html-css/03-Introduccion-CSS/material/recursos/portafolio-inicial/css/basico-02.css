@@ -1,0 +1,32 @@
+/* Reglas de Mateo para el ejercicio Básico 02 */
+p {
+  color: #111827;
+}
+
+h2 {
+  color: #16a34a;
+}
+
+.oferta {
+  color: #b45309;
+}
+
+#especial {
+  color: #7c3aed;
+}
+
+.aviso {
+  color: #0891b2;
+}
+
+.aviso {
+  color: #be123c;
+}
+
+.urgente {
+  color: #dc2626 !important;
+}
+
+#especial-dos {
+  color: #7c3aed;
+}

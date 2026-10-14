@@ -1,0 +1,30 @@
+/* Hoja de Mateo con los colores repetidos (ejercicio Intermedio 01) */
+body {
+  color: #111827;
+  background-color: #fef3c7;
+}
+
+h1 {
+  color: #fef3c7;
+  background-color: #111827;
+}
+
+h2 {
+  color: #16a34a;
+}
+
+a {
+  color: #16a34a;
+}
+
+.destacado {
+  color: #111827;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #16a34a;
+}
+
+.cita {
+  background-color: #16a34a;
+}

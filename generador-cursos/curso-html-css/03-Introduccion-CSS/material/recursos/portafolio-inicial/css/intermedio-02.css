@@ -1,0 +1,7 @@
+/* Una caja de práctica (ejercicio Intermedio 02) */
+.caja {
+  width: 400px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #111827;
+}
