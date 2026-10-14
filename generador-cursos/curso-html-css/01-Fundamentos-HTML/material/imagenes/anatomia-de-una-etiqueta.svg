@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="900" height="290" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Anatomía de una etiqueta HTML</title>
+<desc id="d">Un elemento HTML se forma con una etiqueta de apertura que puede llevar atributos, el contenido y una etiqueta de cierre con una barra; juntos forman el elemento.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="898" height="288" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="450" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Anatomía de un elemento HTML</text>
+<rect x="102" y="76" width="36" height="40" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="138" y="76" width="444" height="40" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<rect x="582" y="76" width="12" height="40" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<rect x="594" y="76" width="156" height="40" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<rect x="750" y="76" width="48" height="40" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="102" y="104" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="20" fill="#1f2937" xml:space="preserve">&lt;a href="proyectos.html" target="_blank"&gt;Ver proyectos&lt;/a&gt;</text>
+<rect x="55" y="160" width="150" height="64" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="130.0" y="187.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Etiqueta de apertura</text>
+<text x="130.0" y="205.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">(y su &gt;)</text>
+<path d="M130 158 L120 122" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="265" y="160" width="150" height="64" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="340.0" y="187.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Atributos</text>
+<text x="340.0" y="205.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">nombre="valor"</text>
+<path d="M340 158 L360 122" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="495" y="160" width="150" height="64" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="570.0" y="187.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Contenido</text>
+<text x="570.0" y="205.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">lo que se ve</text>
+<path d="M570 158 L672 122" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="695" y="160" width="150" height="64" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="770.0" y="187.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Etiqueta de cierre</text>
+<text x="770.0" y="205.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">(con la barra /)</text>
+<path d="M770 158 L774 122" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="450" y="262" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">Todo el conjunto es un elemento. Las etiquetas vacías, como &lt;img&gt; o &lt;br&gt;, no llevan contenido ni cierre.</text>
+</svg>

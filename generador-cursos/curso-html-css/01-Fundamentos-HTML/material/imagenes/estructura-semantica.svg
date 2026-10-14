@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Estructura semántica de una página</title>
+<desc id="d">Una página semántica tiene header arriba con nav, un main en el centro con secciones y artículos, un aside lateral y un footer al pie.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="898" height="438" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="450" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Estructura semántica de una página</text>
+<rect x="40" y="60" width="820" height="60" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="450.0" y="85.25" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">header</text>
+<text x="450.0" y="105.25" text-anchor="middle" font-size="15" font-weight="400" fill="#1f2937">cabecera de la página</text>
+<rect x="40" y="130" width="820" height="44" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="450.0" y="147.4" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">nav</text>
+<text x="450.0" y="166.4" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">enlaces de navegación</text>
+<rect x="40" y="184" width="560" height="190" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="320" y="210" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">main (una sola vez por página)</text>
+<rect x="60" y="224" width="250" height="120" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="185.0" y="279.4" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">section</text>
+<text x="185.0" y="298.4" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">un tema de la página</text>
+<rect x="330" y="224" width="250" height="120" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="455.0" y="279.4" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">article</text>
+<text x="455.0" y="298.4" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">contenido que se entiende solo</text>
+<rect x="620" y="184" width="240" height="190" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="740.0" y="274.4" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">aside</text>
+<text x="740.0" y="293.4" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">contenido relacionado</text>
+<rect x="40" y="384" width="820" height="44" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="450.0" y="401.4" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">footer</text>
+<text x="450.0" y="420.4" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">pie de la página</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Árbol DOM de una página</title>
+<desc id="d">El navegador convierte el documento en un árbol: html contiene head y body; head contiene meta y title; body contiene header, main y footer; main contiene un título h2 y un párrafo.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="898" height="418" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="450" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">El navegador arma un árbol (DOM) con las etiquetas anidadas</text>
+<rect x="390" y="60" width="120" height="38" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="450.0" y="83.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">html</text>
+<rect x="210" y="140" width="120" height="38" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="270.0" y="163.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">head</text>
+<rect x="570" y="140" width="120" height="38" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="630.0" y="163.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">body</text>
+<rect x="90" y="220" width="120" height="38" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="150.0" y="243.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">meta</text>
+<rect x="240" y="220" width="120" height="38" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="300.0" y="243.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">title</text>
+<rect x="430" y="220" width="120" height="38" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="490.0" y="243.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">header</text>
+<rect x="570" y="220" width="120" height="38" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="630.0" y="243.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">main</text>
+<rect x="710" y="220" width="120" height="38" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="770.0" y="243.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">footer</text>
+<rect x="520" y="300" width="80" height="38" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="560.0" y="323.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">h2</text>
+<rect x="620" y="300" width="80" height="38" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="660.0" y="323.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">p</text>
+<rect x="240" y="300" width="100" height="38" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="290.0" y="323.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">texto</text>
+<line x1="450" y1="98" x2="270" y2="140" stroke="#64748b" stroke-width="2"/>
+<line x1="450" y1="98" x2="630" y2="140" stroke="#64748b" stroke-width="2"/>
+<line x1="270" y1="178" x2="150" y2="220" stroke="#64748b" stroke-width="2"/>
+<line x1="270" y1="178" x2="300" y2="220" stroke="#64748b" stroke-width="2"/>
+<line x1="630" y1="178" x2="490" y2="220" stroke="#64748b" stroke-width="2"/>
+<line x1="630" y1="178" x2="630" y2="220" stroke="#64748b" stroke-width="2"/>
+<line x1="630" y1="178" x2="770" y2="220" stroke="#64748b" stroke-width="2"/>
+<line x1="630" y1="258" x2="560" y2="300" stroke="#64748b" stroke-width="2"/>
+<line x1="630" y1="258" x2="660" y2="300" stroke="#64748b" stroke-width="2"/>
+<line x1="300" y1="258" x2="290" y2="300" stroke="#64748b" stroke-width="2"/>
+<text x="450" y="385" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">Cada etiqueta anidada es una "rama": el elemento de arriba es el padre y los de abajo son sus hijos.</text>
+</svg>

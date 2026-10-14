@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Partes de una dirección web</title>
+<desc id="d">La dirección https://lucia-fernandez.example:443/proyectos/panaderia.html?categoria=web&amp;orden=reciente#resultados se divide en protocolo, dominio, puerto, ruta, parámetros y ancla.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="998" height="378" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="500" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Partes de una dirección web</text>
+<rect x="26" y="70" width="110" height="52" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="81.0" y="100.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">https://</text>
+<rect x="138" y="70" width="210" height="52" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="243.0" y="100.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">lucia-fernandez.example</text>
+<rect x="350" y="70" width="66" height="52" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="383.0" y="100.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">:443</text>
+<rect x="418" y="70" width="210" height="52" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="523.0" y="100.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">/proyectos/panaderia.html</text>
+<rect x="630" y="70" width="240" height="52" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="750.0" y="100.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">?categoria=web&amp;orden=reciente</text>
+<rect x="872" y="70" width="100" height="52" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="922.0" y="100.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">#resultados</text>
+<path d="M81.0 200 V126" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="16.0" y="204" width="130" height="56" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="81.0" y="236.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Protocolo</text>
+<path d="M243.0 200 V126" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="178.0" y="204" width="130" height="56" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="243.0" y="236.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Dominio</text>
+<path d="M383.0 200 V126" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="318.0" y="204" width="130" height="56" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="383.0" y="236.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Puerto (opcional)</text>
+<path d="M523.0 200 V126" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="458.0" y="204" width="130" height="56" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="523.0" y="236.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Ruta (path)</text>
+<path d="M750.0 200 V126" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="685.0" y="204" width="130" height="56" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="750.0" y="236.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Parámetros (query string)</text>
+<path d="M922.0 200 V126" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="857.0" y="204" width="130" height="56" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="922.0" y="236.55" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">Ancla</text>
+<text x="500" y="310" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">El fragmento de texto (#:~:text=...) es un recurso opcional del navegador que se agrega al final.</text>
+<text x="500" y="336" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">Ejemplo: https://sitio.example/pagina.html#:~:text=Mi%20lema</text>
+</svg>
