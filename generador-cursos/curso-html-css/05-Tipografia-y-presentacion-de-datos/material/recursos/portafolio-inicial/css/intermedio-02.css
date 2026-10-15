@@ -1,0 +1,5 @@
+/* Aspecto común: el relleno separa el texto del borde */
+div {
+  padding: 8px;
+  margin-bottom: 12px;
+}

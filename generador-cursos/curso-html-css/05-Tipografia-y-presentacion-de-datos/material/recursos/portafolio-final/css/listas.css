@@ -1,0 +1,37 @@
+/* Tipo de viñeta */
+.cuadrados {
+  list-style-type: square;
+}
+
+.circulos {
+  list-style-type: circle;
+}
+
+/* Sin viñetas: también se quita la sangría que trae la lista */
+.sin-vinetas {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Tipo de numeración */
+.romanos {
+  list-style-type: upper-roman;
+}
+
+.letras {
+  list-style-type: lower-alpha;
+}
+
+/* Posición de la viñeta: afuera es el valor por defecto */
+.afuera {
+  list-style-position: outside;
+}
+
+.adentro {
+  list-style-position: inside;
+}
+
+/* Espacio entre elementos */
+.espaciada li {
+  margin-bottom: 0.5rem;
+}

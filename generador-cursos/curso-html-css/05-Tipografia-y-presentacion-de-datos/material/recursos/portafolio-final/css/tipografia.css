@@ -1,0 +1,71 @@
+/* Tipografía base: el texto con una sans-serif, los títulos con una serif y el código con una de ancho fijo */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+code {
+  font-family: "Courier New", monospace;
+}
+
+/* La primera tipografía no existe: el navegador usa la siguiente que encuentre */
+.alternativa {
+  font-family: "Fuente Inexistente", Georgia, serif;
+}
+
+/* Cuatro formas de pedir 20 píxeles, con el tamaño base de 16px */
+.px {
+  font-size: 20px;
+}
+
+.em {
+  font-size: 1.25em;
+}
+
+.rem {
+  font-size: 1.25rem;
+}
+
+.porcentaje {
+  font-size: 125%;
+}
+
+/* Un contenedor más grande: em toma el tamaño del contenedor; rem, el de la raíz */
+.contenedor {
+  font-size: 1.25em;
+}
+
+/* Peso y estilo */
+.liviano {
+  font-weight: 300;
+}
+
+.negrita {
+  font-weight: 700;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+/* Altura de línea: un número sin unidad se multiplica por el tamaño de la letra */
+.apretado {
+  line-height: 1;
+}
+
+.comodo {
+  line-height: 1.6;
+}

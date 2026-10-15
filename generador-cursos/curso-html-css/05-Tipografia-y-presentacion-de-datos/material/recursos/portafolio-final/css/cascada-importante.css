@@ -1,0 +1,26 @@
+/* Especificidad: elemento (1) < clase (10) < identificador (100) */
+p {
+  color: gray;
+}
+
+.destacado {
+  color: green;
+}
+
+#aviso {
+  color: blue;
+}
+
+/* Orden de aparición: con el mismo peso, gana la última */
+.nota {
+  color: teal;
+}
+
+.nota {
+  color: orange;
+}
+
+/* !important anula la especificidad y el orden */
+p {
+  color: red !important;
+}

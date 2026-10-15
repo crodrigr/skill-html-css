@@ -1,0 +1,24 @@
+/* Enlaces */
+a {
+  color: #2563eb;
+}
+
+/* Títulos: una sola regla para las dos propiedades */
+h2 {
+  color: #1e3a8a;
+  background-color: #eff6ff;
+}
+
+/* Listas */
+li {
+  color: #1f2937;
+}
+
+/* Clases y componentes: selectores simples, con la especificidad justa */
+.destacado {
+  background-color: #fef3c7;
+}
+
+.tarjeta__titulo {
+  color: #1e3a8a;
+}

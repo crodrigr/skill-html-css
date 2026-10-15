@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Familias tipográficas</title>
+<desc id="d">Tres familias genéricas con una muestra de cada una: serif, con remates en los extremos de las letras; sans-serif, con extremos lisos; y monospace, donde todas las letras ocupan el mismo ancho.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="358" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Tres familias genéricas</text>
+<rect x="30" y="60" width="290" height="270" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="175" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Con serifa</text>
+<rect x="90" y="108" width="170" height="100" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="175" y="180" text-anchor="middle" font-family='Georgia, "Times New Roman", serif' font-size="64" fill="#1f2937">Wi</text>
+<text x="175" y="232" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">Los trazos terminan en remates</text>
+<text x="175" y="262" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">font-family: serif;</text>
+<text x="175" y="290" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="11" fill="#64748b" xml:space="preserve">en una pila: …, serif</text>
+<rect x="340" y="60" width="290" height="270" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="485" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Sin serifa</text>
+<rect x="400" y="108" width="170" height="100" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.5"/>
+<text x="485" y="180" text-anchor="middle" font-family='Arial, Helvetica, sans-serif' font-size="64" fill="#1f2937">Wi</text>
+<text x="485" y="232" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">Los trazos terminan lisos</text>
+<text x="485" y="262" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">font-family: sans-serif;</text>
+<text x="485" y="290" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="11" fill="#64748b" xml:space="preserve">en una pila: …, sans-serif</text>
+<rect x="650" y="60" width="290" height="270" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="795" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">De ancho fijo</text>
+<rect x="710" y="108" width="170" height="100" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5"/>
+<text x="795" y="180" text-anchor="middle" font-family='"Courier New", monospace' font-size="64" fill="#1f2937">Wi</text>
+<text x="795" y="232" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">La W y la i miden lo mismo</text>
+<text x="795" y="262" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">font-family: monospace;</text>
+<text x="795" y="290" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="11" fill="#64748b" xml:space="preserve">en una pila: …, monospace</text>
+</svg>
