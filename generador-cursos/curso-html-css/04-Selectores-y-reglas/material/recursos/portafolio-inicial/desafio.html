@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio | Mateo Ruiz</title>
+    <link rel="stylesheet" href="css/desafio.css">
+  </head>
+  <body>
+    <header id="arriba">
+      <h1>Mateo Ruiz</h1>
+      <nav>
+        <a href="desafio.html" class="menu__enlace menu__enlace--activo">Inicio</a> |
+        <a href="galeria.html" class="menu__enlace">Galería</a> |
+        <a href="#precios" class="menu__enlace">Precios</a> |
+        <a href="https://instagram.example/mateoruiz" class="menu__enlace" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Fotos con luz natural</h2>
+      <p class="presentacion">Retratos, bodas y paisajes, desde Rosario.</p>
+      <p>Una selección de mis sesiones más recientes.</p>
+
+      <article class="foto foto--destacada">
+        <img class="foto__imagen" src="imagenes/paisaje.png" alt="Montañas al atardecer" width="160">
+        <h3 class="foto__titulo foto__titulo--grande">Montañas al atardecer</h3>
+        <p class="foto__autor">Foto de Mateo Ruiz</p>
+        <a class="foto__enlace" href="galeria.html">Ver la galería</a>
+      </article>
+      <article class="foto">
+        <img class="foto__imagen" src="imagenes/retrato.png" alt="Retrato de una persona con un buzo violeta" width="160">
+        <h3 class="foto__titulo">Retrato en el estudio</h3>
+        <p class="foto__autor">Foto de Mateo Ruiz</p>
+        <a class="foto__enlace" href="galeria.html">Ver la galería</a>
+      </article>
+      <article class="foto">
+        <h3 class="foto__titulo">Boda en el parque</h3>
+        <p class="foto__autor">Foto de Mateo Ruiz</p>
+        <a class="foto__enlace" href="https://mateo-ruiz.example/bodas.pdf">Descargar el álbum (PDF)</a>
+      </article>
+
+      <h2 id="precios">Precios</h2>
+      <table>
+        <caption>Precios por sesión</caption>
+        <thead>
+          <tr><th>Sesión</th><th>Precio en USD</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Retrato</td><td>70</td></tr>
+          <tr><td>Evento</td><td>150</td></tr>
+          <tr><td>Álbum</td><td>90</td></tr>
+          <tr><td>Foto extra</td><td>5</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Reserva</h2>
+      <form method="get">
+        <p>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo">
+        </p>
+        <p>
+          <input type="checkbox" id="ofertas" name="ofertas" value="si" checked>
+          <label for="ofertas">Quiero recibir ofertas</label>
+        </p>
+        <p>
+          <label for="descuento">Código de descuento (no disponible)</label>
+          <input type="text" id="descuento" name="descuento" disabled>
+        </p>
+        <p>
+          <button type="button" class="boton">Reservar</button>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p><small>© 2026 Mateo Ruiz. Sitio de ejemplo del curso.</small></p>
+      <p><a href="#arriba">Volver arriba</a></p>
+    </footer>
+  </body>
+</html>

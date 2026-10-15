@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio (atributos) | Lucía Fernández</title>
+    <link rel="stylesheet" href="css/atributos.css">
+  </head>
+  <body>
+    <header id="arriba">
+      <h1>Laboratorio de selectores</h1>
+      <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="sobre-mi.html">Sobre mí</a> |
+        <a href="proyectos.html" class="menu__enlace menu__enlace--activo">Proyectos</a> |
+        <a href="servicios.html">Servicios</a> |
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Enlaces</h2>
+      <p class="destacado">Esta página reúne todo lo que vamos a seleccionar.</p>
+      <p>Los enlaces de ejemplo:</p>
+      <ul class="enlaces">
+        <li><a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN en español</a></li>
+        <li><a href="https://lucia-fernandez.example/cv.pdf">Mi currículum (PDF)</a></li>
+        <li><a href="proyectos.html">Mis proyectos</a></li>
+        <li><a href="#contacto">Ir al contacto</a></li>
+      </ul>
+
+      <h2>Proyectos</h2>
+      <article class="tarjeta tarjeta--destacada">
+        <img class="tarjeta__imagen" src="imagenes/panaderia.png" alt="Pantalla de inicio de la panadería La Espiga" width="160">
+        <h3 class="tarjeta__titulo tarjeta__titulo--grande">Sitio de una panadería</h3>
+        <p class="tarjeta__texto">Una página para mostrar el pan del día.</p>
+        <a class="tarjeta__enlace" href="proyectos.html#panaderia">Ver proyecto</a>
+      </article>
+      <article class="tarjeta">
+        <img class="tarjeta__imagen" src="imagenes/agenda.png" alt="Calendario con ocho turnos, dos de ellos ocupados" width="160">
+        <h3 class="tarjeta__titulo">Agenda de turnos</h3>
+        <p class="tarjeta__texto">Un calendario para reservar turnos.</p>
+        <a class="tarjeta__enlace" href="proyectos.html#agenda">Ver proyecto</a>
+      </article>
+      <article class="tarjeta">
+        <h3 class="tarjeta__titulo">Blog de recetas</h3>
+        <p class="tarjeta__texto">Un blog con recetas fáciles.</p>
+        <a class="tarjeta__enlace" href="proyectos.html#recetas">Ver proyecto</a>
+      </article>
+
+      <h2>Habilidades</h2>
+      <table>
+        <caption>Mis habilidades</caption>
+        <thead>
+          <tr><th>Habilidad</th><th>Nivel</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>HTML</td><td>Alto</td></tr>
+          <tr><td>CSS</td><td>Medio</td></tr>
+          <tr><td>Formularios</td><td>Medio</td></tr>
+          <tr><td>Accesibilidad</td><td>Básico</td></tr>
+          <tr><td>Git</td><td>Básico</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Pasos y notas</h2>
+      <ol class="pasos">
+        <li>Elegir los elementos</li>
+        <li>Escribir la regla</li>
+        <li>Comprobar el resultado</li>
+      </ol>
+      <ul class="nota">
+        <li>Una nota con un solo elemento</li>
+      </ul>
+
+      <h2 id="contacto">Contacto</h2>
+      <form method="get">
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+        </p>
+        <p>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo">
+        </p>
+        <p>
+          <input type="checkbox" id="novedades" name="novedades" value="si" checked>
+          <label for="novedades">Quiero recibir novedades</label>
+        </p>
+        <p>
+          <label for="codigo">Código (no disponible)</label>
+          <input type="text" id="codigo" name="codigo" disabled>
+        </p>
+        <p>
+          <button type="button" class="boton">Probar</button>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p><small>© 2026 Lucía Fernández. Sitio de ejemplo del curso.</small></p>
+      <p><a href="#arriba">Volver arriba</a></p>
+    </footer>
+  </body>
+</html>

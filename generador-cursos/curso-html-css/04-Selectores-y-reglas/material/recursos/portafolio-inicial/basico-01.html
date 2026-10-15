@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio | Mateo Ruiz</title>
+    <link rel="stylesheet" href="css/basico-01.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mateo Ruiz</h1>
+      <nav>
+        <a href="basico-01.html">Inicio</a> |
+        <a href="galeria.html">Galería</a> |
+        <a href="#precios">Precios</a> |
+        <a href="#reserva">Reserva</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Galería</h2>
+      <p>Mis sesiones de fotos, con luz natural.</p>
+      <ul class="enlaces">
+        <li><a href="https://instagram.example/mateoruiz" target="_blank" rel="noopener">Mi Instagram</a></li>
+        <li><a href="https://mateo-ruiz.example/catalogo.pdf">Catálogo (PDF)</a></li>
+        <li><a href="galeria.html">Galería completa</a></li>
+        <li><a href="#precios">Ver precios</a></li>
+      </ul>
+
+      <h2 id="precios">Precios</h2>
+      <p class="precio">Retrato: 70 USD</p>
+      <p class="precio">Evento: 150 USD</p>
+      <p class="precio">Álbum: 90 USD</p>
+
+      <h2 id="reserva">Reserva</h2>
+      <form method="get">
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+        </p>
+        <p>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo">
+        </p>
+        <p>
+          <input type="checkbox" id="ofertas" name="ofertas" value="si">
+          <label for="ofertas">Quiero recibir ofertas</label>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

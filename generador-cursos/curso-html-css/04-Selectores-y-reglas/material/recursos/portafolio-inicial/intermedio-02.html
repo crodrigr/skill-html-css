@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Estados | Mateo Ruiz</title>
+    <link rel="stylesheet" href="css/intermedio-02.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="intermedio-02.html">Inicio</a> |
+        <a href="galeria.html">Galería</a> |
+        <a href="#reserva">Reserva</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Precios y reserva</h1>
+      <table>
+        <caption>Precios</caption>
+        <thead>
+          <tr><th>Sesión</th><th>Precio en USD</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Retrato</td><td>70</td></tr>
+          <tr><td>Evento</td><td>150</td></tr>
+          <tr><td>Álbum</td><td>90</td></tr>
+          <tr><td>Foto extra</td><td>5</td></tr>
+          <tr><td>Impresión</td><td>12</td></tr>
+          <tr><td>Marco</td><td>25</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Cómo reservar</h2>
+      <ol class="pasos">
+        <li>Elegís la sesión</li>
+        <li>Completás el formulario</li>
+        <li>Mateo te escribe</li>
+        <li>Hacemos la sesión</li>
+      </ol>
+      <ul class="nota">
+        <li>Las reservas se confirman por correo</li>
+      </ul>
+
+      <h2 id="reserva">Reserva</h2>
+      <form method="get">
+        <p>
+          <input type="checkbox" id="ofertas" name="ofertas" value="si" checked>
+          <label for="ofertas">Quiero recibir ofertas</label>
+        </p>
+        <p>
+          <input type="checkbox" id="album" name="album" value="si">
+          <label for="album">Quiero un álbum impreso</label>
+        </p>
+        <p>
+          <label for="descuento">Código de descuento (no disponible)</label>
+          <input type="text" id="descuento" name="descuento" disabled>
+        </p>
+        <p>
+          <button type="button" class="boton">Reservar</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

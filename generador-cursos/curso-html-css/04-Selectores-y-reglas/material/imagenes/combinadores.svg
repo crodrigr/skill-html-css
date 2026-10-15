@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Combinadores</title>
+<desc id="d">En una sección con un título h2, dos párrafos p1 y p2 y un div que contiene un párrafo p3: el espacio elige p1, p2 y p3; el signo mayor elige p1 y p2; el signo más elige p1; la tilde elige p1 y p2.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="498" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Combinadores sobre una misma estructura</text>
+<rect x="360" y="56" width="240" height="40" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="480.0" y="80.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">section</text>
+<line x1="480" y1="96" x2="130" y2="150" stroke="#64748b" stroke-width="2"/>
+<rect x="60" y="150" width="140" height="40" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="130.0" y="174.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">h2</text>
+<line x1="480" y1="96" x2="320" y2="150" stroke="#64748b" stroke-width="2"/>
+<rect x="250" y="150" width="140" height="40" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="320.0" y="174.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">p1</text>
+<line x1="480" y1="96" x2="510" y2="150" stroke="#64748b" stroke-width="2"/>
+<rect x="440" y="150" width="140" height="40" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="510.0" y="174.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">p2</text>
+<line x1="480" y1="96" x2="700" y2="150" stroke="#64748b" stroke-width="2"/>
+<rect x="630" y="150" width="140" height="40" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="700.0" y="174.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">div</text>
+<line x1="700" y1="190" x2="700" y2="230" stroke="#64748b" stroke-width="2"/>
+<rect x="630" y="230" width="140" height="40" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="700.0" y="254.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">p3</text>
+<rect x="30" y="290" width="300" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="44" y="312" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">section p</text>
+<text x="150" y="312" text-anchor="start" font-size="11" font-weight="400" fill="#64748b">espacio (descendiente)</text>
+<rect x="360" y="290" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="410.0" y="311.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p1 ✔</text>
+<rect x="470" y="290" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="520.0" y="311.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p2 ✔</text>
+<rect x="580" y="290" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="630.0" y="311.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p3 ✔</text>
+<rect x="30" y="332" width="300" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="44" y="354" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">section &gt; p</text>
+<text x="150" y="354" text-anchor="start" font-size="11" font-weight="400" fill="#64748b">&gt; (hijo directo)</text>
+<rect x="360" y="332" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="410.0" y="353.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p1 ✔</text>
+<rect x="470" y="332" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="520.0" y="353.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p2 ✔</text>
+<rect x="580" y="332" width="100" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="630.0" y="353.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p3 ✘</text>
+<rect x="30" y="374" width="300" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="44" y="396" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">h2 + p</text>
+<text x="150" y="396" text-anchor="start" font-size="11" font-weight="400" fill="#64748b">+ (hermano adyacente)</text>
+<rect x="360" y="374" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="410.0" y="395.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p1 ✔</text>
+<rect x="470" y="374" width="100" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="520.0" y="395.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p2 ✘</text>
+<rect x="580" y="374" width="100" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="630.0" y="395.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p3 ✘</text>
+<rect x="30" y="416" width="300" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="44" y="438" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">h2 ~ p</text>
+<text x="150" y="438" text-anchor="start" font-size="11" font-weight="400" fill="#64748b">~ (hermano general)</text>
+<rect x="360" y="416" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="410.0" y="437.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p1 ✔</text>
+<rect x="470" y="416" width="100" height="34" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="520.0" y="437.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p2 ✔</text>
+<rect x="580" y="416" width="100" height="34" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="630.0" y="437.55" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">p3 ✘</text>
+<text x="480" y="486" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">p3 está dentro del div: es descendiente de section, pero no hijo directo ni hermano de h2.</text>
+</svg>

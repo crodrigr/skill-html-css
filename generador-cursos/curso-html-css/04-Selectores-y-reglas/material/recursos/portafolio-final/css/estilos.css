@@ -1,0 +1,100 @@
+/* Hoja de estilos del sitio de Lucía Fernández */
+
+/* Variables: cada color se define una sola vez */
+:root {
+  --color-principal: #2563eb;
+  --color-oscuro: #1e3a8a;
+  --color-fondo: #eff6ff;
+  --color-texto: #1f2937;
+  --color-acento: #f59e0b;
+}
+
+/* Estilos generales: se heredan a casi todo el contenido */
+body {
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+/* Títulos: el h1 lleva un gradiente lineal */
+h1 {
+  color: #ffffff;
+  background-color: var(--color-oscuro);
+  background-image: linear-gradient(90deg, var(--color-oscuro), var(--color-principal));
+}
+
+h2 {
+  color: var(--color-oscuro);
+}
+
+/* Enlaces */
+a {
+  color: var(--color-principal);
+}
+
+/* Una clase y un identificador */
+.destacado {
+  color: var(--color-principal);
+  background-color: #ffffff;
+}
+
+#portada {
+  background-color: var(--color-fondo);
+  background-image: url("../imagenes/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Tablas: el mismo borde para varios selectores */
+table, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-principal);
+}
+
+th {
+  color: #ffffff;
+  background-color: var(--color-oscuro);
+  background-image: radial-gradient(circle, var(--color-principal), var(--color-oscuro));
+}
+
+/* Citas: un color con transparencia (canal alfa) */
+blockquote {
+  background-color: rgb(37 99 235 / 0.15);
+}
+
+/* Pie: imagen de fondo que se repite, y letra chica con opacidad */
+footer {
+  background-color: var(--color-fondo);
+  background-image: url("../imagenes/patron.png");
+  background-repeat: repeat;
+}
+
+small {
+  opacity: 0.7;
+}
+
+/* Etapa 8: selectores más precisos (Clase 04) */
+
+/* Combinador descendiente: los enlaces del menú, en negrita */
+nav a {
+  font-weight: bold;
+}
+
+/* Selector de atributo: los enlaces externos llevan el subrayado de color acento */
+a[href^="https"] {
+  text-decoration-color: var(--color-acento);
+}
+
+/* Pseudoclases de enlace, en orden: cursor y después foco */
+a:hover {
+  color: var(--color-oscuro);
+}
+
+a:focus {
+  background-color: var(--color-fondo);
+}
+
+/* Pseudoclase de estructura: filas alternas en el cuerpo de las tablas */
+tbody tr:nth-child(even) {
+  background-color: rgb(37 99 235 / 0.08);
+}
