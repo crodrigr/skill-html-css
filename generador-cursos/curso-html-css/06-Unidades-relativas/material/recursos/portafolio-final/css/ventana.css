@@ -1,0 +1,37 @@
+/* Tamaño base: 16px y una altura de línea de 1.5 en la raíz (la que mide rlh) */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja {
+  margin-bottom: 8px;
+  background-color: #dbeafe;
+}
+
+/* vw y vh: 1% del ancho y 1% del alto de la ventana */
+.caja--vw {
+  width: 10vw;
+}
+
+.caja--vh {
+  height: 50vh;
+}
+
+/* vmin y vmax: 1% de la menor y de la mayor de las dos medidas */
+.caja--vmin {
+  width: 10vmin;
+}
+
+.caja--vmax {
+  width: 10vmax;
+}
+
+/* rlh: la altura de línea de la raíz */
+.caja--rlh {
+  height: 2rlh;
+}

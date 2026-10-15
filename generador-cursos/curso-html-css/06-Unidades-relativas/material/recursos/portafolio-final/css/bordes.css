@@ -1,0 +1,53 @@
+/* Relleno común para que el texto no toque el borde */
+.borde {
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+/* La abreviatura: ancho, estilo y color */
+.borde--solido {
+  border: 3px solid #2563eb;
+}
+
+.borde--punteado {
+  border: 3px dotted #2563eb;
+}
+
+.borde--discontinuo {
+  border: 3px dashed #2563eb;
+}
+
+.borde--doble {
+  border: 6px double #2563eb;
+}
+
+/* Sin estilo no hay borde: el estilo por defecto es none y el ancho se reduce a 0 */
+.borde--sin-estilo {
+  border: 3px #2563eb;
+}
+
+/* Las tres propiedades por separado */
+.borde--componentes {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #16a34a;
+}
+
+/* Un borde distinto por lado */
+.borde--lados {
+  border-top: 4px solid #1e3a8a;
+  border-right: 1px solid #94a3b8;
+  border-bottom: 4px double #1e3a8a;
+  border-left: 1px solid #94a3b8;
+}
+
+.borde--solo-abajo {
+  border-bottom: 3px solid #f59e0b;
+}
+
+/* Con dos valores: el primero es arriba y abajo; el segundo, izquierda y derecha */
+.borde--valores {
+  border-style: solid;
+  border-width: 1px 6px;
+  border-color: #2563eb #16a34a;
+}

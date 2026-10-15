@@ -1,0 +1,40 @@
+/* Un recuadro pequeño con un contenido que no entra */
+.recuadro {
+  width: 200px;
+  height: 80px;
+  border: 2px solid #1e3a8a;
+  margin-bottom: 24px;
+}
+
+.contenido {
+  width: 400px;
+  height: 160px;
+  background-color: #fef3c7;
+}
+
+/* Por defecto el contenido sobresale; el margen deja lugar para verlo */
+.recuadro--visible {
+  overflow: visible;
+  margin-bottom: 120px;
+}
+
+/* Se recorta lo que no entra */
+.recuadro--oculto {
+  overflow: hidden;
+}
+
+/* Siempre hay barras de desplazamiento */
+.recuadro--barras {
+  overflow: scroll;
+}
+
+/* Hay barras solo si el contenido no entra */
+.recuadro--auto {
+  overflow: auto;
+}
+
+/* Un valor para cada eje */
+.recuadro--solo-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}

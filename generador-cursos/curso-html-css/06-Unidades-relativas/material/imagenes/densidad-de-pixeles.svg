@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Densidad de píxeles</title>
+<desc id="d">Una caja de 200 píxeles de CSS en dos pantallas: en una pantalla común cada píxel de CSS es un punto físico y la caja usa 200 puntos; en una pantalla de alta densidad con una relación de 2, cada píxel de CSS son 2 por 2 puntos físicos y la caja usa 400 puntos, pero ocupa el mismo tamaño aparente.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="378" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Un píxel de CSS no siempre es un punto de la pantalla</text>
+<rect x="30" y="60" width="430" height="290" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="245" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Pantalla común: relación 1</text>
+<rect x="130" y="120" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="130" y="160" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="130" y="200" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="130" y="240" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="170" y="120" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="170" y="160" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="170" y="200" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="170" y="240" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="210" y="120" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="210" y="160" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="210" y="200" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="210" y="240" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="250" y="120" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="250" y="160" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="250" y="200" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="250" y="240" width="40" height="40" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="130" y="120" width="160" height="160" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<text x="210" y="304" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">1 píxel de CSS = 1 punto físico</text>
+<text x="245" y="330" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="13" fill="#1f2937" xml:space="preserve">devicePixelRatio = 1</text>
+<rect x="500" y="60" width="430" height="290" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="715" y="90" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Alta densidad: relación 2</text>
+<rect x="595" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="615" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="635" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="655" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="675" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="695" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="715" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="120" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="140" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="160" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="180" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="200" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="220" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="240" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="735" y="260" width="20" height="20" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+<rect x="595" y="120" width="160" height="160" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<rect x="595" y="120" width="40" height="40" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<text x="675" y="304" text-anchor="middle" font-size="13" font-weight="400" fill="#1f2937">1 píxel de CSS = 2 × 2 puntos físicos</text>
+<text x="715" y="330" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="13" fill="#1f2937" xml:space="preserve">devicePixelRatio = 2</text>
+<text x="785" y="170" text-anchor="start" font-size="12" font-weight="400" fill="#dc2626">← un píxel</text>
+<text x="785" y="188" text-anchor="start" font-size="12" font-weight="400" fill="#dc2626">   de CSS</text>
+</svg>

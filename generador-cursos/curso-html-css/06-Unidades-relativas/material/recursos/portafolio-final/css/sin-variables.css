@@ -1,0 +1,65 @@
+/* Hoja de estilos del sitio de Lucía Fernández, sin variables: cada color se repite */
+
+/* Estilos generales: se heredan a casi todo el contenido */
+body {
+  color: #1f2937;
+  background-color: #eff6ff;
+}
+
+/* Títulos: el h1 lleva un gradiente lineal */
+h1 {
+  color: #ffffff;
+  background-color: #1e3a8a;
+  background-image: linear-gradient(90deg, #1e3a8a, #2563eb);
+}
+
+h2 {
+  color: #1e3a8a;
+}
+
+/* Enlaces */
+a {
+  color: #2563eb;
+}
+
+/* Una clase y un identificador */
+.destacado {
+  color: #2563eb;
+  background-color: #ffffff;
+}
+
+#portada {
+  background-color: #eff6ff;
+  background-image: url("../imagenes/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Tablas: el mismo borde para varios selectores */
+table, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2563eb;
+}
+
+th {
+  color: #ffffff;
+  background-color: #1e3a8a;
+  background-image: radial-gradient(circle, #2563eb, #1e3a8a);
+}
+
+/* Citas: un color con transparencia (canal alfa) */
+blockquote {
+  background-color: rgb(37 99 235 / 0.15);
+}
+
+/* Pie: imagen de fondo que se repite, y letra chica con opacidad */
+footer {
+  background-color: #eff6ff;
+  background-image: url("../imagenes/patron.png");
+  background-repeat: repeat;
+}
+
+small {
+  opacity: 0.7;
+}

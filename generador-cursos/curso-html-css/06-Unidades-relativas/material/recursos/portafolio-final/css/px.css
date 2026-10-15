@@ -1,0 +1,22 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* El píxel de CSS: borde y contenido miden lo que dice el valor */
+.caja {
+  box-sizing: border-box;
+  width: 200px;
+  height: 100px;
+  border: 1px solid #1e3a8a;
+  background-color: #dbeafe;
+}
+
+.texto {
+  font-size: 24px;
+  border: 1px solid #1e3a8a;
+}

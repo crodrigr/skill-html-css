@@ -1,0 +1,19 @@
+/* Descendiente (espacio): los enlaces que están dentro de nav, a cualquier profundidad */
+nav a {
+  color: #1e3a8a;
+}
+
+/* Hijo directo (>): los li que son hijos directos de una lista no ordenada */
+ul > li {
+  background-color: #dbeafe;
+}
+
+/* Hermano adyacente (+): el párrafo que va inmediatamente después de un h2 */
+h2 + p {
+  color: #16a34a;
+}
+
+/* Hermano general (~): todos los párrafos que siguen a un h2 con el mismo padre */
+h2 ~ p {
+  background-color: #fef3c7;
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 450" width="960" height="450" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Respecto de qué se calcula cada unidad relativa</title>
+<desc id="d">Tabla visual con la referencia de cada unidad relativa: el porcentaje depende del ancho del contenedor en width y padding, de la letra del padre en font-size y de la altura definida del contenedor en height; em, de la letra del propio elemento; rem, de la letra de la raíz; ex y ch, de la x y del cero de la tipografía; lh y rlh, de la altura de línea; y vw, vh, vmin y vmax, de la ventana.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="448" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Cada unidad relativa mira a otro valor</text>
+<rect x="30" y="56" width="150" height="40" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="105.0" y="80.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">Unidad</text>
+<rect x="190" y="56" width="740" height="40" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="560.0" y="80.9" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">Se calcula a partir de…</text>
+<rect x="30" y="104" width="150" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="105" y="129" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">%</text>
+<rect x="190" y="104" width="740" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="204" y="129" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">width y padding: ancho del contenedor · font-size: letra del padre · height: alto definido del contenedor</text>
+<rect x="30" y="150" width="150" height="40" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="105" y="175" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">em</text>
+<rect x="190" y="150" width="740" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="204" y="175" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la letra del propio elemento (en font-size, la del padre)</text>
+<rect x="30" y="196" width="150" height="40" rx="8" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="105" y="221" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">rem</text>
+<rect x="190" y="196" width="740" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="204" y="221" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la letra del elemento raíz (html)</text>
+<rect x="30" y="242" width="150" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="105" y="267" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">ex</text>
+<rect x="190" y="242" width="740" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="204" y="267" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la altura de la «x» de la tipografía</text>
+<rect x="30" y="288" width="150" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="105" y="313" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">ch</text>
+<rect x="190" y="288" width="740" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="204" y="313" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">el ancho del carácter «0» de la tipografía</text>
+<rect x="30" y="334" width="150" height="40" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="105" y="359" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">lh / rlh</text>
+<rect x="190" y="334" width="740" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="204" y="359" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la altura de línea del elemento / de la raíz</text>
+<rect x="30" y="380" width="150" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="105" y="405" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">vw vh vmin vmax</text>
+<rect x="190" y="380" width="740" height="40" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="204" y="405" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">1% del ancho / alto / lado menor / lado mayor de la ventana</text>
+<text x="480" y="440" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">El color agrupa: contenedor · letra · tipografía · ventana</text>
+</svg>

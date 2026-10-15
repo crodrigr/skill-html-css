@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Tipos de unidades</title>
+<desc id="d">Árbol de las unidades de CSS: las absolutas (px, cm, mm, Q, in, pt, pc), con un tamaño fijo, y las relativas, que se calculan a partir de otro valor: el porcentaje, que depende del contenedor; em, ex, ch y lh, que dependen de la letra; rem y rlh, que dependen de la raíz; y vw, vh, vmin y vmax, que dependen de la ventana.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="428" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Dos familias de unidades</text>
+<rect x="380" y="56" width="200" height="44" rx="12" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="480.0" y="83.25" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">Unidades de CSS</text>
+<line x1="480" y1="100" x2="480" y2="124" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="250" y1="124" x2="710" y2="124" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="250" y1="124" x2="250" y2="146" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="710" y1="124" x2="710" y2="146" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="60" y="146" width="380" height="60" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="250.0" y="171.25" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">Absolutas</text>
+<text x="250.0" y="191.25" text-anchor="middle" font-size="15" font-weight="400" fill="#1f2937">tamaño fijo</text>
+<text x="250" y="236" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">px   cm   mm   Q   in   pt   pc</text>
+<text x="250" y="262" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">1in = 96px = 2.54cm = 72pt = 6pc</text>
+<rect x="480" y="146" width="440" height="60" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+<text x="700.0" y="171.25" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2937">Relativas</text>
+<text x="700.0" y="191.25" text-anchor="middle" font-size="15" font-weight="400" fill="#1f2937">se calculan a partir de otro valor</text>
+<rect x="480" y="226" width="160" height="36" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="560" y="249" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="13" fill="#1f2937" xml:space="preserve">%</text>
+<text x="654" y="249" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">el contenedor (o la letra del padre)</text>
+<rect x="480" y="270" width="160" height="36" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="560" y="293" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="13" fill="#1f2937" xml:space="preserve">em  ex  ch  lh</text>
+<text x="654" y="293" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la letra del propio elemento</text>
+<rect x="480" y="314" width="160" height="36" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="560" y="337" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="13" fill="#1f2937" xml:space="preserve">rem  rlh</text>
+<text x="654" y="337" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la letra o la línea de la raíz</text>
+<rect x="480" y="358" width="160" height="36" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="560" y="381" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="13" fill="#1f2937" xml:space="preserve">vw  vh  vmin  vmax</text>
+<text x="654" y="381" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la ventana de visualización</text>
+<text x="250" y="330" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">No dependen de nada más</text>
+<text x="480" y="420" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">Un número distinto de cero necesita unidad; el 0 no.</text>
+</svg>

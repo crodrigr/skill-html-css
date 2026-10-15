@@ -1,0 +1,214 @@
+/* Hoja de estilos del sitio de Lucía Fernández */
+
+/* Variables: cada color se define una sola vez */
+:root {
+  --color-principal: #2563eb;
+  --color-oscuro: #1e3a8a;
+  --color-fondo: #eff6ff;
+  --color-texto: #1f2937;
+  --color-acento: #f59e0b;
+}
+
+/* Estilos generales: se heredan a casi todo el contenido */
+body {
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+/* Títulos: el h1 lleva un gradiente lineal */
+h1 {
+  color: #ffffff;
+  background-color: var(--color-oscuro);
+  background-image: linear-gradient(90deg, var(--color-oscuro), var(--color-principal));
+}
+
+h2 {
+  color: var(--color-oscuro);
+}
+
+/* Enlaces */
+a {
+  color: var(--color-principal);
+}
+
+/* Una clase y un identificador */
+.destacado {
+  color: var(--color-principal);
+  background-color: #ffffff;
+}
+
+#portada {
+  background-color: var(--color-fondo);
+  background-image: url("../imagenes/portada.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Tablas: el mismo borde para varios selectores */
+table, th, td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-principal);
+}
+
+th {
+  color: #ffffff;
+  background-color: var(--color-oscuro);
+  background-image: radial-gradient(circle, var(--color-principal), var(--color-oscuro));
+}
+
+/* Citas: un color con transparencia (canal alfa) */
+blockquote {
+  background-color: rgb(37 99 235 / 0.15);
+}
+
+/* Pie: imagen de fondo que se repite, y letra chica con opacidad */
+footer {
+  background-color: var(--color-fondo);
+  background-image: url("../imagenes/patron.png");
+  background-repeat: repeat;
+}
+
+small {
+  opacity: 0.7;
+}
+
+/* Etapa 8: selectores más precisos (Clase 04) */
+
+/* Combinador descendiente: los enlaces del menú, en negrita */
+nav a {
+  font-weight: bold;
+}
+
+/* Selector de atributo: los enlaces externos llevan el subrayado de color acento */
+a[href^="https"] {
+  text-decoration-color: var(--color-acento);
+}
+
+/* Pseudoclases de enlace, en orden: cursor y después foco */
+a:hover {
+  color: var(--color-oscuro);
+}
+
+a:focus {
+  background-color: var(--color-fondo);
+}
+
+/* Pseudoclase de estructura: filas alternas en el cuerpo de las tablas */
+tbody tr:nth-child(even) {
+  background-color: rgb(37 99 235 / 0.08);
+}
+
+/* Etapa 9: tipografía y presentación de datos (Clase 05) */
+
+/* Tipografía: texto sin serifa, títulos con serifa y una altura de línea cómoda */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #1e3a8a;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* La entradilla del artículo: más grande y en cursiva */
+.entradilla {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+/* Tablas: bordes unidos, relleno, alineación y título debajo */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.numero {
+  text-align: right;
+}
+
+caption {
+  caption-side: bottom;
+  font-style: italic;
+}
+
+/* Listas: viñeta cuadrada y espacio entre elementos */
+.comprobacion {
+  list-style-type: square;
+}
+
+.comprobacion li {
+  margin-bottom: 0.5rem;
+}
+
+/* Citas: un borde solo a la izquierda, relleno y margen */
+blockquote {
+  border-left: 4px solid var(--color-principal);
+  padding: 8px 16px;
+  margin: 16px 0;
+  font-style: italic;
+}
+
+/* Tarjeta de la autora: bordes distintos por lado, dos esquinas redondeadas, relleno y margen */
+.tarjeta {
+  width: 320px;
+  box-sizing: border-box;
+  border-top: 4px solid var(--color-oscuro);
+  border-right: 1px solid #94a3b8;
+  border-bottom: 4px double var(--color-oscuro);
+  border-left: 1px solid #94a3b8;
+  border-radius: 16px 0;
+  padding: 20px 24px;
+  margin: 16px auto;
+  background-color: #ffffff;
+}
+
+.tarjeta__titulo {
+  margin-top: 0;
+}
+
+/* Etapa 10: unidades relativas (Clase 06) */
+
+/* La raíz respeta la preferencia de tamaño de letra de quien visita la página */
+html {
+  font-size: 100%;
+}
+
+/* Un ancho máximo en rem y un espacio lateral que acompaña a la letra */
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Un ancho de lectura de 65 caracteres */
+p {
+  max-width: 65ch;
+}
+
+/* La tarjeta: sus medidas en rem (20rem = 320px y 1.25rem 1.5rem = 20px 24px con la raíz en 16px) */
+.tarjeta {
+  width: 20rem;
+  padding: 1.25rem 1.5rem;
+}
+
+/* La entradilla: el tamaño acompaña a la raíz */
+.entradilla {
+  font-size: 1.25rem;
+}

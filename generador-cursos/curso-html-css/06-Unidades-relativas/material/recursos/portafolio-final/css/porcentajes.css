@@ -1,0 +1,44 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* El contenedor: 400px de ancho */
+.marco {
+  width: 400px;
+  margin-bottom: 16px;
+  background-color: #eff6ff;
+}
+
+/* El ancho en %: la mitad del ancho del contenedor */
+.mitad {
+  width: 50%;
+  background-color: #dbeafe;
+}
+
+/* El tamaño de letra en %: se calcula sobre la letra del padre (16px) */
+.grande {
+  font-size: 150%;
+  margin: 0;
+}
+
+/* El alto en %: solo funciona si el contenedor tiene un alto definido */
+.mitad-alto {
+  height: 50%;
+  line-height: 1.5;
+  background-color: #dbeafe;
+}
+
+.marco--con-alto {
+  height: 200px;
+}
+
+/* El relleno en %: se calcula sobre el ANCHO del contenedor, también arriba y abajo */
+.relleno {
+  padding: 10%;
+  background-color: #dbeafe;
+}

@@ -1,0 +1,18 @@
+/* Las mismas medidas para las dos cajas */
+.caja {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #2563eb;
+  margin: 10px;
+  background-color: #dbeafe;
+}
+
+/* Cálculo por defecto: el ancho es solo el del contenido */
+.caja--a {
+  box-sizing: content-box;
+}
+
+/* El ancho incluye el relleno y el borde */
+.caja--b {
+  box-sizing: border-box;
+}

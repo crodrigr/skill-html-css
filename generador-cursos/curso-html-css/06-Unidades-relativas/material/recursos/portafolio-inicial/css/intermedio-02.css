@@ -1,0 +1,21 @@
+/* Tamaño base y altura de línea de la página */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.campo, .nota, .banda, .cuadrado {
+  background-color: #fef3c7;
+}
+
+.medida {
+  font-family: monospace;
+}
+
+.cero {
+  display: inline-block;
+}

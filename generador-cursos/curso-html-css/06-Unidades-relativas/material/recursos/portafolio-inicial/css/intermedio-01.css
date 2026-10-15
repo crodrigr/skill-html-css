@@ -1,0 +1,13 @@
+/* Tamaño base */
+html {
+  font-size: 16px;
+}
+
+/* Cada nivel pide 1.5em: se acumula al anidar */
+.nivel {
+  font-size: 1.5em;
+}
+
+.boton {
+  font-size: 18px;
+}
