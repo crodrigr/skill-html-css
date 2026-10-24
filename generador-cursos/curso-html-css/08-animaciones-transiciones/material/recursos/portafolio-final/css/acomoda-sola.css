@@ -1,0 +1,41 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+/* Sin margen en el cuerpo: las cuadrículas ocupan todo el ancho de la ventana */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Que el ancho incluya el relleno y el borde (se explica en el Ejemplo 08) */
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #dbeafe;
+}
+
+.item:nth-child(even) {
+  background-color: #ccfbf1;
+}
+
+/* Tantas columnas de 200px como quepan; las columnas vacías se pliegan y el espacio se reparte */
+.fit,
+.fit-pocos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Con auto-fill las columnas vacías se conservan: los tres elementos no se estiran */
+.fill-pocos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}

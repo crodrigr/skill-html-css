@@ -1,0 +1,49 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* El botón: un enlace con aspecto de botón, en azul */
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: #ffffff;
+  background-color: #2563eb;
+  text-decoration: none;
+}
+
+/* Al pasar el cursor cambian el fondo, el color del texto y la opacidad */
+.boton:hover {
+  background-color: #111827;
+  color: #fef3c7;
+  opacity: 0.6;
+}
+
+/* Un retardo de 1s: el cambio empieza un segundo después */
+.con-retardo {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+
+/* Una lista separada por comas: cada propiedad con su duración, en el mismo orden */
+.lista {
+  transition-property: background-color, opacity;
+  transition-duration: 0.4s, 1s;
+}
+
+/* all: se anima cualquier propiedad que cambie */
+.todas {
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+/* Solo el fondo se anima: el color del texto y la opacidad cambian al instante */
+.solo-fondo {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}

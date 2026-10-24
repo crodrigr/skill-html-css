@@ -1,0 +1,71 @@
+/* Cada bloque tiene un fondo para ver su tamaño */
+.bloque {
+  background-color: #dbeafe;
+}
+
+/* Márgenes con uno a cuatro valores */
+.margen-1 {
+  margin: 10px;
+}
+
+.margen-2 {
+  margin: 10px 20px;
+}
+
+.margen-3 {
+  margin: 5px 10px 15px;
+}
+
+.margen-4 {
+  margin: 5px 10px 15px 20px;
+}
+
+/* Rellenos con uno a cuatro valores */
+.relleno-1 {
+  padding: 10px;
+}
+
+.relleno-2 {
+  padding: 10px 20px;
+}
+
+.relleno-3 {
+  padding: 5px 10px 15px;
+}
+
+.relleno-4 {
+  padding: 5px 10px 15px 20px;
+}
+
+/* Centrar: ancho fijo y márgenes laterales automáticos */
+.centrada {
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* Dos bloques apilados: los márgenes verticales colapsan */
+.apilada {
+  height: 40px;
+}
+
+.apilada--arriba {
+  margin-bottom: 30px;
+}
+
+.apilada--abajo {
+  margin-top: 20px;
+}
+
+/* La tarjeta: borde distinto por lado, dos esquinas redondeadas, relleno y margen */
+.tarjeta {
+  width: 320px;
+  box-sizing: border-box;
+  border-top: 4px solid #1e3a8a;
+  border-right: 1px solid #94a3b8;
+  border-bottom: 4px double #1e3a8a;
+  border-left: 1px solid #94a3b8;
+  border-radius: 16px 0;
+  padding: 20px 24px;
+  margin: 16px auto;
+  background-color: #ffffff;
+}

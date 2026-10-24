@@ -1,0 +1,63 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 1.5rem;
+  background-color: #2563eb;
+}
+
+/* La secuencia: la caja pasa de la mitad de su tamaño al doble */
+@keyframes crecer {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(2);
+  }
+}
+
+/* Todas duran 1s y esperan 1s antes de empezar; solo cambia animation-fill-mode */
+.c-none,
+.c-forwards,
+.c-backwards,
+.c-both,
+.c-pausada {
+  animation-name: crecer;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+
+/* none: antes y después la caja tiene su aspecto normal */
+.c-none {
+  animation-fill-mode: none;
+}
+
+/* forwards: al terminar conserva el último paso */
+.c-forwards {
+  animation-fill-mode: forwards;
+}
+
+/* backwards: durante el retardo ya muestra el primer paso */
+.c-backwards {
+  animation-fill-mode: backwards;
+}
+
+/* both: las dos cosas */
+.c-both {
+  animation-fill-mode: both;
+}
+
+/* paused: la animación queda detenida donde está (acá, sin haber empezado) */
+.c-pausada {
+  animation-play-state: paused;
+}

@@ -1,0 +1,37 @@
+/* Bloque: el componente completo */
+.tarjeta {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cbd5e1;
+}
+
+/* Elementos: las partes del bloque */
+.tarjeta__imagen {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #bfdbfe;
+}
+
+.tarjeta__titulo {
+  color: #1e3a8a;
+}
+
+.tarjeta__texto {
+  color: #1f2937;
+}
+
+.tarjeta__enlace {
+  color: #2563eb;
+}
+
+/* Modificador del bloque: una variante de toda la tarjeta */
+.tarjeta--destacada {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+}
+
+/* Modificador de un elemento: una variante de una sola parte */
+.tarjeta__titulo--grande {
+  font-size: 28px;
+}

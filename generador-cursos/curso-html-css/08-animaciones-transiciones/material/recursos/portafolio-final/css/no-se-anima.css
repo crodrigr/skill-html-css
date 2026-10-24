@@ -1,0 +1,63 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.panel {
+  margin-bottom: 0.5rem;
+  background-color: #dbeafe;
+}
+
+/* Una altura fija: el navegador puede calcular los valores intermedios */
+.panel-fijo {
+  height: 50px;
+  transition: height 1s linear;
+}
+
+.panel-fijo:hover {
+  height: 100px;
+}
+
+/* De auto a una medida no hay valores intermedios: el cambio es instantáneo */
+.panel-auto {
+  height: auto;
+  transition: height 1s linear;
+}
+
+.panel-auto:hover {
+  height: 100px;
+}
+
+/* display tampoco admite valores intermedios: no se inicia ninguna transición */
+.panel-display {
+  display: block;
+  transition: all 1s linear;
+}
+
+.panel-display:hover {
+  display: inline-block;
+}
+
+/* Sin duración (el valor por defecto es 0s) no hay transición */
+.panel-sin-duracion {
+  height: 50px;
+  transition-property: height;
+}
+
+.panel-sin-duracion:hover {
+  height: 100px;
+}
+
+/* Un retardo negativo: la transición empieza ya avanzada, como si hubieran pasado 0.5s */
+.panel-negativo {
+  height: 50px;
+  transition: height 1s linear -0.5s;
+}
+
+.panel-negativo:hover {
+  height: 100px;
+}

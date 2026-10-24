@@ -1,0 +1,16 @@
+/* Una declaración inválida se ignora y la regla sigue con las demás */
+.uno {
+  color: #16a34a;
+  background-color: colorinexistente;
+}
+
+/* En un grupo, un selector mal escrito invalida toda la regla */
+.dos, ..mal {
+  color: #dc2626;
+}
+
+/* Una declaración sin los dos puntos se ignora */
+.tres {
+  color #2563eb;
+  background-color: #fef3c7;
+}

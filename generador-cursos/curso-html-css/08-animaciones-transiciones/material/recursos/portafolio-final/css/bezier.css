@@ -1,0 +1,46 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* La pista de 300px por la que se mueve la caja de 100px (recorre 200px) */
+.pista {
+  width: 300px;
+  margin-bottom: 0.75rem;
+  background-color: #e5e7eb;
+}
+
+.caja {
+  width: 100px;
+  height: 40px;
+  background-color: #2563eb;
+}
+
+/* Al pasar el cursor sobre la pista, la caja se desplaza 200px */
+.pista:hover .caja {
+  transform: translateX(200px);
+}
+
+/* Los valores de y pueden salirse de 0 a 1: la caja se pasa de su destino y vuelve */
+.rebasa {
+  transition: transform 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Una curva propia: arranca rápido, casi se detiene y termina rápido */
+.propia {
+  transition: transform 2s cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+
+/* Estos cuatro valores son los de ease-in-out */
+.igual-a-ease-in-out {
+  transition: transform 2s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* x1 = 2 está fuera de 0 a 1: la función es inválida y el navegador la ignora */
+.invalida {
+  transition: transform 2s cubic-bezier(2, 0, 0.5, 1);
+}

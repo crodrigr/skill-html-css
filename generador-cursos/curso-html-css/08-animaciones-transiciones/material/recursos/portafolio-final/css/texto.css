@@ -1,0 +1,43 @@
+/* Alineación del texto dentro de su caja */
+.izquierda {
+  text-align: left;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.derecha {
+  text-align: right;
+}
+
+.justificado {
+  text-align: justify;
+}
+
+/* Sangría: deja espacio antes de la primera línea */
+.sangria {
+  text-indent: 2rem;
+}
+
+/* Espacio entre letras y entre palabras */
+.letras {
+  letter-spacing: 2px;
+}
+
+.palabras {
+  word-spacing: 10px;
+}
+
+/* Mayúsculas y minúsculas sin cambiar el texto del HTML */
+.mayusculas {
+  text-transform: uppercase;
+}
+
+.minusculas {
+  text-transform: lowercase;
+}
+
+.capitalizado {
+  text-transform: capitalize;
+}

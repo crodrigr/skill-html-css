@@ -1,0 +1,29 @@
+/* [a]: los enlaces que tienen el atributo href */
+a[href] {
+  color: #2563eb;
+}
+
+/* [a="v"]: los enlaces que se abren en una pestaña nueva */
+a[target="_blank"] {
+  background-color: #fef3c7;
+}
+
+/* [a^="v"]: los enlaces cuyo href empieza con https */
+a[href^="https"] {
+  color: #16a34a;
+}
+
+/* [a$="v"]: los enlaces cuyo href termina en .pdf */
+a[href$=".pdf"] {
+  color: #dc2626;
+}
+
+/* [a*="v"]: los enlaces cuyo href contiene la palabra proyectos */
+a[href*="proyectos"] {
+  background-color: #dbeafe;
+}
+
+/* El selector de atributo también sirve para los campos de un formulario */
+input[type="email"] {
+  background-color: #dbeafe;
+}

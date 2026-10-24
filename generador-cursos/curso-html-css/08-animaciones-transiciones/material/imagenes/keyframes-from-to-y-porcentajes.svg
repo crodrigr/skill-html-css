@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">@keyframes: from y to, y selectores porcentuales</title>
+<desc id="d">Arriba, una secuencia con dos pasos: from, que equivale a 0 por ciento, con opacidad 0 y desplazada 20 píxeles hacia abajo, y to, que equivale a 100 por ciento, con opacidad 1 y sin desplazamiento. Abajo, un rebote con cinco pasos en 2 segundos: 0 por ciento en 0 píxeles, 25 por ciento en menos 60, 50 por ciento en 0, 75 por ciento en menos 30 y 100 por ciento en 0; los pasos caen a 0, 0.5, 1, 1.5 y 2 segundos.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="518" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Los pasos de una animación</text>
+<text x="30" y="84" text-anchor="start" font-size="15" font-weight="700" fill="#2563eb">from y to</text>
+<line x1="110" y1="150" x2="850" y2="150" stroke="#1f2937" stroke-width="2.5"/>
+<circle cx="110.0" cy="150.0" r="8" fill="#2563eb"/>
+<text x="110" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">from  (0%)</text>
+<text x="190" y="178" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">opacity: 0; translateY(20px)</text>
+<circle cx="850.0" cy="150.0" r="8" fill="#2563eb"/>
+<text x="850" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">to  (100%)</text>
+<text x="770" y="178" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">opacity: 1; translateY(0)</text>
+<text x="480.0" y="140" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">animation-duration: 1s</text>
+<path d="M130 150 L830 150" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#ah)"/>
+<text x="30" y="252" text-anchor="start" font-size="15" font-weight="700" fill="#16a34a">Porcentajes (2s)</text>
+<line x1="110" y1="420" x2="850" y2="420" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+<path d="M110.0 420.0 L119.2 415.8 L128.5 411.6 L137.8 407.4 L147.0 403.2 L156.2 399.0 L165.5 394.8 L174.8 390.6 L184.0 386.4 L193.2 382.2 L202.5 378.0 L211.8 373.8 L221.0 369.6 L230.2 365.4 L239.5 361.2 L248.8 357.0 L258.0 352.8 L267.2 348.6 L276.5 344.4 L285.8 340.2 L295.0 336.0 L295.0 336.0 L304.2 340.2 L313.5 344.4 L322.8 348.6 L332.0 352.8 L341.2 357.0 L350.5 361.2 L359.8 365.4 L369.0 369.6 L378.2 373.8 L387.5 378.0 L396.8 382.2 L406.0 386.4 L415.2 390.6 L424.5 394.8 L433.8 399.0 L443.0 403.2 L452.2 407.4 L461.5 411.6 L470.8 415.8 L480.0 420.0 L480.0 420.0 L489.2 417.9 L498.5 415.8 L507.8 413.7 L517.0 411.6 L526.2 409.5 L535.5 407.4 L544.8 405.3 L554.0 403.2 L563.2 401.1 L572.5 399.0 L581.8 396.9 L591.0 394.8 L600.2 392.7 L609.5 390.6 L618.8 388.5 L628.0 386.4 L637.2 384.3 L646.5 382.2 L655.8 380.1 L665.0 378.0 L665.0 378.0 L674.2 380.1 L683.5 382.2 L692.8 384.3 L702.0 386.4 L711.2 388.5 L720.5 390.6 L729.8 392.7 L739.0 394.8 L748.2 396.9 L757.5 399.0 L766.8 401.1 L776.0 403.2 L785.2 405.3 L794.5 407.4 L803.8 409.5 L813.0 411.6 L822.2 413.7 L831.5 415.8 L840.8 417.9 L850.0 420.0" fill="none" stroke="#16a34a" stroke-width="3" stroke-linejoin="round"/>
+<line x1="110" y1="420.0" x2="110" y2="440" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+<circle cx="110.0" cy="420.0" r="7" fill="#dc2626"/>
+<text x="110" y="462" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">0%</text>
+<text x="110" y="482" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">0s</text>
+<text x="110" y="406.0" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">0px</text>
+<line x1="295.0" y1="336.0" x2="295.0" y2="440" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+<circle cx="295.0" cy="336.0" r="7" fill="#dc2626"/>
+<text x="295.0" y="462" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">25%</text>
+<text x="295.0" y="482" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">0.5s</text>
+<text x="295.0" y="322.0" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">-60px</text>
+<line x1="480.0" y1="420.0" x2="480.0" y2="440" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+<circle cx="480.0" cy="420.0" r="7" fill="#dc2626"/>
+<text x="480.0" y="462" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">50%</text>
+<text x="480.0" y="482" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">1s</text>
+<text x="480.0" y="406.0" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">0px</text>
+<line x1="665.0" y1="378.0" x2="665.0" y2="440" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+<circle cx="665.0" cy="378.0" r="7" fill="#dc2626"/>
+<text x="665.0" y="462" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">75%</text>
+<text x="665.0" y="482" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">1.5s</text>
+<text x="665.0" y="364.0" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">-30px</text>
+<line x1="850" y1="420.0" x2="850" y2="440" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>
+<circle cx="850.0" cy="420.0" r="7" fill="#dc2626"/>
+<text x="850" y="462" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">100%</text>
+<text x="850" y="482" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">2s</text>
+<text x="850" y="406.0" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">0px</text>
+<text x="480" y="506" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">Cada paso es un porcentaje de la duración; entre dos pasos el navegador calcula los valores intermedios.</text>
+</svg>

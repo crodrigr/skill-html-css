@@ -1,0 +1,37 @@
+/* Bordes, relleno y alineación de las celdas */
+th, td {
+  border: 1px solid #2563eb;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  color: #ffffff;
+  background-color: #1e3a8a;
+}
+
+.numero {
+  text-align: right;
+}
+
+/* Sin border-collapse, cada celda dibuja su propio borde y se ve doble */
+.separada {
+  border-spacing: 8px;
+}
+
+/* Con collapse, las celdas comparten el borde */
+.unida {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* El título de la tabla, debajo */
+.unida caption {
+  caption-side: bottom;
+  font-style: italic;
+}
+
+/* Filas alternas */
+.unida tbody tr:nth-child(even) {
+  background-color: #dbeafe;
+}

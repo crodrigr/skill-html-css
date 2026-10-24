@@ -1,0 +1,80 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* El botón: un enlace con aspecto de botón, en azul */
+.boton {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: #ffffff;
+  background-color: #2563eb;
+  text-decoration: none;
+}
+
+.indicador {
+  width: 60px;
+  height: 60px;
+  background-color: #16a34a;
+}
+
+.tarjeta {
+  width: 300px;
+  padding: 1rem;
+  background-color: #dbeafe;
+}
+
+@keyframes latir {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Una animación que no termina nunca: puede molestar a quien es sensible al movimiento */
+.latido {
+  animation: latir 1s ease-in-out infinite alternate;
+}
+
+.entrada {
+  animation: aparecer 1s ease-out;
+}
+
+.boton:hover {
+  background-color: #111827;
+}
+
+.boton-suave {
+  transition: background-color 0.3s;
+}
+
+/* Si la persona pidió menos movimiento: sin animaciones y con el cambio de color al instante */
+@media (prefers-reduced-motion: reduce) {
+  .latido,
+  .entrada {
+    animation: none;
+  }
+
+  .boton-suave {
+    transition: none;
+  }
+}

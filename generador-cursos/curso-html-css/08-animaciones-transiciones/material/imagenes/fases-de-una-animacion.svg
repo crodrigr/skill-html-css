@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Las fases de una animación</title>
+<desc id="d">Una animación con un retardo de 1 segundo, una duración de 1 segundo, 2 repeticiones alternadas y relleno both. De 0 a 1000 milisegundos es el retardo y, por el relleno hacia atrás, la caja ya muestra el primer paso. De 1000 a 2000 milisegundos va de 0 a 100 píxeles. De 2000 a 3000 vuelve de 100 a 0 porque la dirección alterna. Después de 3000 milisegundos termina y, por el relleno hacia adelante, conserva el último paso.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="498" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="#1f2937">animation: 1s linear 1s 2 alternate both mover</text>
+<rect x="90" y="90" width="790" height="180" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="90.0" y="90" width="197.5" height="180" rx="0" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="188.75" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">retardo</text>
+<text x="188.75" y="130" text-anchor="middle" font-size="11" font-weight="400" fill="#64748b">animation-delay: 1s</text>
+<rect x="287.5" y="90" width="197.5" height="180" rx="0" fill="#dbeafe" stroke="#cbd5e1" stroke-width="1"/>
+<text x="386.25" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">iteración 1</text>
+<text x="386.25" y="130" text-anchor="middle" font-size="11" font-weight="400" fill="#64748b">va (normal)</text>
+<rect x="485.0" y="90" width="197.5" height="180" rx="0" fill="#dcfce7" stroke="#cbd5e1" stroke-width="1"/>
+<text x="583.75" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">iteración 2</text>
+<text x="583.75" y="130" text-anchor="middle" font-size="11" font-weight="400" fill="#64748b">vuelve (alternate)</text>
+<rect x="682.5" y="90" width="197.5" height="180" rx="0" fill="#fef3c7" stroke="#cbd5e1" stroke-width="1"/>
+<text x="781.25" y="112" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">después</text>
+<text x="781.25" y="130" text-anchor="middle" font-size="11" font-weight="400" fill="#64748b">animation-fill-mode: forwards</text>
+<path d="M90.0 250.0 L287.5 250.0 L485.0 140.0 L682.5 250.0 L880.0 250.0" fill="none" stroke="#dc2626" stroke-width="3.5" stroke-linejoin="round"/>
+<circle cx="90.0" cy="250.0" r="6" fill="#dc2626"/>
+<circle cx="287.5" cy="250.0" r="6" fill="#dc2626"/>
+<circle cx="485.0" cy="140.0" r="6" fill="#dc2626"/>
+<circle cx="682.5" cy="250.0" r="6" fill="#dc2626"/>
+<text x="82" y="254.0" text-anchor="end" font-size="11" font-weight="700" fill="#1f2937">0</text>
+<text x="82" y="144.0" text-anchor="end" font-size="11" font-weight="700" fill="#1f2937">100px</text>
+<line x1="90" y1="310" x2="880" y2="310" stroke="#1f2937" stroke-width="2"/>
+<line x1="90.0" y1="302" x2="90.0" y2="318" stroke="#1f2937" stroke-width="2"/>
+<text x="90.0" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">0 ms</text>
+<line x1="287.5" y1="302" x2="287.5" y2="318" stroke="#1f2937" stroke-width="2"/>
+<text x="287.5" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">1000 ms</text>
+<line x1="485.0" y1="302" x2="485.0" y2="318" stroke="#1f2937" stroke-width="2"/>
+<text x="485.0" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">2000 ms</text>
+<line x1="682.5" y1="302" x2="682.5" y2="318" stroke="#1f2937" stroke-width="2"/>
+<text x="682.5" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">3000 ms</text>
+<line x1="880.0" y1="302" x2="880.0" y2="318" stroke="#1f2937" stroke-width="2"/>
+<text x="880.0" y="338" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">4000 ms</text>
+<rect x="90" y="354" width="150" height="26" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="165.0" y="371.2" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2937">backwards</text>
+<text x="256" y="372" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">durante el retardo, ya muestra el primer paso (0px)</text>
+<rect x="90" y="384" width="150" height="26" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="165.0" y="401.2" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2937">alternate</text>
+<text x="256" y="402" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">la segunda iteración va hacia atrás (de 100 a 0)</text>
+<rect x="90" y="414" width="150" height="26" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="165.0" y="431.2" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2937">forwards</text>
+<text x="256" y="432" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">al terminar conserva el último paso (aquí, 0px)</text>
+<rect x="90" y="444" width="150" height="26" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="165.0" y="461.2" text-anchor="middle" font-size="12" font-weight="700" fill="#1f2937">sin relleno</text>
+<text x="256" y="462" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">antes y después, el elemento vuelve a su aspecto normal</text>
+</svg>

@@ -1,0 +1,80 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.zona {
+  height: 100px;
+  padding-top: 70px;
+  margin-bottom: 0.5rem;
+  background-color: #e5e7eb;
+}
+
+.bola {
+  width: 30px;
+  height: 30px;
+  background-color: #2563eb;
+}
+
+/* Cinco pasos: cada uno ocurre a un porcentaje de la duración (2s → 0, 0.5s, 1s, 1.5s y 2s) */
+@keyframes rebote {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-60px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rebote-lineal {
+  animation-name: rebote;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+/* La función de tiempo se aplica entre cada par de pasos, no en toda la animación */
+.rebote-suave {
+  animation-name: rebote;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Una lista de porcentajes comparte el mismo bloque: 0%, 50% y 100% valen lo mismo */
+@keyframes rebote-simple {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-60px);
+  }
+
+  75% {
+    transform: translateY(-30px);
+  }
+}
+
+.rebote-lista {
+  animation-name: rebote-simple;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}

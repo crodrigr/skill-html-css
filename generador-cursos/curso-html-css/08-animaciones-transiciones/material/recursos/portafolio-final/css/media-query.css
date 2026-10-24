@@ -1,0 +1,48 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+/* Sin margen en el cuerpo: las cuadrículas ocupan todo el ancho de la ventana */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Que el ancho incluya el relleno y el borde (se explica en el Ejemplo 08) */
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #dbeafe;
+}
+
+.item:nth-child(even) {
+  background-color: #ccfbf1;
+}
+
+/* Estilos de partida: valen en cualquier ancho */
+.titulo {
+  font-size: 1.5rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* A partir de 600px de ancho de ventana (incluido), se aplican las reglas de adentro */
+@media (min-width: 600px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

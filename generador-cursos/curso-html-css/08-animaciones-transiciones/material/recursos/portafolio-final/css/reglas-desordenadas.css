@@ -1,0 +1,24 @@
+main article.tarjeta h3.tarjeta__titulo {
+  color: #1e3a8a;
+}
+a {
+  color: #2563eb;
+}
+.tarjeta__titulo {
+  color: #dc2626;
+}
+h2 {
+  color: #1e3a8a;
+}
+.destacado {
+  background-color: #fef3c7;
+}
+h2 {
+  background-color: #eff6ff;
+}
+ul > li {
+  color: #1f2937;
+}
+li {
+  color: #1f2937;
+}

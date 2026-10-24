@@ -1,0 +1,45 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+/* Sin margen en el cuerpo: las cuadrículas ocupan todo el ancho de la ventana */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #dbeafe;
+}
+
+.item:nth-child(even) {
+  background-color: #ccfbf1;
+}
+
+.sin-hueco,
+.con-gap,
+.dos-huecos,
+.con-margen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* gap: el mismo hueco entre filas y entre columnas */
+.con-gap {
+  gap: 16px;
+}
+
+/* row-gap separa las filas; column-gap separa las columnas */
+.dos-huecos {
+  row-gap: 1rem;
+  column-gap: 2rem;
+}
+
+/* El margen también separa, pero rodea a cada elemento, borde exterior incluido */
+.con-margen .item {
+  margin: 8px;
+}

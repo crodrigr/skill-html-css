@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Columnas con fr | Lucía Fernández</title>
+    <link rel="stylesheet" href="css/columnas.css">
+  </head>
+  <body>
+    <header>
+      <h1>Columnas con fr</h1>
+      <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="sobre-mi.html">Sobre mí</a> |
+        <a href="proyectos.html">Proyectos</a> |
+        <a href="servicios.html">Servicios</a> |
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Medidas fijas: 200px 300px 200px</h2>
+      <section class="fijas">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+
+      <h2>Fija y fracciones: 200px 1fr 1fr</h2>
+      <section class="mixta">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+
+      <h2>Fracciones desiguales: 1fr 2fr 1fr</h2>
+      <section class="fraccion">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+
+      <h2>Porcentajes: 25% 50% 25%</h2>
+      <section class="porcentaje">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+
+      <h2>Un elemento ancho dentro de 1fr 1fr 1fr</h2>
+      <section class="crece">
+        <div class="item"><div class="ancho">Elemento de 600px</div></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+
+      <h2>Lo mismo con minmax(0, 1fr)</h2>
+      <section class="controlado">
+        <div class="item"><div class="ancho">Elemento de 600px</div></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+    </main>
+  </body>
+</html>
