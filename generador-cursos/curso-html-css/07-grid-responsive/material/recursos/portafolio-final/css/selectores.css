@@ -1,0 +1,26 @@
+/* Selector universal: se aplica a todos los elementos */
+* {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f59e0b;
+}
+
+/* Selector de elemento */
+p {
+  color: #1f2937;
+}
+
+/* Selector de grupo: la misma regla para dos selectores */
+h1, h2 {
+  color: #1e3a8a;
+}
+
+/* Selector de clase */
+.destacado {
+  color: #2563eb;
+}
+
+/* Selector de identificador */
+#aviso {
+  color: #16a34a;
+}

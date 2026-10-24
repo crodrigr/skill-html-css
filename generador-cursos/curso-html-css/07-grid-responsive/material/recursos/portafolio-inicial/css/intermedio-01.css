@@ -1,0 +1,23 @@
+/* Tamaño base */
+html {
+  font-size: 16px;
+}
+
+/* Sin margen en el cuerpo: las cuadrículas ocupan todo el ancho de la ventana */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+  width: 960px;
+  padding: 20px;
+  border: 4px solid #111827;
+}
+
+.tarjeta {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #16a34a;
+  background-color: #fef3c7;
+}

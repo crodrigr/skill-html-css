@@ -1,0 +1,31 @@
+/* Orden recomendado para los enlaces: normal, visitado, pasar el cursor, foco */
+a {
+  color: #2563eb;
+}
+
+a:visited {
+  color: #7c3aed;
+}
+
+a:hover {
+  color: #dc2626;
+}
+
+a:focus {
+  background-color: #fef3c7;
+}
+
+/* :active: mientras se presiona el botón */
+.boton:active {
+  background-color: #16a34a;
+}
+
+/* :checked: la etiqueta de una casilla marcada */
+input:checked + label {
+  color: #16a34a;
+}
+
+/* :disabled: un campo que no se puede usar */
+input:disabled {
+  background-color: #e5e7eb;
+}

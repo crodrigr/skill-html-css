@@ -1,0 +1,31 @@
+/* Tamaño base */
+html {
+  font-size: 16px;
+}
+
+/* Sin margen en el cuerpo: las cuadrículas ocupan todo el ancho de la ventana */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.titulo {
+  font-size: 1.25rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.foto {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #fef3c7;
+}

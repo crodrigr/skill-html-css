@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Puntos de ruptura y consulta de medios</title>
+<desc id="d">Un eje con el ancho de la ventana dividido por dos puntos de ruptura, 600 y 900 píxeles, en tres tramos: menos de 600 con una columna, de 600 a 899 con dos y 900 o más con tres. Se marcan las ventanas de comprobación de 500, 800 y 1200 píxeles.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="468" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Los puntos de ruptura dividen el ancho en tramos</text>
+<rect x="70.0" y="90" width="351.42857142857144" height="100" rx="0" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="245.71428571428572" y="128" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Teléfono</text>
+<text x="245.71428571428572" y="150" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">1 columna</text>
+<text x="245.71428571428572" y="172" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">menos de 600px</text>
+<rect x="421.42857142857144" y="90" width="175.71428571428578" height="100" rx="0" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="509.28571428571433" y="128" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Tableta</text>
+<text x="509.28571428571433" y="150" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">2 columnas</text>
+<text x="509.28571428571433" y="172" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">600px a 899px</text>
+<rect x="597.1428571428572" y="90" width="292.8571428571428" height="100" rx="0" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="743.5714285714287" y="128" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Computador</text>
+<text x="743.5714285714287" y="150" text-anchor="middle" font-size="14" font-weight="400" fill="#1f2937">3 columnas</text>
+<text x="743.5714285714287" y="172" text-anchor="middle" font-size="12" font-weight="400" fill="#64748b">900px o más</text>
+<line x1="70" y1="220" x2="890" y2="220" stroke="#1f2937" stroke-width="2"/>
+<line x1="70.0" y1="212" x2="70.0" y2="228" stroke="#1f2937" stroke-width="2"/>
+<text x="70.0" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">0</text>
+<line x1="421.42857142857144" y1="212" x2="421.42857142857144" y2="228" stroke="#1f2937" stroke-width="2"/>
+<text x="421.42857142857144" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">600px</text>
+<line x1="597.1428571428572" y1="212" x2="597.1428571428572" y2="228" stroke="#1f2937" stroke-width="2"/>
+<text x="597.1428571428572" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">900px</text>
+<line x1="890.0" y1="212" x2="890.0" y2="228" stroke="#1f2937" stroke-width="2"/>
+<text x="890.0" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2937">1400px</text>
+<text x="421.42857142857144" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">punto de ruptura</text>
+<text x="597.1428571428572" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">punto de ruptura</text>
+<circle cx="362.8571428571429" cy="220" r="7" fill="#2563eb"/>
+<text x="362.8571428571429" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#2563eb">comprobación: 500</text>
+<circle cx="538.5714285714287" cy="220" r="7" fill="#2563eb"/>
+<text x="538.5714285714287" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#2563eb">comprobación: 800</text>
+<circle cx="772.8571428571429" cy="220" r="7" fill="#2563eb"/>
+<text x="772.8571428571429" y="282" text-anchor="middle" font-size="12" font-weight="700" fill="#2563eb">comprobación: 1200</text>
+<rect x="70" y="316" width="380" height="120" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="86" y="344" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">.galeria {</text>
+<text x="102" y="366" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="13" fill="#1f2937" xml:space="preserve">grid-template-columns: 1fr;</text>
+<text x="86" y="388" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#1f2937" xml:space="preserve">}</text>
+<text x="86" y="412" text-anchor="start" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="14" fill="#dc2626" xml:space="preserve">@media (min-width: 600px) { … }</text>
+<text x="500" y="336" text-anchor="start" font-size="14" font-weight="700" fill="#1f2937">Cómo se lee una consulta</text>
+<text x="500" y="362" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">@media  →  «solo si…»</text>
+<text x="500" y="384" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">(min-width: 600px)  →  la ventana mide 600px o más</text>
+<text x="500" y="406" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">{ … }  →  las reglas que se aplican en ese caso</text>
+<text x="500" y="428" text-anchor="start" font-size="13" font-weight="400" fill="#64748b">El límite se incluye: con 600px de ancho ya se aplica.</text>
+</svg>

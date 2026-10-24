@@ -1,0 +1,40 @@
+/* Líneas: tipo, estilo y color en una sola declaración */
+.subrayado {
+  text-decoration: underline;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+.superior {
+  text-decoration: overline;
+}
+
+.ondulado {
+  text-decoration: underline wavy #dc2626;
+}
+
+.doble {
+  text-decoration: underline double #16a34a;
+}
+
+/* Quitar el subrayado de un enlace: hay que dejar otra señal de que es un enlace */
+.limpio {
+  text-decoration: none;
+}
+
+/* Sombras: desplazamiento horizontal, vertical, desenfoque y color */
+.sombra {
+  text-shadow: 2px 2px 4px #94a3b8;
+}
+
+.resplandor {
+  text-shadow: 0 0 8px #f59e0b;
+}
+
+/* Dos sombras a la vez, separadas por una coma */
+.relieve {
+  color: #1e3a8a;
+  text-shadow: -1px -1px 0 #ffffff, 1px 1px 0 #94a3b8;
+}

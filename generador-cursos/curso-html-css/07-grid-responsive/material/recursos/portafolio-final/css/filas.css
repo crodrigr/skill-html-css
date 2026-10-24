@@ -1,0 +1,42 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+/* Sin margen en el cuerpo: las cuadrículas ocupan todo el ancho de la ventana */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+  text-align: center;
+  background-color: #dbeafe;
+}
+
+.item:nth-child(even) {
+  background-color: #ccfbf1;
+}
+
+/* La fila 2 es auto (se ajusta a su contenido); la fila 3 toma todo lo que sobra */
+.filas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 60px auto 1fr;
+  height: 300px;
+}
+
+/* Dos filas definidas, pero hay ocho elementos: la tercera fila se crea sola */
+.sin-auto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 50px;
+}
+
+/* grid-auto-rows da la altura de las filas que se crean solas */
+.con-auto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 50px;
+  grid-auto-rows: 80px;
+}

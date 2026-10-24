@@ -1,0 +1,110 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+/* Sin margen en el cuerpo: las cuadrículas ocupan todo el ancho de la ventana */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Que el ancho incluya el relleno y el borde (se explica en el Ejemplo 08) */
+* {
+  box-sizing: border-box;
+}
+
+div {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Tres tramos, cada uno con su rango */
+.rango {
+  background-color: #fee2e2;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .rango {
+    background-color: #fef3c7;
+  }
+}
+
+@media (min-width: 900px) {
+  .rango {
+    background-color: #dcfce7;
+  }
+}
+
+/* La coma funciona como «o»: basta con que se cumpla una condición */
+.coma {
+  border: 0 solid #111827;
+}
+
+@media (max-width: 599px), (min-width: 900px) {
+  .coma {
+    border-width: 4px;
+  }
+}
+
+/* Dos rangos que no se tocan: entre 501px y 699px no se aplica ninguno y queda el estilo base */
+.sin-cubrir {
+  background-color: #e5e7eb;
+}
+
+@media (max-width: 500px) {
+  .sin-cubrir {
+    background-color: #fee2e2;
+  }
+}
+
+@media (min-width: 700px) {
+  .sin-cubrir {
+    background-color: #dcfce7;
+  }
+}
+
+/* La orientación depende de la forma de la ventana, no de su ancho */
+.orientacion {
+  background-color: #fee2e2;
+}
+
+@media (orientation: landscape) {
+  .orientacion {
+    background-color: #dcfce7;
+  }
+}
+
+/* Con dos consultas que coinciden, gana la que aparece DESPUÉS */
+.orden {
+  color: #111827;
+}
+
+@media (min-width: 600px) {
+  .orden {
+    color: #dc2626;
+  }
+}
+
+@media (min-width: 700px) {
+  .orden {
+    color: #2563eb;
+  }
+}
+
+/* Mismas dos reglas con el orden invertido: ahora gana la de 600px */
+.orden-inverso {
+  color: #111827;
+}
+
+@media (min-width: 700px) {
+  .orden-inverso {
+    color: #2563eb;
+  }
+}
+
+@media (min-width: 600px) {
+  .orden-inverso {
+    color: #dc2626;
+  }
+}

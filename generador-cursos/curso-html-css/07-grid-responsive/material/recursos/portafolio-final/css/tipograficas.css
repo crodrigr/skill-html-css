@@ -1,0 +1,41 @@
+/* Tamaño base: 16px, declarado para que los cálculos no dependan del equipo */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ch: el ancho del carácter «0» de la tipografía del elemento */
+.medida {
+  font-family: monospace;
+}
+
+.cero {
+  display: inline-block;
+}
+
+.campo {
+  font-family: monospace;
+  width: 20ch;
+  background-color: #dbeafe;
+}
+
+/* lh: la altura de una línea de texto del elemento */
+.tres-lineas {
+  line-height: 1.6;
+  height: 3lh;
+  background-color: #dbeafe;
+}
+
+/* ex: la altura de la «x» de la tipografía; es menor que 1em */
+.ancho-em {
+  width: 10em;
+  background-color: #dbeafe;
+}
+
+.ancho-ex {
+  width: 10ex;
+  background-color: #ccfbf1;
+}

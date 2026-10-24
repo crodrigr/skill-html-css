@@ -1,0 +1,28 @@
+/* :first-child: el primer elemento entre sus hermanos */
+li:first-child {
+  color: #16a34a;
+}
+
+/* :last-child: el último elemento entre sus hermanos */
+li:last-child {
+  background-color: #fef3c7;
+}
+
+/* :nth-child(): por posición, contando desde 1 entre todos los hermanos */
+li:nth-child(3) {
+  color: #dc2626;
+}
+
+tr:nth-child(even) {
+  background-color: #dbeafe;
+}
+
+/* :nth-of-type(): por posición entre los hermanos de la misma etiqueta */
+p:nth-of-type(2) {
+  background-color: #e0f2fe;
+}
+
+/* :only-child: un elemento sin hermanos */
+li:only-child {
+  font-weight: bold;
+}

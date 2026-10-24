@@ -1,0 +1,19 @@
+/* Selector de elemento: todos los títulos de segundo nivel */
+h2 {
+  color: #1e3a8a;
+}
+
+/* Selector de grupo: la misma regla para dos selectores */
+h1, h3 {
+  color: #2563eb;
+}
+
+/* Selector de clase: los elementos con class="destacado" */
+.destacado {
+  background-color: #fef3c7;
+}
+
+/* Selector de identificador: el elemento con id="contacto" */
+#contacto {
+  color: #16a34a;
+}

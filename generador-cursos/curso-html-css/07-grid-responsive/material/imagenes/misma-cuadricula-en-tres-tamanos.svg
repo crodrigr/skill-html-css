@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">La misma cuadrícula en tres tamaños</title>
+<desc id="d">La misma página en tres ventanas. A 500 píxeles todos los bloques se apilan en una columna. A 800 píxeles hay dos columnas: el menú y el contenido van juntos y la cabecera, el lateral y el pie ocupan el ancho. A 1200 píxeles hay tres columnas: menú, contenido y lateral en la misma fila, entre la cabecera y el pie.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect x="1" y="1" width="958" height="518" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="480" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Una página, tres disposiciones</text>
+<rect x="45" y="90" width="150.0" height="340" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="120.0" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">Teléfono · 500px</text>
+<rect x="53" y="98" width="134.0" height="40" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="120.0" y="122.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Cabecera</text>
+<rect x="53" y="144" width="134.0" height="40" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="120.0" y="168.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Menú</text>
+<rect x="53" y="190" width="134.0" height="90" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="120.0" y="239.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Contenido</text>
+<rect x="53" y="286" width="134.0" height="50" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="120.0" y="315.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Lateral</text>
+<rect x="53" y="342" width="134.0" height="40" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="120.0" y="366.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Pie</text>
+<text x="120.0" y="454" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">grid-template-columns: 1fr</text>
+<text x="120.0" y="476" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">1 columna</text>
+<rect x="235.0" y="90" width="240.0" height="340" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="355.0" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">Tableta · 800px</text>
+<rect x="243.0" y="98" width="224.0" height="40" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="355.0" y="122.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Cabecera</text>
+<rect x="243.0" y="144" width="60.0" height="90" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="273.0" y="193.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Menú</text>
+<rect x="309.0" y="144" width="158.0" height="90" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="388.0" y="193.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Contenido</text>
+<rect x="243.0" y="240" width="224.0" height="40" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="355.0" y="264.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Lateral</text>
+<rect x="243.0" y="286" width="224.0" height="40" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="355.0" y="310.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Pie</text>
+<text x="355.0" y="454" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">200px 1fr</text>
+<text x="355.0" y="476" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">2 columnas</text>
+<rect x="515.0" y="90" width="360.0" height="340" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="695.0" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">Computador · 1200px</text>
+<rect x="523.0" y="98" width="344.0" height="40" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="695.0" y="122.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Cabecera</text>
+<rect x="523.0" y="144" width="60.0" height="90" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="553.0" y="193.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Menú</text>
+<rect x="589.0" y="144" width="212.0" height="90" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="695.0" y="193.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Contenido</text>
+<rect x="807.0" y="144" width="60.0" height="90" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="837.0" y="193.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Lateral</text>
+<rect x="523.0" y="240" width="344.0" height="40" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="695.0" y="264.0" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">Pie</text>
+<text x="695.0" y="454" text-anchor="middle" font-family="DejaVu Sans Mono, Consolas, monospace" font-size="12" fill="#1f2937" xml:space="preserve">200px 1fr 200px</text>
+<text x="695.0" y="476" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">3 columnas</text>
+<text x="480" y="494" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">Los puntos de ruptura están en 600px y 900px.</text>
+</svg>

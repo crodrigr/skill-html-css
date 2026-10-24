@@ -1,0 +1,38 @@
+/* Propiedades de color: color (texto), background-color (fondo) y border-color (borde) */
+p {
+  color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1e3a8a;
+}
+
+/* Un color por nombre */
+.nombre {
+  background-color: royalblue;
+}
+
+/* El mismo azul principal escrito de tres formas */
+.hexadecimal {
+  background-color: #2563eb;
+}
+
+.rgb {
+  background-color: rgb(37, 99, 235);
+}
+
+.hsl {
+  background-color: hsl(221, 83%, 53%);
+}
+
+/* El mismo azul con un 50% de transparencia (canal alfa) */
+.alfa-rgb {
+  background-color: rgb(37 99 235 / 0.5);
+}
+
+.alfa-hsl {
+  background-color: hsl(221 83% 53% / 50%);
+}
+
+.alfa-hex {
+  background-color: #2563eb80;
+}

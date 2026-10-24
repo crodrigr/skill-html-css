@@ -1,0 +1,34 @@
+/* :is(): una sola regla para varios selectores */
+:is(h1, h2, h3) {
+  color: #1e3a8a;
+}
+
+/* :is() suma la especificidad de su argumento más específico: vale más que li */
+:is(ul, ol) li {
+  background-color: #dbeafe;
+}
+
+li {
+  background-color: #fef3c7;
+}
+
+/* :where() siempre vale cero: li, que viene después, lo anula */
+:where(ul, ol) li {
+  color: #16a34a;
+}
+
+li {
+  color: #dc2626;
+}
+
+/* :not(): todos los enlaces menos los que empiezan con https */
+a:not([href^="https"]) {
+  background-color: #e0f2fe;
+}
+
+/* :has(): los artículos que contienen una imagen */
+article:has(img) {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #16a34a;
+}

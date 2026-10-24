@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>repeat() y minmax() | Lucía Fernández</title>
+    <link rel="stylesheet" href="css/repeat.css">
+  </head>
+  <body>
+    <header>
+      <h1>repeat() y minmax()</h1>
+      <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="sobre-mi.html">Sobre mí</a> |
+        <a href="proyectos.html">Proyectos</a> |
+        <a href="servicios.html">Servicios</a> |
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>repeat(3, 1fr)</h2>
+      <section class="tres">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+
+      <h2>repeat(2, 100px 1fr)</h2>
+      <section class="patron">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </section>
+
+      <h2>repeat(3, minmax(200px, 1fr))</h2>
+      <section class="minimo">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </section>
+    </main>
+  </body>
+</html>
