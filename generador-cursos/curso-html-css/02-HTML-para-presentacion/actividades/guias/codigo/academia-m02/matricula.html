@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Academia — Matrícula</title>
+</head>
+<body>
+  <header>
+    <h1>Matricular a un estudiante</h1>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="estudiantes.html">Estudiantes</a> |
+      <a href="cursos.html">Cursos</a> |
+      <a href="matricula.html">Matricular</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>Usá <strong>solo datos inventados</strong>: el formulario no se envía a ningún servidor.</p>
+
+    <form method="get">
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="Ana Pérez">
+      </p>
+      <p>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+      </p>
+      <p>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad">
+      </p>
+
+      <p>Curso:</p>
+      <p>
+        <input type="radio" id="java" name="curso" value="java">
+        <label for="java">Java desde cero</label>
+        <input type="radio" id="web" name="curso" value="web">
+        <label for="web">HTML y CSS</label>
+        <input type="radio" id="git" name="curso" value="git">
+        <label for="git">Git</label>
+      </p>
+
+      <p>
+        <input type="checkbox" id="acepta" name="acepta" value="si">
+        <label for="acepta">Acepto el reglamento de la Academia</label>
+      </p>
+
+      <p><input type="submit" value="Matricular"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Datos inventados · <a href="#">Volver arriba</a></p>
+  </footer>
+</body>
+</html>
