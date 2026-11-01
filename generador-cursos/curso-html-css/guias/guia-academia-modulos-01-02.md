@@ -3,7 +3,7 @@
 > 👩‍🏫 **Material docente.** Guía única para construir **junto con los estudiantes**, en vivo, el frente web del **sistema académico** del curso de Spring Boot (**estudiantes**, **cursos** y **matrículas**), aplicando lo visto en el [Módulo 01](../01-Fundamentos-HTML/material/ejemplos/explicacion-conceptual.md) y el [Módulo 02](../02-HTML-para-presentacion/material/ejemplos/explicacion-conceptual.md).
 > Contiene código completo: no se entrega a los estudiantes antes de resolver el taller.
 >
-> 📦 **Proyectos terminados:** [`academia-m01/`](codigo/academia-m01/) (fin de la Parte 1) y [`academia-m02/`](codigo/academia-m02/) (fin de la Parte 2) · 🔗 **Mismo sistema** que la [guía de la Academia del curso de Spring Boot](../../../../curso-spring-boot/generador-cursos/curso-spring-boot/guias/modulo-03-diseno-api-rest-con-dto/02-academica-dtos.md): allí se construye la API; aquí, las páginas que más adelante la van a consumir.
+> 📦 **Proyecto terminado (Partes 1 y 2):** [`academia/`](codigo/academia/) — un solo proyecto con todo el código final · 🔗 **Mismo sistema** que la [guía de la Academia del curso de Spring Boot](../../../../curso-spring-boot/generador-cursos/curso-spring-boot/guias/modulo-03-diseno-api-rest-con-dto/02-academica-dtos.md): allí se construye la API; aquí, las páginas que más adelante la van a consumir.
 >
 > ✅ **Verificada.** Las páginas de ambas partes pasan el validador de HTML del curso (`herramientas/validar_html.py`) sin errores.
 >
@@ -78,7 +78,7 @@
 > >
 > > | Código | Requerimiento | Página | Contenido |
 > > |---|---|---|---|
-> > | **RF-2.01** | Mostrar los estudiantes en una tabla con nombre, edad, correo y número de cursos. | `estudiantes.html` | Tabla |
+> > | **RF-2.01** | Mostrar los estudiantes en una tabla con nombre, edad, correo y los cursos (enlazados). | `estudiantes.html` | Tabla |
 > > | **RF-2.02** | Mostrar los cursos con precio y cupo máximo, y una nota al pie. | `cursos.html` | `tfoot` y `colspan` |
 > > | **RF-2.03** | Listar la oferta de cursos, con los temas de Java como sublista. | `cursos.html` | `ul` anidada |
 > > | **RF-2.04** | Explicar la matrícula en tres pasos. | `cursos.html` | `ol` |
@@ -142,14 +142,14 @@
 
 > ```text
 > 📁 academia
-> ├── 🆕 index.html          bienvenida · logo · video · enlace externo   (✏️ P2: nav con «Matricular»; sin video)
-> ├── 🆕 estudiantes.html    un article por estudiante                    (✏️ P2: tabla)
-> ├── 🆕 cursos.html         una section por curso, con id                (✏️ P2: listas · hr · tabla · cita)
+> ├── 🆕 index.html          bienvenida · logo · video · enlace externo   (✏️ P2: nav con «Matricular»)
+> ├── 🆕 estudiantes.html    un article por estudiante                    (✏️ P2: pasa a tabla)
+> ├── 🆕 cursos.html         una section por curso, con id                (✏️ P2: + listas · hr · tabla · cita)
 > ├── 🆕 matricula.html      (Parte 2) formulario GET
 > ├── 📁 imagenes
 > │   └── 🆕 logo.svg
 > └── 📁 video
->     └── 🆕 recorrido.mp4   (solo en la Parte 1)
+>     └── 🆕 recorrido.mp4   
 > ```
 
 </details>
@@ -159,7 +159,9 @@
 <details>
 <summary><strong>🅰️ PARTE 1 — Módulo 01: Fundamentos HTML (Pasos 0 a 6)</strong></summary>
 
-> Carpeta de trabajo: `academia-m01`. Resultado: [`codigo/academia-m01/`](codigo/academia-m01/).
+> Carpeta de trabajo: `academia`. Al terminar la Parte 1 existen `index.html`, `estudiantes.html` y `cursos.html`; el proyecto completo está en [`codigo/academia/`](codigo/academia/). 
+>
+> 💡 Los archivos de `codigo/academia/` ya incluyen también los cambios de la Parte 2: lo que la Parte 2 agrega está indicado en cada paso.
 
 </details>
 
@@ -172,10 +174,10 @@
 > <details>
 > <summary><strong>Paso 0.1 · Carpeta y archivos</strong></summary>
 >
-> > 1. Se crea la carpeta `academia-m01` con las subcarpetas `imagenes` y `video`.
+> > 1. Se crea la carpeta `academia` con las subcarpetas `imagenes` y `video`.
 > > 2. Se abre en VS Code (`Archivo → Abrir carpeta`).
 > > 3. Se crean los tres archivos vacíos: `index.html`, `estudiantes.html` y `cursos.html`.
-> > 4. Se copia el logo en `imagenes/logo.svg` y el video en `video/recorrido.mp4` desde la carpeta [`codigo/academia-m01`](codigo/academia-m01/) (el video es de práctica: se puede cambiar por otro propio).
+> > 4. Se copia el logo en `imagenes/logo.svg` y el video en `video/recorrido.mp4` desde la carpeta [`codigo/academia`](codigo/academia/) (el video es de práctica: se puede cambiar por otro propio).
 > >
 > > > ✅ **Punto de control.** Hacer doble clic en un archivo abre el navegador, aunque esté vacío. No se necesita servidor.
 >
@@ -276,7 +278,7 @@
 > >   </article>
 > > ```
 > >
-> > Se repite para **Luis Gómez** (31 años, `luis@academia.test`) y **Marta Ruiz** (19 años, `marta@academia.test`). El código completo está en [`estudiantes.html`](codigo/academia-m01/estudiantes.html).
+> > Se repite para **Luis Gómez** (31 años, `luis@academia.test`) y **Marta Ruiz** (19 años, `marta@academia.test`). El código completo está en [`estudiantes.html`](codigo/academia/estudiantes.html).
 >
 > </details>
 >
@@ -294,7 +296,7 @@
 > >   </section>
 > > ```
 > >
-> > Se repite con `id="web"` (HTML y CSS, $150.000, cupo 25) e `id="git"` (Git, $90.000, cupo 30). Ver [`cursos.html`](codigo/academia-m01/cursos.html).
+> > Se repite con `id="web"` (HTML y CSS, $150.000, cupo 25) e `id="git"` (Git, $90.000, cupo 30). Ver [`cursos.html`](codigo/academia/cursos.html).
 > >
 > > > ⚠️ **Error típico.** Dos elementos con el mismo `id`. Cada `id` es único en la página.
 >
@@ -404,7 +406,7 @@
 > > | Temas | `section` / `article` | cursos / estudiantes |
 > > | Pie | `footer` | aviso de datos inventados y «Volver arriba» |
 > >
-> > Se pide a los estudiantes que **comparen** su `index.html` con [la versión terminada](codigo/academia-m01/index.html) y expliquen en voz alta por qué cada bloque tiene esa etiqueta.
+> > Se pide a los estudiantes que **comparen** su `index.html` con [la versión terminada](codigo/academia/index.html) y expliquen en voz alta por qué cada bloque tiene esa etiqueta.
 > >
 > > > 🧠 **Para preguntar:** si en `estudiantes.html` solo quisiera agrupar tres párrafos sin significado propio, ¿qué etiqueta usaría? *(Un `div`, y se deja un comentario que lo explique.)*
 >
@@ -424,8 +426,8 @@
 > > **Verificación automática (docente):**
 > >
 > > ```bash
-> > python3 herramientas/validar_html.py curso-html-css/guias/codigo/academia-m01
-> > # 3 archivo(s), 0 error(es)
+> > python3 herramientas/validar_html.py curso-html-css/guias/codigo/academia
+> > # 4 archivo(s), 0 error(es)
 > > ```
 >
 > </details>
@@ -437,7 +439,7 @@
 <details>
 <summary><strong>🅱️ PARTE 2 — Módulo 02: HTML para presentación (Pasos 7 a 13)</strong></summary>
 
-> Se parte del proyecto terminado en la Parte 1. Carpeta de trabajo: `academia-m02`. Resultado: [`codigo/academia-m02/`](codigo/academia-m02/).
+> Se sigue en **la misma carpeta `academia`**, partiendo de lo terminado en la Parte 1. Resultado: [`codigo/academia/`](codigo/academia/).
 
 </details>
 
@@ -450,7 +452,7 @@
 > <details>
 > <summary><strong>Paso 7.1 · El proyecto</strong></summary>
 >
-> > Se copia la carpeta terminada de la Parte 1 como `academia-m02` y se agrega al `nav` de **todas** las páginas el enlace nuevo:
+> > Se continúa en la carpeta `academia` y se agrega al `nav` de **todas** las páginas el enlace nuevo:
 > >
 > > ```html
 > >     <nav>
@@ -462,7 +464,7 @@
 > > ```
 > >
 > > > ⚠️ El enlace a `matricula.html` queda roto hasta el Paso 11; es normal y sirve para ver cómo falla un enlace.
-> > > Para simplificar la carpeta se quita el video de `index.html` y las anclas de `estudiantes.html` pasan a `cursos.html#cursos`.
+> > > Todo lo de la Parte 1 (logo, video, anclas, enlace externo) se conserva.
 >
 > </details>
 
@@ -502,9 +504,9 @@
 > >           <td>Ana Pérez</td>
 > >           <td>24</td>
 > >           <td><a href="mailto:ana@academia.test">ana@academia.test</a></td>
-> >           <td>1</td>
+> >           <td><a href="cursos.html#java">Java desde cero</a></td>
 > >         </tr>
-> >         <!-- Luis Gómez (31, luis@academia.test, 2) y Marta Ruiz (19, marta@academia.test, 1) -->
+> >         <!-- Luis Gómez (31, luis@academia.test, cursos Java y HTML y CSS) y Marta Ruiz (19, marta@academia.test, curso HTML y CSS), con enlaces a `cursos.html#java` / `#web` -->
 > >       </tbody>
 > >       <tfoot>
 > >         <tr>
@@ -524,7 +526,7 @@
 > > | `tbody` / `td` | Filas de datos |
 > > | `tfoot` + `colspan="4"` | Nota que ocupa **las cuatro** columnas |
 > >
-> > Se completan las filas de Luis y Marta ([código final](codigo/academia-m02/estudiantes.html)).
+> > Se completan las filas de Luis y Marta ([código final](codigo/academia/estudiantes.html)).
 > >
 > > > ⚠️ **Error típico.** Una fila con tres `td` en una tabla de cuatro columnas: la tabla se «descuadra». Se cuenta por fila.
 >
@@ -540,7 +542,7 @@
 > <details>
 > <summary><strong>Paso 9.1 · Oferta con sublista</strong></summary>
 >
-> > En `cursos.html` se reemplazan las tres `section` de la Parte 1 por:
+> > En `cursos.html` se **conservan** las tres `section` de la Parte 1 (con sus `id`) y, **debajo**, se agrega:
 > >
 > > ```html
 > >     <section id="cursos">
@@ -589,7 +591,7 @@
 > >     <hr>
 > > ```
 > >
-> > (En el [código final](codigo/academia-m02/cursos.html) cada celda va en su propia línea, igual que en el Paso 8.)
+> > (En el [código final](codigo/academia/cursos.html) cada celda va en su propia línea, igual que en el Paso 8.)
 >
 > </details>
 
@@ -708,7 +710,7 @@
 > > | `value="Ana Pérez"` en el nombre | Valor inicial que se puede cambiar |
 > > | Sin `action` | No sale ningún dato del equipo |
 > >
-> > Página completa: [`matricula.html`](codigo/academia-m02/matricula.html).
+> > Página completa: [`matricula.html`](codigo/academia/matricula.html).
 >
 > </details>
 
@@ -776,7 +778,7 @@
 > > **Verificación automática (docente):**
 > >
 > > ```bash
-> > python3 herramientas/validar_html.py curso-html-css/guias/codigo/academia-m02
+> > python3 herramientas/validar_html.py curso-html-css/guias/codigo/academia
 > > # 4 archivo(s), 0 error(es)
 > > ```
 >
