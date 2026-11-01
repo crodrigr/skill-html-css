@@ -1,9 +1,9 @@
 # 🧭 Guía paso a paso — Portal de la Academia (Módulo 01: Fundamentos HTML)
 
-> 👩‍🏫 **Material docente.** Guía para construir **junto con los estudiantes**, en vivo, el frente web del **sistema académico** del curso de Spring Boot (**estudiantes**, **cursos** y **matrículas**), aplicando lo visto en el [Módulo 01](../../material/ejemplos/explicacion-conceptual.md).
+> 👩‍🏫 **Material docente.** Guía para construir **junto con los estudiantes**, en vivo, el frente web del **sistema académico** del curso de Spring Boot (**estudiantes**, **cursos** y **matrículas**), aplicando lo visto en el [Módulo 01](../../01-Fundamentos-HTML/material/ejemplos/explicacion-conceptual.md).
 > Contiene código completo: no se entrega a los estudiantes antes de resolver el taller.
 >
-> 📦 **Proyecto terminado:** [`academia-m01/`](codigo/academia-m01/) · 🔗 **Es el mismo sistema** de la [guía de la Academia del curso de Spring Boot](../../../../../../curso-spring-boot/generador-cursos/curso-spring-boot/guias/modulo-03-diseno-api-rest-con-dto/02-academica-dtos.md): allí se construye la API; aquí, las páginas que más adelante la van a consumir.
+> 📦 **Proyecto terminado:** [`academia-m01/`](codigo/academia-m01/) · 🔗 **Es el mismo sistema** de la [guía de la Academia del curso de Spring Boot](../../../../../curso-spring-boot/generador-cursos/curso-spring-boot/guias/modulo-03-diseno-api-rest-con-dto/02-academica-dtos.md): allí se construye la API; aquí, las páginas que más adelante la van a consumir.
 >
 > ✅ **Verificada.** Las tres páginas pasan el validador de HTML del curso (`herramientas/validar_html.py`) sin errores.
 >
@@ -370,7 +370,7 @@
 > > **Verificación automática (docente):**
 > >
 > > ```bash
-> > python3 herramientas/validar_html.py curso-html-css/01-Fundamentos-HTML/actividades/guias/codigo
+> > python3 herramientas/validar_html.py curso-html-css/guias/modulo-01-fundamentos-html/codigo
 > > # 3 archivo(s), 0 error(es)
 > > ```
 >
@@ -396,6 +396,6 @@
 <details>
 <summary><strong>🔭 Qué sigue</strong></summary>
 
-> En el [Módulo 02](../../../02-HTML-para-presentacion/actividades/guias/guia-academia-modulo-02.md) el mismo portal incorpora **listas, tablas, una cita y el formulario de matrícula**. El código de partida es el que se acaba de terminar.
+> En el [Módulo 02](../modulo-02-html-para-presentacion/guia-academia-modulo-02.md) el mismo portal incorpora **listas, tablas, una cita y el formulario de matrícula**. El código de partida es el que se acaba de terminar.
 
 </details>

@@ -1,9 +1,9 @@
 # 🧭 Guía paso a paso — Portal de la Academia (Módulo 02: HTML para presentación)
 
-> 👩‍🏫 **Material docente.** Guía para construir **junto con los estudiantes**, en vivo, la segunda versión del portal del **sistema académico** (**estudiantes**, **cursos** y **matrículas**), aplicando lo visto en el [Módulo 02](../../material/ejemplos/explicacion-conceptual.md).
-> Parte del [portal del Módulo 01](../../../01-Fundamentos-HTML/actividades/guias/guia-academia-modulo-01.md). Contiene código completo: no se entrega a los estudiantes antes de resolver el taller.
+> 👩‍🏫 **Material docente.** Guía para construir **junto con los estudiantes**, en vivo, la segunda versión del portal del **sistema académico** (**estudiantes**, **cursos** y **matrículas**), aplicando lo visto en el [Módulo 02](../../02-HTML-para-presentacion/material/ejemplos/explicacion-conceptual.md).
+> Parte del [portal del Módulo 01](../modulo-01-fundamentos-html/guia-academia-modulo-01.md). Contiene código completo: no se entrega a los estudiantes antes de resolver el taller.
 >
-> 📦 **Proyecto terminado:** [`academia-m02/`](codigo/academia-m02/) · 🔗 **Mismo sistema** que la [guía de la Academia del curso de Spring Boot](../../../../../../curso-spring-boot/generador-cursos/curso-spring-boot/guias/modulo-03-diseno-api-rest-con-dto/02-academica-dtos.md): el formulario de matrícula refleja el `EnrollmentRequest` de la API.
+> 📦 **Proyecto terminado:** [`academia-m02/`](codigo/academia-m02/) · 🔗 **Mismo sistema** que la [guía de la Academia del curso de Spring Boot](../../../../../curso-spring-boot/generador-cursos/curso-spring-boot/guias/modulo-03-diseno-api-rest-con-dto/02-academica-dtos.md): el formulario de matrícula refleja el `EnrollmentRequest` de la API.
 >
 > ✅ **Verificada.** Las cuatro páginas pasan el validador de HTML del curso (`herramientas/validar_html.py`) sin errores.
 >
@@ -467,7 +467,7 @@
 > > **Verificación automática (docente):**
 > >
 > > ```bash
-> > python3 herramientas/validar_html.py curso-html-css/02-HTML-para-presentacion/actividades/guias/codigo
+> > python3 herramientas/validar_html.py curso-html-css/guias/modulo-02-html-para-presentacion/codigo
 > > # 4 archivo(s), 0 error(es)
 > > ```
 >
