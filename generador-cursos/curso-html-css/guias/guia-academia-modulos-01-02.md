@@ -19,8 +19,8 @@
 > - Prepara el entorno y escribe la **estructura mínima** de cada documento.
 > - Marca texto con significado y deja **comentarios**.
 > - Conecta las páginas con **enlaces**, una dirección externa y **anclas**.
-> - Incorpora una **imagen** con `alt` y un **video** con controles.
-> - Organiza cada página con **etiquetas semánticas** y sabe cuándo bastaría un `div`.
+> - Incorpora una **imagen** con `alt`, un **video** con controles y un mapa con `iframe`.
+> - Organiza cada página con **etiquetas semánticas** (`header`, `nav`, `main`, `section`, `aside`, `footer`) y sabe cuándo bastaría un `div`.
 >
 > **Parte 2 — Módulo 02.** Al terminar, el estudiante:
 >
@@ -69,6 +69,8 @@
 > > | **RF-1.05** | Navegar entre las páginas desde cualquiera. | todas | Enlaces relativos |
 > > | **RF-1.06** | Saltar a un curso desde la misma página o desde un estudiante. | `cursos.html`, `estudiantes.html` | Anclas y fragmentos |
 > > | **RF-1.07** | Remitir a la documentación oficial en una pestaña nueva. | `index.html` | Enlace externo |
+> > | **RF-1.08** | Mostrar un mapa de la sede. | `index.html` | `iframe` con `title` |
+> > | **RF-1.09** | Ofrecer accesos rápidos a las demás páginas, aparte del contenido principal. | `index.html` | `aside` |
 > >
 > </details>
 >
@@ -116,7 +118,7 @@
 
 > > 🗣️ **Se proyectan las maquetas antes de escribir código.** Una **maqueta** es un dibujo de las zonas de la página. Cada bloque de la maqueta es una etiqueta; a la derecha se lee cuál. Quien tiene la maqueta delante sabe qué escribir y en qué orden.
 > >
-> > **Pantalla de computador.** Cada maqueta muestra la página en la ventana de un navegador de escritorio, con el contenido real de la academia. Las líneas punteadas marcan las zonas y, a la derecha, se lee la etiqueta de cada una. Sin CSS el navegador apila los bloques de arriba hacia abajo y alinea todo a la izquierda, tal como se dibuja; la distribución en columnas llega con CSS.
+> > **Diseño para computador.** El portal está pensado para la **pantalla de un computador**: las maquetas muestran una ventana de navegador de escritorio con una banda superior (logo y menú), el contenido principal y, en la página de inicio, una columna lateral. Cada zona lleva un **número** que se explica en la lista de la derecha con su etiqueta HTML. El HTML que se escribe en estos dos módulos fija **qué** va en cada zona y en qué orden; **dónde** se coloca (columnas, colores, tarjetas) lo resuelve CSS a partir del Módulo 03. Mientras tanto, el navegador muestra el mismo contenido apilado de arriba hacia abajo.
 > >
 > > **Colores:** 🟦 azul = lo que se escribe en la **Parte 1**; 🟨 ámbar = lo que se agrega en la **Parte 2**.
 >
@@ -132,7 +134,7 @@
 > <details>
 > <summary><strong>🏠 Maqueta de index.html</strong></summary>
 >
-> > ![Maqueta de index.html: header, tres section y footer](imagenes/maqueta-index.svg)
+> > ![Maqueta de index.html: banda superior con logo y menú, contenido principal con cuatro secciones, accesos rápidos a la derecha y pie](imagenes/maqueta-index.svg)
 >
 > </details>
 >
@@ -146,7 +148,7 @@
 > <details>
 > <summary><strong>📚 Maqueta de cursos.html</strong></summary>
 >
-> > ![Maqueta de cursos.html: header, tres secciones con id, lista, tabla, pasos, cita y footer](imagenes/maqueta-cursos.svg)
+> > ![Maqueta de cursos.html: tres tarjetas de curso, oferta y pasos, tabla de precios y cita](imagenes/maqueta-cursos.svg)
 >
 > </details>
 >
@@ -164,7 +166,7 @@
 
 > ```text
 > 📁 academia
-> ├── 🆕 1. index.html          bienvenida · logo · video · enlace externo   (✏️ P2: menú con «Matricular»)
+> ├── 🆕 1. index.html          bienvenida · logo · video · mapa · aside   (✏️ P2: «Matricular» en menú y aside)
 > ├── 🆕 2. estudiantes.html    un article por estudiante                    (✏️ P2: pasa a tabla)
 > ├── 🆕 3. cursos.html         una section por curso, con id                (✏️ P2: + lista · tabla · pasos · cita)
 > ├── 🆕 4. matricula.html      formulario (Parte 2)
@@ -214,7 +216,7 @@
 <details>
 <summary><strong>🏠 Paso 1 — Archivo 1: index.html (la página de inicio)</strong></summary>
 
-> > 🗣️ **Se muestra la [maqueta de index.html](imagenes/maqueta-index.svg).** Se pregunta: ¿cuántas zonas ve? *(Una cabecera, tres secciones y un pie.)* Se escribe de arriba hacia abajo, una zona por vez.
+> > 🗣️ **Se muestra la [maqueta de index.html](imagenes/maqueta-index.svg).** Se pregunta: ¿cuántas zonas numeradas ve? *(Cabecera, contenido principal con cuatro secciones, lateral y pie.)* Se escribe en el orden de los números, una zona por vez.
 >
 > <details>
 > <summary><strong>Paso 1.1 · Crear el archivo y el esqueleto</strong></summary>
@@ -288,9 +290,9 @@
 > >   <main>
 > >     <section>
 > >       <h2>Bienvenida</h2>
-> >       <!-- Este párrafo se reutiliza en las demás páginas del portal -->
+> >       <!-- Presentación de la academia: el texto de bienvenida se escribe una sola vez -->
 > >       <p>La <strong>Academia</strong> enseña programación a personas <em>sin experiencia previa</em>.
-> >       Aquí podés ver quiénes estudian, qué cursos hay y cuántos cupos quedan.</p>
+> >       Aquí podés ver quiénes estudian, qué cursos hay y cuánto cuestan.</p>
 > >       <p>Este sitio es el <mark>portal</mark> de la academia: estudiantes, cursos y matrículas.</p>
 > >     </section>
 > >   </main>
@@ -325,9 +327,28 @@
 > </details>
 >
 > <details>
-> <summary><strong>Paso 1.6 · El enlace externo (RF-1.07)</strong></summary>
+> <summary><strong>Paso 1.6 · El mapa (RF-1.08)</strong></summary>
 >
+> > 🗣️ **Se explica:** un `iframe` incrusta **otra página** dentro de la nuestra; aquí, un mapa. Necesita conexión a internet y siempre lleva un `title` que dice qué contiene.
+> >
 > > 🧑‍🎓 **Indicación al estudiante:** dentro de `main`, **debajo** del video, agregá la tercera sección:
+> >
+> > ```html
+> >     <section>
+> >       <h2>Dónde estamos</h2>
+> >       <iframe title="Mapa de la sede de la Academia" width="480" height="320"
+> >         src="https://www.openstreetmap.org/export/embed.html?bbox=-58.42%2C-34.63%2C-58.36%2C-34.59&amp;layer=mapnik"></iframe>
+> >     </section>
+> > ```
+> >
+> > > ⚠️ **Error típico.** Sin internet el mapa queda en blanco: no es un error del código. Se revisa la conexión antes de buscar el fallo.
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 1.7 · El enlace externo (RF-1.07)</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** dentro de `main`, **debajo** del mapa, agregá la cuarta sección:
 > >
 > > ```html
 > >     <section>
@@ -342,9 +363,28 @@
 > </details>
 >
 > <details>
-> <summary><strong>Paso 1.7 · El pie</strong></summary>
+> <summary><strong>Paso 1.8 · Los accesos rápidos (RF-1.09)</strong></summary>
 >
-> > 🧑‍🎓 **Indicación al estudiante:** **fuera** de `main` y debajo de él, antes de `</body>`, agregá:
+> > 🗣️ **Se pregunta:** ¿qué etiqueta es para contenido **relacionado pero secundario**, que se puede quitar sin perder el sentido de la página? *(`aside`.)* Va **fuera** de `main`, como lo muestra la maqueta (zona 5).
+> >
+> > 🧑‍🎓 **Indicación al estudiante:** **debajo** de `</main>` y antes del pie, agregá:
+> >
+> > ```html
+> >   <aside>
+> >     <h2>Accesos rápidos</h2>
+> >     <p><a href="estudiantes.html">Ver los estudiantes</a></p>
+> >     <p><a href="cursos.html">Ver los cursos</a></p>
+> >   </aside>
+> > ```
+> >
+> > > 💡 El tercer acceso, «Matricularme», se agrega en la Parte 2 (Paso 5).
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 1.9 · El pie</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** **debajo** del `aside`, antes de `</body>`, agregá:
 > >
 > > ```html
 > >   <footer>
@@ -352,7 +392,7 @@
 > >   </footer>
 > > ```
 > >
-> > > ✅ **Punto de control del archivo 1.** Se compara con la [maqueta](imagenes/maqueta-index.svg) y con el [archivo terminado](codigo/academia/index.html): `header` → `main` (3 `section`) → `footer`, cada zona en su lugar. Solo cambia el menú, al que la Parte 2 le agrega «Matricular».
+> > > ✅ **Punto de control del archivo 1.** Se compara con la [maqueta](imagenes/maqueta-index.svg) y con el [archivo terminado](codigo/academia/index.html): `header` → `main` (4 `section`) → `aside` → `footer`, cada zona en su lugar. La Parte 2 solo le agrega «Matricular» al menú y al `aside`.
 > >
 > > 🧠 **Para preguntar:** si solo quisiera agrupar dos párrafos sin significado propio, ¿qué etiqueta usaría? *(Un `div`, y se deja un comentario que lo explique.)*
 >
@@ -564,7 +604,13 @@
 > >     </nav>
 > > ```
 > >
-> > > ⚠️ El enlace a `matricula.html` queda roto hasta el Paso 8; es normal. Todo lo de la Parte 1 (logo, video, anclas, enlace externo) se conserva.
+> > Y en `index.html`, dentro del `aside`, agregá el tercer acceso rápido:
+> >
+> > ```html
+> >     <p><a href="matricula.html">Matricularme</a></p>
+> > ```
+> >
+> > > ⚠️ Los enlaces a `matricula.html` quedan rotos hasta el Paso 8; es normal. Todo lo de la Parte 1 (logo, video, mapa, anclas, enlace externo) se conserva.
 >
 > </details>
 
@@ -926,6 +972,390 @@
 ---
 
 <details>
+<summary><strong>🏁 Estructura final esperada</strong></summary>
+
+> Así debe quedar la carpeta al terminar el Paso 10. Los archivos son **idénticos** a los de [`codigo/academia/`](codigo/academia/).
+>
+> ```text
+> 📁 academia
+> ├── 📄 index.html
+> ├── 📄 estudiantes.html
+> ├── 📄 cursos.html
+> ├── 📄 matricula.html
+> ├── 📁 imagenes
+> │   └── 🖼️ logo.svg
+> └── 📁 video
+>     └── 🎬 recorrido.mp4
+> ```
+>
+> | Archivo | Se crea en | Contenido final |
+> |---|---|---|
+> | `index.html` | Paso 1 (menú y acceso: Paso 5) | Logo, bienvenida, video, mapa, enlace externo, accesos rápidos |
+> | `estudiantes.html` | Paso 2 (tabla: Paso 6) | Tabla de estudiantes con cursos enlazados |
+> | `cursos.html` | Paso 3 (Paso 7) | Tres cursos con `id`, oferta, tabla, pasos y cita |
+> | `matricula.html` | Paso 8 | Formulario de matrícula |
+> | `imagenes/logo.svg`, `video/recorrido.mp4` | Paso 0 | Recursos de práctica |
+>
+> <details>
+> <summary><strong>📄 index.html</strong> <em>(Parte 1 + menú de la Parte 2)</em></summary>
+>
+> **Ruta:** `academia/index.html`
+>
+> ```html
+> <!DOCTYPE html>
+> <html lang="es">
+> <head>
+>   <meta charset="UTF-8">
+>   <title>Academia — Inicio</title>
+> </head>
+> <body>
+>   <header>
+>     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
+>     <h1>Academia de programación</h1>
+>     <nav>
+>       <a href="index.html">Inicio</a> |
+>       <a href="estudiantes.html">Estudiantes</a> |
+>       <a href="cursos.html">Cursos</a> |
+>       <a href="matricula.html">Matricular</a>
+>     </nav>
+>   </header>
+>
+>   <main>
+>     <section>
+>       <h2>Bienvenida</h2>
+>       <!-- Presentación de la academia: el texto de bienvenida se escribe una sola vez -->
+>       <p>La <strong>Academia</strong> enseña programación a personas <em>sin experiencia previa</em>.
+>       Aquí podés ver quiénes estudian, qué cursos hay y cuánto cuestan.</p>
+>       <p>Este sitio es el <mark>portal</mark> de la academia: estudiantes, cursos y matrículas.</p>
+>     </section>
+>
+>     <section>
+>       <h2>Recorrido en video</h2>
+>       <video src="video/recorrido.mp4" controls width="480">
+>         Tu navegador no reproduce video.
+>       </video>
+>     </section>
+>
+>     <section>
+>       <h2>Dónde estamos</h2>
+>       <iframe title="Mapa de la sede de la Academia" width="480" height="320"
+>         src="https://www.openstreetmap.org/export/embed.html?bbox=-58.42%2C-34.63%2C-58.36%2C-34.59&amp;layer=mapnik"></iframe>
+>     </section>
+>
+>     <section>
+>       <h2>Para saber más</h2>
+>       <p>La documentación oficial de HTML está en
+>       <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs</a>.</p>
+>     </section>
+>   </main>
+>
+>   <aside>
+>     <h2>Accesos rápidos</h2>
+>     <p><a href="estudiantes.html">Ver los estudiantes</a></p>
+>     <p><a href="cursos.html">Ver los cursos</a></p>
+>     <p><a href="matricula.html">Matricularme</a></p>
+>   </aside>
+>
+>   <footer>
+>     <p>© 2026 Academia de programación · <a href="#">Volver arriba</a></p>
+>   </footer>
+> </body>
+> </html>
+> ```
+>
+> </details>
+>
+> <details>
+> <summary><strong>📄 estudiantes.html</strong> <em>(Parte 1 → tabla de la Parte 2)</em></summary>
+>
+> **Ruta:** `academia/estudiantes.html`
+>
+> ```html
+> <!DOCTYPE html>
+> <html lang="es">
+> <head>
+>   <meta charset="UTF-8">
+>   <title>Academia — Estudiantes</title>
+> </head>
+> <body>
+>   <header>
+>     <h1>Estudiantes</h1>
+>     <nav>
+>       <a href="index.html">Inicio</a> |
+>       <a href="estudiantes.html">Estudiantes</a> |
+>       <a href="cursos.html">Cursos</a> |
+>       <a href="matricula.html">Matricular</a>
+>     </nav>
+>   </header>
+>
+>   <main>
+>     <p>Cada estudiante tiene un <strong>nombre</strong>, una <strong>edad</strong> y un <strong>correo</strong> único.</p>
+>
+>     <hr>
+>
+>     <table>
+>       <caption>Estudiantes matriculados</caption>
+>       <thead>
+>         <tr>
+>           <th>Nombre</th>
+>           <th>Edad</th>
+>           <th>Correo</th>
+>           <th>Cursos</th>
+>         </tr>
+>       </thead>
+>       <tbody>
+>         <tr>
+>           <td>Ana Pérez</td>
+>           <td>24</td>
+>           <td><a href="mailto:ana@academia.test">ana@academia.test</a></td>
+>           <td><a href="cursos.html#java">Java desde cero</a></td>
+>         </tr>
+>         <tr>
+>           <td>Luis Gómez</td>
+>           <td>31</td>
+>           <td><a href="mailto:luis@academia.test">luis@academia.test</a></td>
+>           <td><a href="cursos.html#java">Java desde cero</a>, <a href="cursos.html#web">HTML y CSS</a></td>
+>         </tr>
+>         <tr>
+>           <td>Marta Ruiz</td>
+>           <td>19</td>
+>           <td><a href="mailto:marta@academia.test">marta@academia.test</a></td>
+>           <td><a href="cursos.html#web">HTML y CSS</a></td>
+>         </tr>
+>       </tbody>
+>       <tfoot>
+>         <tr>
+>           <td colspan="4">Datos inventados. Un estudiante puede estar en varios cursos.</td>
+>         </tr>
+>       </tfoot>
+>     </table>
+>   </main>
+>
+>   <footer>
+>     <p>Datos inventados · <a href="#">Volver arriba</a></p>
+>   </footer>
+> </body>
+> </html>
+> ```
+>
+> </details>
+>
+> <details>
+> <summary><strong>📄 cursos.html</strong> <em>(Parte 1 + bloques de la Parte 2)</em></summary>
+>
+> **Ruta:** `academia/cursos.html`
+>
+> ```html
+> <!DOCTYPE html>
+> <html lang="es">
+> <head>
+>   <meta charset="UTF-8">
+>   <title>Academia — Cursos</title>
+> </head>
+> <body>
+>   <header>
+>     <h1>Cursos</h1>
+>     <nav>
+>       <a href="index.html">Inicio</a> |
+>       <a href="estudiantes.html">Estudiantes</a> |
+>       <a href="cursos.html">Cursos</a> |
+>       <a href="matricula.html">Matricular</a>
+>     </nav>
+>     <p>Ir a: <a href="#java">Java</a> · <a href="#web">HTML y CSS</a> · <a href="#git">Git</a></p>
+>   </header>
+>
+>   <main>
+>     <!-- Se usa section porque cada curso es un tema con su propio título -->
+>     <section id="java">
+>       <h2>Java desde cero</h2>
+>       <p>Precio: $180.000 · Cupo máximo: 20 personas</p>
+>       <p>Variables, condicionales, ciclos y clases.</p>
+>     </section>
+>
+>     <section id="web">
+>       <h2>HTML y CSS</h2>
+>       <p>Precio: $150.000 · Cupo máximo: 25 personas</p>
+>       <p>Páginas con <code>HTML</code> semántico y estilo con <code>CSS</code>.</p>
+>     </section>
+>
+>     <section id="git">
+>       <h2>Git</h2>
+>       <p>Precio: $90.000 · Cupo máximo: 30 personas</p>
+>       <p>Control de versiones: guardar, comparar y compartir cambios.</p>
+>     </section>
+>
+>     <hr>
+>
+>     <section>
+>       <h2>Oferta de cursos</h2>
+>       <ul>
+>         <li>Java desde cero
+>           <ul>
+>             <li>Variables y condicionales</li>
+>             <li>Ciclos y clases</li>
+>           </ul>
+>         </li>
+>         <li>HTML y CSS</li>
+>         <li>Git</li>
+>       </ul>
+>     </section>
+>
+>     <hr>
+>
+>     <section>
+>       <h2>Precios y cupos</h2>
+>       <table>
+>         <caption>Cursos de la Academia</caption>
+>         <thead>
+>           <tr>
+>             <th>Curso</th>
+>             <th>Precio</th>
+>             <th>Cupo máximo</th>
+>           </tr>
+>         </thead>
+>         <tbody>
+>           <tr>
+>             <td>Java desde cero</td>
+>             <td>$180.000</td>
+>             <td>20</td>
+>           </tr>
+>           <tr>
+>             <td>HTML y CSS</td>
+>             <td>$150.000</td>
+>             <td>25</td>
+>           </tr>
+>           <tr>
+>             <td>Git</td>
+>             <td>$90.000</td>
+>             <td>30</td>
+>           </tr>
+>         </tbody>
+>         <tfoot>
+>           <tr>
+>             <td colspan="3">Precios en pesos. El cupo máximo es el tope de matriculados.</td>
+>           </tr>
+>         </tfoot>
+>       </table>
+>     </section>
+>
+>     <hr>
+>
+>     <section>
+>       <h2>Cómo te matriculás</h2>
+>       <ol>
+>         <li>Elegí un curso de la tabla.</li>
+>         <li>Completá el <a href="matricula.html">formulario de matrícula</a>.</li>
+>         <li>Esperá la confirmación de la Academia.</li>
+>       </ol>
+>     </section>
+>
+>     <hr>
+>
+>     <section>
+>       <h2>Lo que dicen</h2>
+>       <blockquote cite="https://academia.test/opiniones/ana">
+>         <p>Entré sin saber qué era una variable y salí armando mi primera página.</p>
+>       </blockquote>
+>       <p>— Ana Pérez, estudiante de Java desde cero</p>
+>     </section>
+>   </main>
+>
+>   <footer>
+>     <p>Datos inventados · <a href="#">Volver arriba</a></p>
+>   </footer>
+> </body>
+> </html>
+> ```
+>
+> </details>
+>
+> <details>
+> <summary><strong>📄 matricula.html</strong> <em>(Parte 2)</em></summary>
+>
+> **Ruta:** `academia/matricula.html`
+>
+> ```html
+> <!DOCTYPE html>
+> <html lang="es">
+> <head>
+>   <meta charset="UTF-8">
+>   <title>Academia — Matrícula</title>
+> </head>
+> <body>
+>   <header>
+>     <h1>Matricular a un estudiante</h1>
+>     <nav>
+>       <a href="index.html">Inicio</a> |
+>       <a href="estudiantes.html">Estudiantes</a> |
+>       <a href="cursos.html">Cursos</a> |
+>       <a href="matricula.html">Matricular</a>
+>     </nav>
+>   </header>
+>
+>   <main>
+>     <p>Usá <strong>solo datos inventados</strong>: el formulario no se envía a ningún servidor.</p>
+>
+>     <form method="get">
+>       <p>
+>         <label for="nombre">Nombre:</label>
+>         <input type="text" id="nombre" name="nombre" value="Ana Pérez">
+>       </p>
+>       <p>
+>         <label for="correo">Correo:</label>
+>         <input type="email" id="correo" name="correo">
+>       </p>
+>       <p>
+>         <label for="edad">Edad:</label>
+>         <input type="number" id="edad" name="edad">
+>       </p>
+>
+>       <p>Curso:</p>
+>       <p>
+>         <input type="radio" id="java" name="curso" value="java">
+>         <label for="java">Java desde cero</label>
+>         <input type="radio" id="web" name="curso" value="web">
+>         <label for="web">HTML y CSS</label>
+>         <input type="radio" id="git" name="curso" value="git">
+>         <label for="git">Git</label>
+>       </p>
+>
+>       <p>
+>         <input type="checkbox" id="acepta" name="acepta" value="si">
+>         <label for="acepta">Acepto el reglamento de la Academia</label>
+>       </p>
+>
+>       <p><input type="submit" value="Matricular"></p>
+>     </form>
+>   </main>
+>
+>   <footer>
+>     <p>Datos inventados · <a href="#">Volver arriba</a></p>
+>   </footer>
+> </body>
+> </html>
+> ```
+>
+> </details>
+>
+> <details>
+> <summary><strong>🖼️ imagenes/logo.svg</strong> <em>(recurso)</em></summary>
+>
+> **Ruta:** `academia/imagenes/logo.svg`
+>
+> ```xml
+> <svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="Logo de la Academia">
+>   <rect width="240" height="80" rx="12" fill="#1f4e79"/>
+>   <text x="120" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Academia</text>
+> </svg>
+> ```
+>
+> </details>
+
+</details>
+
+---
+
+<details>
 <summary><strong>🚧 Errores frecuentes y cómo se ven</strong></summary>
 
 > | Síntoma | Causa probable | Arreglo |
@@ -935,6 +1365,7 @@
 > | El enlace «no hace nada» | Mayúsculas o nombre mal escrito en `href` | Copiar el nombre exacto del archivo |
 > | El ancla no baja | El `id` no coincide con el `#` | Comparar letra por letra |
 > | La imagen no se ve | Ruta equivocada | Revisar `imagenes/logo.svg` y las mayúsculas |
+> | El mapa queda en blanco | Sin conexión a internet o dirección mal copiada | Revisar la conexión y el `src` |
 > | La tabla se ve corrida | Filas con distinta cantidad de celdas | Contar `td` por fila; ajustar `colspan` |
 > | La sublista sale al nivel de la principal | `ul` hija fuera del `li` | Moverla dentro del `li` |
 > | Se pueden marcar los tres cursos | Los `radio` tienen `name` distinto | Mismo `name` en los tres |
