@@ -208,6 +208,7 @@
 > > > ✅ **Punto de control.** El explorador de VS Code muestra `academia` con las carpetas `imagenes` y `video` y sus dos archivos. Todavía no hay ninguna página.
 >
 > </details>
+>
 
 </details>
 
@@ -414,6 +415,7 @@
 > >
 > > ```html
 > >   <header>
+> >     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
 > >     <h1>Estudiantes</h1>
 > >     <nav>
 > >       <a href="index.html">Inicio</a> |
@@ -487,6 +489,7 @@
 > >
 > > ```html
 > >   <header>
+> >     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
 > >     <h1>Cursos</h1>
 > >     <nav>
 > >       <a href="index.html">Inicio</a> |
@@ -819,6 +822,7 @@
 > >
 > > ```html
 > >   <header>
+> >     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
 > >     <h1>Matricular a un estudiante</h1>
 > >     <nav>
 > >       <a href="index.html">Inicio</a> |
@@ -995,9 +999,10 @@
 > | `cursos.html` | Paso 3 (Paso 7) | Tres cursos con `id`, oferta, tabla, pasos y cita |
 > | `matricula.html` | Paso 8 | Formulario de matrícula |
 > | `imagenes/logo.svg`, `video/recorrido.mp4` | Paso 0 | Recursos de práctica |
+
 >
 > <details>
-> <summary><strong>📄 index.html</strong> <em>(Parte 1 + menú de la Parte 2)</em></summary>
+> <summary><strong>📄 index.html</strong> <em>(Parte 1 + menú y acceso de la Parte 2)</em></summary>
 >
 > **Ruta:** `academia/index.html`
 >
@@ -1079,6 +1084,7 @@
 > </head>
 > <body>
 >   <header>
+>     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
 >     <h1>Estudiantes</h1>
 >     <nav>
 >       <a href="index.html">Inicio</a> |
@@ -1154,6 +1160,7 @@
 > </head>
 > <body>
 >   <header>
+>     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
 >     <h1>Cursos</h1>
 >     <nav>
 >       <a href="index.html">Inicio</a> |
@@ -1283,6 +1290,7 @@
 > </head>
 > <body>
 >   <header>
+>     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
 >     <h1>Matricular a un estudiante</h1>
 >     <nav>
 >       <a href="index.html">Inicio</a> |
@@ -1337,6 +1345,7 @@
 >
 > </details>
 >
+>
 > <details>
 > <summary><strong>🖼️ imagenes/logo.svg</strong> <em>(recurso)</em></summary>
 >
@@ -1344,7 +1353,7 @@
 >
 > ```xml
 > <svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-label="Logo de la Academia">
->   <rect width="240" height="80" rx="12" fill="#1f4e79"/>
+>   <rect x="2" y="2" width="236" height="76" rx="12" fill="#2f6fa8" stroke="#ffffff" stroke-width="3"/>
 >   <text x="120" y="50" font-family="sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">Academia</text>
 > </svg>
 > ```
