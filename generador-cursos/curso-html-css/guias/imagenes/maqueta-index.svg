@@ -1,48 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="900" height="650" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
-<title id="t">Maqueta de index.html</title>
-<desc id="d">Página de inicio con cabecera, navegación, tres secciones y pie.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1052" width="1240" height="1052" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<title id="t">Maqueta de index.html (pantalla de computador)</title>
+<desc id="d">Ventana de navegador con la página de inicio: cabecera con logo, título y menú; tres secciones y pie.</desc>
 <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
-<rect x="1" y="1" width="898" height="648" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
-<text x="450" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Maqueta de index.html</text>
-<rect x="40" y="56" width="560" height="518" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-<rect x="60" y="70" width="520" height="130" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-<rect x="70" y="78.0" width="500" height="34.666666666666664" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="99.53333333333333" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;img&gt; Logo de la Academia</text>
-<rect x="70" y="118.66666666666666" width="500" height="34.666666666666664" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="140.2" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;h1&gt; Academia de programación</text>
-<rect x="70" y="159.33333333333331" width="500" height="34.666666666666664" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="180.86666666666665" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;nav&gt; Inicio | Estudiantes | Cursos | Matricular</text>
-<line x1="582" y1="135.0" x2="640" y2="135.0" stroke="#64748b" stroke-width="2"/>
-<text x="650" y="140.0" text-anchor="start" font-size="14" font-weight="700" fill="#1f2937">&lt;header&gt;</text>
-<rect x="60" y="210" width="520" height="90" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-<rect x="70" y="218.0" width="500" height="35.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="239.7" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;h2&gt; Bienvenida</text>
-<rect x="70" y="259.0" width="500" height="35.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="280.7" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;p&gt; texto con &lt;strong&gt;, &lt;em&gt; y &lt;mark&gt;</text>
-<line x1="582" y1="255.0" x2="640" y2="255.0" stroke="#64748b" stroke-width="2"/>
-<text x="650" y="260.0" text-anchor="start" font-size="14" font-weight="700" fill="#1f2937">&lt;section&gt;</text>
-<rect x="60" y="310" width="520" height="90" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-<rect x="70" y="318.0" width="500" height="35.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="339.7" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;h2&gt; Recorrido en video</text>
-<rect x="70" y="359.0" width="500" height="35.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="380.7" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;video controls&gt;</text>
-<line x1="582" y1="355.0" x2="640" y2="355.0" stroke="#64748b" stroke-width="2"/>
-<text x="650" y="360.0" text-anchor="start" font-size="14" font-weight="700" fill="#1f2937">&lt;section&gt;</text>
-<rect x="60" y="410" width="520" height="90" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-<rect x="70" y="418.0" width="500" height="35.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="439.7" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;h2&gt; Para saber más</text>
-<rect x="70" y="459.0" width="500" height="35.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="480.7" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;a target="_blank"&gt; MDN Web Docs</text>
-<line x1="582" y1="455.0" x2="640" y2="455.0" stroke="#64748b" stroke-width="2"/>
-<text x="650" y="460.0" text-anchor="start" font-size="14" font-weight="700" fill="#1f2937">&lt;section&gt;</text>
-<rect x="60" y="510" width="520" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-<rect x="70" y="518.0" width="500" height="36.0" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
-<text x="320.0" y="540.2" text-anchor="middle" font-size="12" font-weight="400" fill="#1f2937">&lt;p&gt; © 2026 · &lt;a href="#"&gt; Volver arriba</text>
-<line x1="582" y1="535.0" x2="640" y2="535.0" stroke="#64748b" stroke-width="2"/>
-<text x="650" y="540.0" text-anchor="start" font-size="14" font-weight="700" fill="#1f2937">&lt;footer&gt;</text>
-<rect x="60" y="588" width="18" height="18" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-<text x="86" y="602" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">Parte 1 (Módulo 01)</text>
-<rect x="250" y="588" width="18" height="18" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
-<text x="276" y="602" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">Parte 2 (Módulo 02)</text>
-<text x="450" y="632" text-anchor="middle" font-size="13" font-weight="400" fill="#64748b">Todo dentro de &lt;body&gt;; &lt;main&gt; envuelve las tres secciones.</text>
+<rect x="1" y="1" width="1238" height="1050" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="620.0" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1f2937">Maqueta de index.html (pantalla de computador)</text>
+<rect x="40" y="56" width="900" height="926" rx="10" fill="#ffffff" stroke="#64748b" stroke-width="2"/>
+<path d="M40 66 a10 10 0 0 1 10 -10 h880 a10 10 0 0 1 10 10 v36 h-900z" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+<circle cx="62" cy="80" r="6" fill="#ef4444"/>
+<circle cx="82" cy="80" r="6" fill="#f59e0b"/>
+<circle cx="102" cy="80" r="6" fill="#22c55e"/>
+<rect x="140" y="68" width="770" height="24" rx="12" fill="#ffffff" stroke="#94a3b8"/>
+<text x="158" y="85" text-anchor="start" font-size="13" font-weight="400" fill="#64748b">academia/index.html</text>
+<line x1="40" y1="102" x2="940" y2="102" stroke="#64748b" stroke-width="2"/>
+<rect x="59" y="118" width="862" height="90" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="921" cy="163.0" r="4" fill="#2563eb"/>
+<path d="M921 163.0 L962 163.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="168.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;img&gt;</text>
+<text x="972" y="185.0" text-anchor="start" font-size="12" font-weight="400" fill="#64748b">logo con alt</text>
+<rect x="50" y="110" width="880" height="206" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="930" cy="213.0" r="4" fill="#2563eb"/>
+<path d="M930 213.0 L962 213.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="218.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;header&gt;</text>
+<rect x="59" y="258" width="862" height="44" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="921" cy="280.0" r="4" fill="#2563eb"/>
+<path d="M921 280.0 L962 280.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="285.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;nav&gt;</text>
+<text x="972" y="302.0" text-anchor="start" font-size="12" font-weight="400" fill="#64748b">4.º enlace: Parte 2</text>
+<rect x="59" y="330" width="862" height="104" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="921" cy="382.0" r="4" fill="#2563eb"/>
+<path d="M921 382.0 L962 382.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="387.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;section&gt;</text>
+<text x="972" y="404.0" text-anchor="start" font-size="12" font-weight="400" fill="#64748b">Bienvenida</text>
+<rect x="50" y="322" width="880" height="538" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="930" cy="591.0" r="4" fill="#2563eb"/>
+<path d="M930 591.0 L962 591.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="596.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;main&gt;</text>
+<rect x="59" y="440" width="862" height="320" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="921" cy="600.0" r="4" fill="#2563eb"/>
+<path d="M921 600.0 L962 621.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="626.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;section&gt;</text>
+<text x="972" y="643.0" text-anchor="start" font-size="12" font-weight="400" fill="#64748b">Recorrido en video</text>
+<rect x="68" y="484" width="844" height="262" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="912" cy="615.0" r="4" fill="#2563eb"/>
+<path d="M912 615.0 L962 665.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="670.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;video controls&gt;</text>
+<rect x="59" y="766" width="862" height="80" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="921" cy="806.0" r="4" fill="#2563eb"/>
+<path d="M921 806.0 L962 806.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="811.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;section&gt;</text>
+<text x="972" y="828.0" text-anchor="start" font-size="12" font-weight="400" fill="#64748b">Enlace externo</text>
+<rect x="50" y="866" width="880" height="60" rx="6" fill="#dbeafe" fill-opacity="0.18" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<circle cx="930" cy="896.0" r="4" fill="#2563eb"/>
+<path d="M930 896.0 L962 896.0" stroke="#2563eb" stroke-width="2" fill="none"/>
+<text x="972" y="901.0" text-anchor="start" font-size="15" font-weight="700" fill="#1f2937">&lt;footer&gt;</text>
+<rect x="80" y="126" width="190" height="62" rx="10" fill="#1f4e79" stroke="#1f4e79" stroke-width="1.5"/>
+<text x="175" y="166" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">Academia</text>
+<text x="80" y="240" font-size="30" font-weight="700" fill="#1f2937" text-anchor="start">Academia de programación</text>
+<text x="80" y="281" font-size="15" font-weight="400" fill="#2563eb" text-anchor="start" text-decoration="underline">Inicio</text>
+<text x="137.6" y="281" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">|</text>
+<text x="155.6" y="281" font-size="15" font-weight="400" fill="#2563eb" text-anchor="start" text-decoration="underline">Estudiantes</text>
+<text x="256.2" y="281" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">|</text>
+<text x="274.2" y="281" font-size="15" font-weight="400" fill="#2563eb" text-anchor="start" text-decoration="underline">Cursos</text>
+<text x="331.79999999999995" y="281" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">|</text>
+<text x="349.79999999999995" y="281" font-size="15" font-weight="400" fill="#d97706" text-anchor="start" text-decoration="underline">Matricular</text>
+<text x="80" y="358" font-size="22" font-weight="700" fill="#1f2937" text-anchor="start">Bienvenida</text>
+<text x="80" y="389" font-size="15" font-weight="400" fill="#1f2937" text-anchor="start">La Academia enseña programación a personas sin experiencia previa.</text>
+<text x="80" y="415" font-size="15" font-weight="400" fill="#1f2937" text-anchor="start">Este sitio es el portal de la academia: estudiantes, cursos y matrículas.</text>
+<text x="80" y="468" font-size="22" font-weight="700" fill="#1f2937" text-anchor="start">Recorrido en video</text>
+<rect x="80" y="492" width="440" height="230" rx="6" fill="#111827" stroke="#111827" stroke-width="1.5"/>
+<circle cx="300" cy="607" r="34" fill="#ffffff" fill-opacity="0.15" stroke="#ffffff" stroke-width="3"/><path d="M290 589 L320 607 L290 625z" fill="#ffffff"/>
+<rect x="80" y="692" width="440" height="30" rx="0" fill="#374151" stroke="#374151" stroke-width="1.5"/>
+<path d="M94 700 l12 7 l-12 7z" fill="#ffffff"/><rect x="124" y="705" width="360" height="4" fill="#9ca3af"/><circle cx="124" cy="707" r="6" fill="#ffffff"/>
+<text x="80" y="794" font-size="22" font-weight="700" fill="#1f2937" text-anchor="start">Para saber más</text>
+<text x="80" y="825" font-size="15" font-weight="400" fill="#2563eb" text-anchor="start" text-decoration="underline">MDN Web Docs  (target="_blank")</text>
+<line x1="80" y1="882" x2="900" y2="882" stroke="#94a3b8" stroke-width="2"/>
+<text x="80" y="909" font-size="14" font-weight="400" fill="#64748b" text-anchor="start">© 2026 Academia de programación · </text>
+<text x="358" y="909" font-size="14" font-weight="400" fill="#2563eb" text-anchor="start" text-decoration="underline">Volver arriba</text>
+<rect x="40" y="996" width="18" height="18" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="66" y="1010" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">Parte 1 (Módulo 01)</text>
+<rect x="230" y="996" width="18" height="18" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="256" y="1010" text-anchor="start" font-size="13" font-weight="400" fill="#1f2937">Parte 2 (Módulo 02)</text>
+<text x="460" y="1010" text-anchor="start" font-size="13" font-weight="400" fill="#64748b">Todo dentro de &lt;body&gt;; &lt;main&gt; envuelve las tres secciones.</text>
 </svg>

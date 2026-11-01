@@ -116,6 +116,8 @@
 
 > > 🗣️ **Se proyectan las maquetas antes de escribir código.** Una **maqueta** es un dibujo de las zonas de la página. Cada bloque de la maqueta es una etiqueta; a la derecha se lee cuál. Quien tiene la maqueta delante sabe qué escribir y en qué orden.
 > >
+> > **Pantalla de computador.** Cada maqueta muestra la página en la ventana de un navegador de escritorio, con el contenido real de la academia. Las líneas punteadas marcan las zonas y, a la derecha, se lee la etiqueta de cada una. Sin CSS el navegador apila los bloques de arriba hacia abajo y alinea todo a la izquierda, tal como se dibuja; la distribución en columnas llega con CSS.
+> >
 > > **Colores:** 🟦 azul = lo que se escribe en la **Parte 1**; 🟨 ámbar = lo que se agrega en la **Parte 2**.
 >
 > <details>
@@ -154,29 +156,6 @@
 > > ![Maqueta de matricula.html: header, párrafo, formulario y footer](imagenes/maqueta-matricula.svg)
 >
 > </details>
-
-</details>
-
-<details>
-<summary><strong>⏱️ Plan de las sesiones</strong></summary>
-
-> | Paso | Minutos | Actividad | Archivo |
-> |---|---:|---|---|
-> | | | **Sesión 1 — Parte 1 (Módulo 01)** | |
-> | 0 | 0 – 10 | Entorno: carpeta, VS Code y navegador | — |
-> | 1 | 10 – 45 | **Archivo 1:** la página de inicio | `index.html` |
-> | 2 | 45 – 62 | **Archivo 2:** los estudiantes | `estudiantes.html` |
-> | 3 | 62 – 80 | **Archivo 3:** los cursos | `cursos.html` |
-> | 4 | 80 – 90 | Probar y revisar la Parte 1 | — |
-> | | | **Sesión 2 — Parte 2 (Módulo 02)** | |
-> | 5 | 0 – 5 | Una opción más en el menú | las tres páginas |
-> | 6 | 5 – 20 | Los estudiantes pasan a una **tabla** | `estudiantes.html` |
-> | 7 | 20 – 45 | Cursos: lista, tabla, pasos y cita | `cursos.html` |
-> | 8 | 45 – 65 | **Archivo 4:** el formulario de matrícula | `matricula.html` |
-> | 9 | 65 – 80 | Probar el formulario y leer la dirección | — |
-> | 10 | 80 – 90 | Revisión final | — |
->
-> > 💡 **Ritmo.** Después de cada paso se guarda (`Ctrl+S`) y se **recarga el navegador** (`F5`). Quien no ve el cambio, revisa la etiqueta que acaba de escribir.
 
 </details>
 
