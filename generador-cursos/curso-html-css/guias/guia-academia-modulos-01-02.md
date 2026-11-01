@@ -1,18 +1,18 @@
 # 🧭 Guía paso a paso — Portal de la Academia (Módulos 01 y 02: HTML)
 
-> 👩‍🏫 **Material docente.** Guía única para construir **junto con los estudiantes**, en vivo, el frente web del **sistema académico** del curso de Spring Boot (**estudiantes**, **cursos** y **matrículas**), aplicando lo visto en el [Módulo 01](../01-Fundamentos-HTML/material/ejemplos/explicacion-conceptual.md) y el [Módulo 02](../02-HTML-para-presentacion/material/ejemplos/explicacion-conceptual.md).
+> 👩‍🏫 **Material docente.** Guía única para construir **junto con los estudiantes**, en vivo, el sitio web de una **academia de programación**: sus **estudiantes**, sus **cursos** y las **matrículas**. Aplica lo visto en el [Módulo 01](../01-Fundamentos-HTML/material/ejemplos/explicacion-conceptual.md) y el [Módulo 02](../02-HTML-para-presentacion/material/ejemplos/explicacion-conceptual.md).
 > Contiene código completo: no se entrega a los estudiantes antes de resolver el taller.
 >
-> 📦 **Proyecto terminado (Partes 1 y 2):** [`academia/`](codigo/academia/) — un solo proyecto con todo el código final · 🔗 **Mismo sistema** que la [guía de la Academia del curso de Spring Boot](../../../../curso-spring-boot/generador-cursos/curso-spring-boot/guias/modulo-03-diseno-api-rest-con-dto/02-academica-dtos.md): allí se construye la API; aquí, las páginas que más adelante la van a consumir.
+> 📦 **Proyecto terminado (Partes 1 y 2):** [`academia/`](codigo/academia/) · 🖼️ **Maquetas:** carpeta [`imagenes/`](imagenes/).
 >
-> ✅ **Verificada.** Las páginas de ambas partes pasan el validador de HTML del curso (`herramientas/validar_html.py`) sin errores.
+> ✅ **Verificada.** Las cuatro páginas pasan el validador de HTML del curso (`herramientas/validar_html.py`) sin errores.
 >
-> 🧭 **Idea central.** El portal se construye en **dos partes** sobre el mismo proyecto: la **Parte 1** (Módulo 01) arma estructura, texto, enlaces, multimedia y semántica; la **Parte 2** (Módulo 02) presenta los datos con **tablas, listas, cita y formulario**. Se elige la etiqueta según la forma del dato.
+> 🧭 **Idea central.** Se crean **cuatro archivos HTML, uno detrás de otro**, siguiendo la maqueta. La **Parte 1** (Módulo 01) arma estructura, texto, enlaces, multimedia y semántica; la **Parte 2** (Módulo 02) presenta los datos con **tablas, listas, cita y formulario**. No se necesita saber nada de programación ni de servidores.
 
 <details>
 <summary><strong>🎯 Objetivo</strong></summary>
 
-> Construir el portal de la academia **sin CSS ni JavaScript**, en dos sesiones de 1 h 30 min.
+> Construir el sitio de la academia **sin CSS ni JavaScript**, en dos sesiones de 1 h 30 min.
 >
 > **Parte 1 — Módulo 01.** Al terminar, el estudiante:
 >
@@ -20,7 +20,7 @@
 > - Marca texto con significado y deja **comentarios**.
 > - Conecta las páginas con **enlaces**, una dirección externa y **anclas**.
 > - Incorpora una **imagen** con `alt` y un **video** con controles.
-> - Reorganiza con **etiquetas semánticas** y sabe cuándo bastaría un `div`.
+> - Organiza cada página con **etiquetas semánticas** y sabe cuándo bastaría un `div`.
 >
 > **Parte 2 — Módulo 02.** Al terminar, el estudiante:
 >
@@ -34,26 +34,26 @@
 <details>
 <summary><strong>📝 Introducción: el problema y sus requerimientos</strong></summary>
 
-> > 🗣️ **Para abrir la sesión.** Se lee el problema y se pregunta: «¿qué datos de la academia ya conocemos del curso de Spring Boot?». Cada dato que digan se convierte en un trozo de página.
+> > 🗣️ **Para abrir la sesión.** Se lee el problema y se pregunta: «¿qué información tendría que mostrar la página de una academia?». Cada respuesta del grupo es un trozo de página.
 >
 > ### 🏫 El problema
 >
-> La **Academia de programación** quiere un portal web donde cualquier persona vea quiénes estudian, qué cursos hay y cómo se matricula. Por ahora el portal es **estático**: se escribe a mano. Cuando se llegue a JavaScript, mostrará los datos reales de la API.
+> La **Academia de programación** quiere un sitio web donde cualquier persona vea quiénes estudian, qué cursos hay, cuánto cuestan y cómo se matricula. El sitio se escribe **a mano**, página por página.
 >
-> ### 🧩 De la entidad a la página
+> ### 🧩 La información de la academia
 >
-> | Entidad (API) | Atributos | Parte 1 (Módulo 01) | Parte 2 (Módulo 02) |
+> | Elemento | Datos | Parte 1 (Módulo 01) | Parte 2 (Módulo 02) |
 > |---|---|---|---|
-> | **Estudiante** | `name`, `age`, `email` | `estudiantes.html`: un `article` por persona | Una **tabla** con una fila por persona |
-> | **Curso** | `name`, `price`, `maxCapacity` | `cursos.html`: una `section` por curso | **Lista** de oferta y **tabla** de precios y cupos |
-> | **Matrícula** | estudiante + curso | Enlaces del estudiante a sus cursos | **Formulario** `matricula.html` (el `EnrollmentRequest` de la API) |
+> | **Estudiante** | nombre, edad, correo | Un bloque (`article`) por persona | Una **tabla** con una fila por persona |
+> | **Curso** | nombre, precio, cupo máximo | Una sección (`section`) por curso | **Lista** de oferta y **tabla** de precios y cupos |
+> | **Matrícula** | quién y en qué curso | Enlaces de cada estudiante a sus cursos | **Formulario** para matricular |
 >
-> | Si el dato es… | Etiqueta | Ejemplo en el portal |
+> | Si el dato es… | Etiqueta | Ejemplo en el sitio |
 > |---|---|---|
 > | Un bloque autónomo o un tema | `article` / `section` | Estudiante, curso (Parte 1) |
 > | Filas y columnas con el mismo significado | `table` | Estudiantes, cursos |
 > | Elementos sin orden / pasos con orden | `ul` / `ol` + `li` | Oferta / cómo te matriculás |
-> | Palabras de otra fuente | `blockquote` | Testimonio |
+> | Palabras de otra persona | `blockquote` | Testimonio |
 > | Datos que escribe el usuario | `form` + `input` | Matrícula |
 >
 > <details>
@@ -78,7 +78,7 @@
 > >
 > > | Código | Requerimiento | Página | Contenido |
 > > |---|---|---|---|
-> > | **RF-2.01** | Mostrar los estudiantes en una tabla con nombre, edad, correo y los cursos (enlazados). | `estudiantes.html` | Tabla |
+> > | **RF-2.01** | Mostrar los estudiantes en una tabla con nombre, edad, correo y cursos (enlazados). | `estudiantes.html` | Tabla |
 > > | **RF-2.02** | Mostrar los cursos con precio y cupo máximo, y una nota al pie. | `cursos.html` | `tfoot` y `colspan` |
 > > | **RF-2.03** | Listar la oferta de cursos, con los temas de Java como sublista. | `cursos.html` | `ul` anidada |
 > > | **RF-2.04** | Explicar la matrícula en tres pasos. | `cursos.html` | `ol` |
@@ -112,28 +112,71 @@
 </details>
 
 <details>
+<summary><strong>🖼️ Maquetado: cómo se ve cada página antes de escribirla</strong></summary>
+
+> > 🗣️ **Se proyectan las maquetas antes de escribir código.** Una **maqueta** es un dibujo de las zonas de la página. Cada bloque de la maqueta es una etiqueta; a la derecha se lee cuál. Quien tiene la maqueta delante sabe qué escribir y en qué orden.
+> >
+> > **Colores:** 🟦 azul = lo que se escribe en la **Parte 1**; 🟨 ámbar = lo que se agrega en la **Parte 2**.
+>
+> <details>
+> <summary><strong>🗺️ Mapa del sitio</strong></summary>
+>
+> > ![Mapa del sitio: index enlaza con estudiantes, cursos y matrícula; estudiantes y cursos se enlazan entre sí](imagenes/mapa-del-sitio.svg)
+> >
+> > Son **cuatro archivos** que se crean en este orden: `index.html` → `estudiantes.html` → `cursos.html` → `matricula.html`.
+>
+> </details>
+>
+> <details>
+> <summary><strong>🏠 Maqueta de index.html</strong></summary>
+>
+> > ![Maqueta de index.html: header, tres section y footer](imagenes/maqueta-index.svg)
+>
+> </details>
+>
+> <details>
+> <summary><strong>👩‍🎓 Maqueta de estudiantes.html</strong></summary>
+>
+> > ![Maqueta de estudiantes.html: header, párrafo, separador, tabla y footer](imagenes/maqueta-estudiantes.svg)
+>
+> </details>
+>
+> <details>
+> <summary><strong>📚 Maqueta de cursos.html</strong></summary>
+>
+> > ![Maqueta de cursos.html: header, tres secciones con id, lista, tabla, pasos, cita y footer](imagenes/maqueta-cursos.svg)
+>
+> </details>
+>
+> <details>
+> <summary><strong>📝 Maqueta de matricula.html</strong></summary>
+>
+> > ![Maqueta de matricula.html: header, párrafo, formulario y footer](imagenes/maqueta-matricula.svg)
+>
+> </details>
+
+</details>
+
+<details>
 <summary><strong>⏱️ Plan de las sesiones</strong></summary>
 
-> | Paso | Minutos | Actividad |
-> |---|---:|---|
-> | | | **Sesión 1 — Parte 1 (Módulo 01)** |
-> | 0 | 0 – 10 | Entorno: carpeta, VS Code y navegador |
-> | 1 | 10 – 25 | La primera página: estructura mínima (`index.html`) |
-> | 2 | 25 – 40 | Texto con significado y comentarios |
-> | 3 | 40 – 55 | Las páginas de datos: `estudiantes.html` y `cursos.html` |
-> | 4 | 55 – 70 | Enlaces, ancla y enlace externo |
-> | 5 | 70 – 80 | Imagen y video |
-> | 6 | 80 – 90 | Semántica y revisión final |
-> | | | **Sesión 2 — Parte 2 (Módulo 02)** |
-> | 7 | 0 – 10 | Punto de partida: el portal de la Parte 1 |
-> | 8 | 10 – 25 | Tabla de estudiantes (`thead`, `tbody`, `tfoot`) |
-> | 9 | 25 – 40 | Cursos: listas, separadores y tabla |
-> | 10 | 40 – 48 | Pasos de matrícula y testimonio |
-> | 11 | 48 – 65 | El formulario de matrícula |
-> | 12 | 65 – 80 | Probar el formulario y leer la dirección |
-> | 13 | 80 – 90 | Revisión final |
+> | Paso | Minutos | Actividad | Archivo |
+> |---|---:|---|---|
+> | | | **Sesión 1 — Parte 1 (Módulo 01)** | |
+> | 0 | 0 – 10 | Entorno: carpeta, VS Code y navegador | — |
+> | 1 | 10 – 45 | **Archivo 1:** la página de inicio | `index.html` |
+> | 2 | 45 – 62 | **Archivo 2:** los estudiantes | `estudiantes.html` |
+> | 3 | 62 – 80 | **Archivo 3:** los cursos | `cursos.html` |
+> | 4 | 80 – 90 | Probar y revisar la Parte 1 | — |
+> | | | **Sesión 2 — Parte 2 (Módulo 02)** | |
+> | 5 | 0 – 5 | Una opción más en el menú | las tres páginas |
+> | 6 | 5 – 20 | Los estudiantes pasan a una **tabla** | `estudiantes.html` |
+> | 7 | 20 – 45 | Cursos: lista, tabla, pasos y cita | `cursos.html` |
+> | 8 | 45 – 65 | **Archivo 4:** el formulario de matrícula | `matricula.html` |
+> | 9 | 65 – 80 | Probar el formulario y leer la dirección | — |
+> | 10 | 80 – 90 | Revisión final | — |
 >
-> > 💡 **Ritmo.** Después de cada paso se guarda y se **recarga el navegador** (`F5`). Quien no ve el cambio, revisa la etiqueta que acaba de escribir.
+> > 💡 **Ritmo.** Después de cada paso se guarda (`Ctrl+S`) y se **recarga el navegador** (`F5`). Quien no ve el cambio, revisa la etiqueta que acaba de escribir.
 
 </details>
 
@@ -142,44 +185,46 @@
 
 > ```text
 > 📁 academia
-> ├── 🆕 index.html          bienvenida · logo · video · enlace externo   (✏️ P2: nav con «Matricular»)
-> ├── 🆕 estudiantes.html    un article por estudiante                    (✏️ P2: pasa a tabla)
-> ├── 🆕 cursos.html         una section por curso, con id                (✏️ P2: + listas · hr · tabla · cita)
-> ├── 🆕 matricula.html      (Parte 2) formulario GET
+> ├── 🆕 1. index.html          bienvenida · logo · video · enlace externo   (✏️ P2: menú con «Matricular»)
+> ├── 🆕 2. estudiantes.html    un article por estudiante                    (✏️ P2: pasa a tabla)
+> ├── 🆕 3. cursos.html         una section por curso, con id                (✏️ P2: + lista · tabla · pasos · cita)
+> ├── 🆕 4. matricula.html      formulario (Parte 2)
 > ├── 📁 imagenes
 > │   └── 🆕 logo.svg
 > └── 📁 video
->     └── 🆕 recorrido.mp4   
+>     └── 🆕 recorrido.mp4
 > ```
+>
+> > 🧑‍🎓 **Regla de oro para el grupo:** un archivo a la vez. No se pasa al siguiente hasta ver el actual funcionando en el navegador.
 
 </details>
 
 ---
 
 <details>
-<summary><strong>🅰️ PARTE 1 — Módulo 01: Fundamentos HTML (Pasos 0 a 6)</strong></summary>
+<summary><strong>🅰️ PARTE 1 — Módulo 01: Fundamentos HTML (Pasos 0 a 4)</strong></summary>
 
-> Carpeta de trabajo: `academia`. Al terminar la Parte 1 existen `index.html`, `estudiantes.html` y `cursos.html`; el proyecto completo está en [`codigo/academia/`](codigo/academia/). 
+> Se crean `index.html`, `estudiantes.html` y `cursos.html`. Todo el código final está en [`codigo/academia/`](codigo/academia/).
 >
-> 💡 Los archivos de `codigo/academia/` ya incluyen también los cambios de la Parte 2: lo que la Parte 2 agrega está indicado en cada paso.
+> > 💡 Los archivos de `codigo/academia/` ya incluyen también los cambios de la Parte 2; lo que cada parte agrega está indicado en los pasos.
 
 </details>
 
 ---
-
 
 <details>
 <summary><strong>🚀 Paso 0 — Entorno</strong></summary>
 
 > <details>
-> <summary><strong>Paso 0.1 · Carpeta y archivos</strong></summary>
+> <summary><strong>Paso 0.1 · Carpeta del proyecto</strong></summary>
 >
-> > 1. Se crea la carpeta `academia` con las subcarpetas `imagenes` y `video`.
-> > 2. Se abre en VS Code (`Archivo → Abrir carpeta`).
-> > 3. Se crean los tres archivos vacíos: `index.html`, `estudiantes.html` y `cursos.html`.
-> > 4. Se copia el logo en `imagenes/logo.svg` y el video en `video/recorrido.mp4` desde la carpeta [`codigo/academia`](codigo/academia/) (el video es de práctica: se puede cambiar por otro propio).
+> > 🧑‍🎓 **Indicación al estudiante:**
 > >
-> > > ✅ **Punto de control.** Hacer doble clic en un archivo abre el navegador, aunque esté vacío. No se necesita servidor.
+> > 1. Creá una carpeta llamada `academia`, y dentro de ella dos subcarpetas: `imagenes` y `video`.
+> > 2. Abrí la carpeta `academia` en VS Code (`Archivo → Abrir carpeta`).
+> > 3. Copiá el logo en `imagenes/logo.svg` y el video en `video/recorrido.mp4` desde [`codigo/academia`](codigo/academia/) (el video es de práctica: se puede cambiar por otro propio).
+> >
+> > > ✅ **Punto de control.** El explorador de VS Code muestra `academia` con las carpetas `imagenes` y `video` y sus dos archivos. Todavía no hay ninguna página.
 >
 > </details>
 
@@ -188,15 +233,16 @@
 ---
 
 <details>
-<summary><strong>🌱 Paso 1 — La primera página: estructura mínima</strong></summary>
+<summary><strong>🏠 Paso 1 — Archivo 1: index.html (la página de inicio)</strong></summary>
 
+> > 🗣️ **Se muestra la [maqueta de index.html](imagenes/maqueta-index.svg).** Se pregunta: ¿cuántas zonas ve? *(Una cabecera, tres secciones y un pie.)* Se escribe de arriba hacia abajo, una zona por vez.
+>
 > <details>
-> <summary><strong>Paso 1.1 · El esqueleto</strong></summary>
+> <summary><strong>Paso 1.1 · Crear el archivo y el esqueleto</strong></summary>
 >
 > > 🗣️ **Se explica antes de escribir:** `<!DOCTYPE html>` avisa al navegador que es HTML moderno; `html` envuelve todo; `head` lleva lo que **no se ve** (codificación y título); `body` lleva lo que **sí se ve**.
 > >
-> > <details>
-> > <summary><strong>📄 index.html</strong> <em>(esqueleto)</em></summary>
+> > 🧑‍🎓 **Indicación al estudiante:** en VS Code, creá el archivo **`index.html`** en la carpeta `academia` y escribí:
 > >
 > > ```html
 > > <!DOCTYPE html>
@@ -211,41 +257,64 @@
 > > </html>
 > > ```
 > >
-> > </details>
+> > Guardá y abrí el archivo en el navegador (doble clic, o clic derecho → «Abrir con» el navegador).
 > >
-> > **Se prueba:** la pestaña del navegador dice «Academia — Inicio» y la página muestra el título.
-> >
+> > > ✅ **Punto de control.** La pestaña dice «Academia — Inicio» y la página muestra el título.
+> > >
 > > > ⚠️ **Error típico.** Olvidar `charset`: «Pérez» se ve «PÃ©rez». Se agrega y se recarga.
 >
 > </details>
 >
 > <details>
-> <summary><strong>Paso 1.2 · Lo mismo en las otras dos páginas</strong></summary>
+> <summary><strong>Paso 1.2 · La cabecera: logo y título (RF-1.02)</strong></summary>
 >
-> > Se copia el esqueleto en `estudiantes.html` y `cursos.html`, y se cambian el `title` (`Academia — Estudiantes`, `Academia — Cursos`) y el `h1` (`Estudiantes`, `Cursos`).
-> >
-> > > 🧠 **Para preguntar:** ¿por qué cada página lleva su propio `title`? *(Aparece en la pestaña, en el historial y en los buscadores.)*
->
-> </details>
-
-</details>
-
----
-
-<details>
-<summary><strong>✍️ Paso 2 — Texto con significado y comentarios</strong></summary>
-
-> <details>
-> <summary><strong>Paso 2.1 · La bienvenida (RF-1.01)</strong></summary>
->
-> > Dentro del `body` de `index.html`, bajo el `h1`, se agrega la bienvenida:
+> > 🧑‍🎓 **Indicación al estudiante:** reemplazá el `h1` del `body` por una **cabecera** (`header`) que lleve el logo y el título:
 > >
 > > ```html
-> >   <h2>Bienvenida</h2>
-> >   <!-- Este párrafo se reutiliza en las demás páginas del portal -->
-> >   <p>La <strong>Academia</strong> enseña programación a personas <em>sin experiencia previa</em>.
-> >   Aquí podés ver quiénes estudian, qué cursos hay y cuántos cupos quedan.</p>
-> >   <p>Este portal es el <mark>frente web</mark> del sistema académico que se construye en el curso de Spring Boot.</p>
+> >   <header>
+> >     <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
+> >     <h1>Academia de programación</h1>
+> >   </header>
+> > ```
+> >
+> > > 💡 **`alt`** es lo que lee un lector de pantalla y lo que se muestra si el archivo no carga. Para comprobarlo, cambiá `logo.svg` por `logo-roto.svg`, mirá la página y volvé atrás.
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 1.3 · La navegación (RF-1.05)</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** dentro del `header`, debajo del `h1`, agregá el menú:
+> >
+> > ```html
+> >     <nav>
+> >       <a href="index.html">Inicio</a> |
+> >       <a href="estudiantes.html">Estudiantes</a> |
+> >       <a href="cursos.html">Cursos</a>
+> >     </nav>
+> > ```
+> >
+> > > ⚠️ Los enlaces a `estudiantes.html` y `cursos.html` **todavía no funcionan**: esos archivos no existen. Se prueban en el Paso 4. Es una buena ocasión para ver cómo se comporta un enlace roto.
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 1.4 · El contenido principal: la bienvenida (RF-1.01)</strong></summary>
+>
+> > 🗣️ **Se pregunta:** ¿qué etiqueta agrupa «lo principal» de la página? *(`main`, y solo uno por página.)* Dentro, cada tema va en una `section` con su título.
+> >
+> > 🧑‍🎓 **Indicación al estudiante:** debajo del `header`, agregá:
+> >
+> > ```html
+> >   <main>
+> >     <section>
+> >       <h2>Bienvenida</h2>
+> >       <!-- Este párrafo se reutiliza en las demás páginas del portal -->
+> >       <p>La <strong>Academia</strong> enseña programación a personas <em>sin experiencia previa</em>.
+> >       Aquí podés ver quiénes estudian, qué cursos hay y cuántos cupos quedan.</p>
+> >       <p>Este sitio es el <mark>portal</mark> de la academia: estudiantes, cursos y matrículas.</p>
+> >     </section>
+> >   </main>
 > > ```
 > >
 > > | Etiqueta | Significa | No es |
@@ -257,202 +326,255 @@
 > > > 💡 El comentario `<!-- … -->` **no se muestra**, pero sí queda en el código. Se comprueba con `Ctrl+U` (ver código fuente).
 >
 > </details>
-
-</details>
-
----
-
-<details>
-<summary><strong>🗂️ Paso 3 — Las páginas de datos</strong></summary>
-
-> <details>
-> <summary><strong>Paso 3.1 · Estudiantes (RF-1.03)</strong></summary>
 >
-> > 🗣️ **Se pregunta:** ¿qué campos tiene un estudiante en la API? *(`name`, `age`, `email`.)* Cada persona es un bloque autónomo, así que se usa `article`.
+> <details>
+> <summary><strong>Paso 1.5 · El video (RF-1.01)</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** dentro de `main`, **debajo** de la sección de bienvenida, agregá una segunda sección:
 > >
 > > ```html
-> >   <article>
-> >     <h2>Ana Pérez</h2>
-> >     <p>Edad: 24 años</p>
-> >     <p>Correo: <a href="mailto:ana@academia.test">ana@academia.test</a></p>
-> >   </article>
-> > ```
-> >
-> > Se repite para **Luis Gómez** (31 años, `luis@academia.test`) y **Marta Ruiz** (19 años, `marta@academia.test`). El código completo está en [`estudiantes.html`](codigo/academia/estudiantes.html).
->
-> </details>
->
-> <details>
-> <summary><strong>Paso 3.2 · Cursos (RF-1.04)</strong></summary>
->
-> > Cada curso tiene `name`, `price` y `maxCapacity`. Cada uno es un tema con título propio: `section`, y con un **`id`** para poder saltar a él (se usa en el Paso 4).
-> >
-> > ```html
-> >   <!-- Se usa section porque cada curso es un tema con su propio título -->
-> >   <section id="java">
-> >     <h2>Java desde cero</h2>
-> >     <p>Precio: $180.000 · Cupo máximo: 20 personas</p>
-> >     <p>Variables, condicionales, ciclos y clases. Es la base para el curso de <em>Spring Boot</em>.</p>
-> >   </section>
-> > ```
-> >
-> > Se repite con `id="web"` (HTML y CSS, $150.000, cupo 25) e `id="git"` (Git, $90.000, cupo 30). Ver [`cursos.html`](codigo/academia/cursos.html).
-> >
-> > > ⚠️ **Error típico.** Dos elementos con el mismo `id`. Cada `id` es único en la página.
->
-> </details>
-
-</details>
-
----
-
-<details>
-<summary><strong>🔗 Paso 4 — Enlaces, ancla y enlace externo</strong></summary>
-
-> <details>
-> <summary><strong>Paso 4.1 · Navegación entre páginas (RF-1.05)</strong></summary>
->
-> > En **las tres páginas**, dentro de un `header`, el mismo bloque de navegación:
-> >
-> > ```html
-> >     <nav>
-> >       <a href="index.html">Inicio</a> |
-> >       <a href="estudiantes.html">Estudiantes</a> |
-> >       <a href="cursos.html">Cursos</a>
-> >     </nav>
-> > ```
-> >
-> > > ✅ **Punto de control.** Desde cualquier página se llega a las otras dos y se vuelve. Al estar todos los archivos en la misma carpeta, la ruta es solo el nombre.
->
-> </details>
->
-> <details>
-> <summary><strong>Paso 4.2 · Anclas (RF-1.06)</strong></summary>
->
-> > 1. En `cursos.html`, bajo la navegación: `<p>Ir a: <a href="#java">Java</a> · <a href="#web">HTML y CSS</a> · <a href="#git">Git</a></p>`.
-> > 2. En `estudiantes.html`, en cada estudiante, la línea de cursos enlaza **a otra página y a un punto de ella**:
-> >    `<p>Cursos: <a href="cursos.html#java">Java desde cero</a></p>`.
-> > 3. En los `footer`: `<a href="#">Volver arriba</a>`.
-> >
-> > > 🧠 **Para preguntar:** ¿qué diferencia hay entre `#java` y `cursos.html#java`? *(El primero busca en la página actual; el segundo abre la otra página y baja al `id`.)*
->
-> </details>
->
-> <details>
-> <summary><strong>Paso 4.3 · Enlace externo (RF-1.07)</strong></summary>
->
-> > En `index.html`:
-> >
-> > ```html
-> >   <h2>Para saber más</h2>
-> >   <p>La documentación oficial de HTML está en
-> >   <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs</a>.</p>
-> > ```
-> >
-> > `target="_blank"` abre otra pestaña; `rel="noopener"` evita que la pestaña nueva controle a la de origen.
->
-> </details>
-
-</details>
-
----
-
-<details>
-<summary><strong>🖼️ Paso 5 — Imagen y video</strong></summary>
-
-> <details>
-> <summary><strong>Paso 5.1 · El logo (RF-1.02)</strong></summary>
->
-> > Al principio del `body` de `index.html`:
-> >
-> > ```html
-> >   <img src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
-> > ```
-> >
-> > > 💡 **`alt`** es lo que lee un lector de pantalla y lo que se muestra si el archivo no carga. Para comprobarlo, se cambia `logo.svg` por `logo-roto.svg` y se mira la página; luego se vuelve atrás.
->
-> </details>
->
-> <details>
-> <summary><strong>Paso 5.2 · El video (RF-1.01)</strong></summary>
->
-> > ```html
-> >   <h2>Recorrido en video</h2>
-> >   <video src="video/recorrido.mp4" controls width="480">
-> >     Tu navegador no reproduce video.
-> >   </video>
+> >     <section>
+> >       <h2>Recorrido en video</h2>
+> >       <video src="video/recorrido.mp4" controls width="480">
+> >         Tu navegador no reproduce video.
+> >       </video>
+> >     </section>
 > > ```
 > >
 > > > ⚠️ **Error típico.** Sin `controls` el video no tiene botón de reproducir y parece una imagen.
 >
 > </details>
+>
+> <details>
+> <summary><strong>Paso 1.6 · El enlace externo (RF-1.07)</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** dentro de `main`, **debajo** del video, agregá la tercera sección:
+> >
+> > ```html
+> >     <section>
+> >       <h2>Para saber más</h2>
+> >       <p>La documentación oficial de HTML está en
+> >       <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs</a>.</p>
+> >     </section>
+> > ```
+> >
+> > `target="_blank"` abre otra pestaña; `rel="noopener"` evita que la pestaña nueva controle a la de origen.
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 1.7 · El pie</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** **fuera** de `main` y debajo de él, antes de `</body>`, agregá:
+> >
+> > ```html
+> >   <footer>
+> >     <p>© 2026 Academia de programación · <a href="#">Volver arriba</a></p>
+> >   </footer>
+> > ```
+> >
+> > > ✅ **Punto de control del archivo 1.** Se compara con la [maqueta](imagenes/maqueta-index.svg) y con el [archivo terminado](codigo/academia/index.html): `header` → `main` (3 `section`) → `footer`, cada zona en su lugar. Solo cambia el menú, al que la Parte 2 le agrega «Matricular».
+> >
+> > 🧠 **Para preguntar:** si solo quisiera agrupar dos párrafos sin significado propio, ¿qué etiqueta usaría? *(Un `div`, y se deja un comentario que lo explique.)*
+>
+> </details>
 
 </details>
 
 ---
 
 <details>
-<summary><strong>🏛️ Paso 6 — Semántica y revisión final</strong></summary>
+<summary><strong>👩‍🎓 Paso 2 — Archivo 2: estudiantes.html</strong></summary>
 
-> <details>
-> <summary><strong>Paso 6.1 · Reorganizar con etiquetas semánticas (RA-7)</strong></summary>
+> > 🗣️ **Se muestra la [maqueta de estudiantes.html](imagenes/maqueta-estudiantes.svg)** (en esta parte solo se escribe lo azul). Se pregunta: ¿qué datos tiene un estudiante? *(Nombre, edad y correo.)* Cada persona es un bloque autónomo: `article`.
 >
-> > Se revisa cada página y se agrupa su contenido así:
+> <details>
+> <summary><strong>Paso 2.1 · Crear el archivo con la cabecera</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** creá **`estudiantes.html`**. Podés copiar el esqueleto de `index.html` y cambiar el `title` a `Academia — Estudiantes`. Dentro del `body` escribí la cabecera con el mismo menú:
 > >
-> > | Zona | Etiqueta | Qué lleva |
-> > |---|---|---|
-> > | Cabecera | `header` | logo, `h1` y `nav` |
-> > | Contenido principal | `main` | **uno solo** por página |
-> > | Temas | `section` / `article` | cursos / estudiantes |
-> > | Pie | `footer` | aviso de datos inventados y «Volver arriba» |
+> > ```html
+> >   <header>
+> >     <h1>Estudiantes</h1>
+> >     <nav>
+> >       <a href="index.html">Inicio</a> |
+> >       <a href="estudiantes.html">Estudiantes</a> |
+> >       <a href="cursos.html">Cursos</a>
+> >     </nav>
+> >   </header>
+> > ```
 > >
-> > Se pide a los estudiantes que **comparen** su `index.html` con [la versión terminada](codigo/academia/index.html) y expliquen en voz alta por qué cada bloque tiene esa etiqueta.
-> >
-> > > 🧠 **Para preguntar:** si en `estudiantes.html` solo quisiera agrupar tres párrafos sin significado propio, ¿qué etiqueta usaría? *(Un `div`, y se deja un comentario que lo explique.)*
+> > 🧠 **Para preguntar:** ¿por qué cada página lleva su propio `title`? *(Aparece en la pestaña, en el historial y en los buscadores.)*
 >
 > </details>
 >
 > <details>
-> <summary><strong>Paso 6.2 · Lista de verificación</strong></summary>
+> <summary><strong>Paso 2.2 · Un article por estudiante (RF-1.03)</strong></summary>
 >
-> > - [ ] Las tres páginas abren sin errores y cada una tiene su `title`.
-> > - [ ] La navegación funciona en ambos sentidos.
-> > - [ ] Las tres anclas de `cursos.html` saltan al curso correcto.
-> > - [ ] El logo se ve, tiene `alt` y el video se reproduce.
-> > - [ ] El enlace externo abre una pestaña nueva.
-> > - [ ] Hay al menos dos comentarios y ningún `id` repetido.
-> > - [ ] No hay CSS ni JavaScript.
+> > 🧑‍🎓 **Indicación al estudiante:** debajo del `header`, agregá `main` con el primer estudiante:
 > >
-> > **Verificación automática (docente):**
+> > ```html
+> >   <main>
+> >     <p>Cada estudiante tiene un <strong>nombre</strong>, una <strong>edad</strong> y un <strong>correo</strong> único.</p>
 > >
-> > ```bash
-> > python3 herramientas/validar_html.py curso-html-css/guias/codigo/academia
-> > # 4 archivo(s), 0 error(es)
+> >     <article>
+> >       <h2>Ana Pérez</h2>
+> >       <p>Edad: 24 años</p>
+> >       <p>Correo: <a href="mailto:ana@academia.test">ana@academia.test</a></p>
+> >       <p>Cursos: <a href="cursos.html#java">Java desde cero</a></p>
+> >     </article>
+> >   </main>
+> > ```
+> >
+> > Dentro de `main`, debajo, repetí el `article` para **Luis Gómez** (31 años, `luis@academia.test`, cursos: Java desde cero y HTML y CSS) y **Marta Ruiz** (19 años, `marta@academia.test`, curso: HTML y CSS). El enlace de cada curso es `cursos.html#java` o `cursos.html#web`.
+> >
+> > | Parte del enlace | Qué hace |
+> > |---|---|
+> > | `cursos.html` | Abre la otra página |
+> > | `#java` | Baja hasta el elemento con `id="java"` (se crea en el Paso 3) |
+> >
+> > > ⚠️ Hasta crear `cursos.html` estos enlaces no llevan a ningún lado; es esperable.
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 2.3 · El pie</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** debajo de `main`, agregá:
+> >
+> > ```html
+> >   <footer>
+> >     <p>Datos inventados · <a href="#">Volver arriba</a></p>
+> >   </footer>
+> > ```
+> >
+> > > ✅ **Punto de control del archivo 2.** Se ven tres estudiantes, cada uno con su correo como enlace (`mailto:`). Se compara la estructura con la maqueta.
+>
+> </details>
+
+</details>
+
+---
+
+<details>
+<summary><strong>📚 Paso 3 — Archivo 3: cursos.html</strong></summary>
+
+> > 🗣️ **Se muestra la [maqueta de cursos.html](imagenes/maqueta-cursos.svg)** (ahora solo las zonas azules: cabecera, tres secciones y pie). Cada curso es un tema con título propio: `section`, y con un **`id`** para poder saltar a él.
+>
+> <details>
+> <summary><strong>Paso 3.1 · Crear el archivo con la cabecera y los atajos (RF-1.06)</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** creá **`cursos.html`** con el esqueleto (`title`: `Academia — Cursos`) y esta cabecera. El último párrafo son **atajos** a cada curso dentro de la misma página:
+> >
+> > ```html
+> >   <header>
+> >     <h1>Cursos</h1>
+> >     <nav>
+> >       <a href="index.html">Inicio</a> |
+> >       <a href="estudiantes.html">Estudiantes</a> |
+> >       <a href="cursos.html">Cursos</a>
+> >     </nav>
+> >     <p>Ir a: <a href="#java">Java</a> · <a href="#web">HTML y CSS</a> · <a href="#git">Git</a></p>
+> >   </header>
 > > ```
 >
 > </details>
+>
+> <details>
+> <summary><strong>Paso 3.2 · Una section por curso (RF-1.04)</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** debajo del `header`, agregá `main` con las tres secciones. Cada `id` coincide con un atajo del Paso 3.1:
+> >
+> > ```html
+> >   <main>
+> >     <!-- Se usa section porque cada curso es un tema con su propio título -->
+> >     <section id="java">
+> >       <h2>Java desde cero</h2>
+> >       <p>Precio: $180.000 · Cupo máximo: 20 personas</p>
+> >       <p>Variables, condicionales, ciclos y clases.</p>
+> >     </section>
+> >
+> >     <section id="web">
+> >       <h2>HTML y CSS</h2>
+> >       <p>Precio: $150.000 · Cupo máximo: 25 personas</p>
+> >       <p>Páginas con <code>HTML</code> semántico y estilo con <code>CSS</code>.</p>
+> >     </section>
+> >
+> >     <section id="git">
+> >       <h2>Git</h2>
+> >       <p>Precio: $90.000 · Cupo máximo: 30 personas</p>
+> >       <p>Control de versiones: guardar, comparar y compartir cambios.</p>
+> >     </section>
+> >   </main>
+> > ```
+> >
+> > > ⚠️ **Error típico.** Dos elementos con el mismo `id`. Cada `id` es único en la página.
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 3.3 · El pie</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** debajo de `main`, el mismo pie de `estudiantes.html`:
+> >
+> > ```html
+> >   <footer>
+> >     <p>Datos inventados · <a href="#">Volver arriba</a></p>
+> >   </footer>
+> > ```
+> >
+> > > ✅ **Punto de control del archivo 3.** Los tres atajos del encabezado bajan al curso correcto. Si uno no baja, se compara el `id` con el `#` letra por letra.
+>
+> </details>
 
 </details>
 
 ---
 
 <details>
-<summary><strong>🅱️ PARTE 2 — Módulo 02: HTML para presentación (Pasos 7 a 13)</strong></summary>
-
-> Se sigue en **la misma carpeta `academia`**, partiendo de lo terminado en la Parte 1. Resultado: [`codigo/academia/`](codigo/academia/).
-
-</details>
-
----
-
-
-<details>
-<summary><strong>🚀 Paso 7 — Punto de partida de la Parte 2</strong></summary>
+<summary><strong>✅ Paso 4 — Probar y revisar la Parte 1</strong></summary>
 
 > <details>
-> <summary><strong>Paso 7.1 · El proyecto</strong></summary>
+> <summary><strong>Paso 4.1 · Recorrer el sitio</strong></summary>
 >
-> > Se continúa en la carpeta `academia` y se agrega al `nav` de **todas** las páginas el enlace nuevo:
+> > 🧑‍🎓 **Indicación al estudiante:** desde `index.html`, seguí el menú hasta las otras dos páginas y volvé. Luego entrá a `estudiantes.html` y hacé clic en el nombre de un curso: debería abrir `cursos.html` y bajar a ese curso. Compará tu sitio con el [mapa del sitio](imagenes/mapa-del-sitio.svg).
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 4.2 · Lista de verificación</strong></summary>
+>
+> > - [ ] Las tres páginas abren sin errores y cada una tiene su `title`.
+> > - [ ] La navegación funciona en ambos sentidos.
+> > - [ ] Los tres atajos de `cursos.html` y los enlaces de los estudiantes saltan al curso correcto.
+> > - [ ] El logo se ve, tiene `alt` y el video se reproduce.
+> > - [ ] El enlace externo abre una pestaña nueva.
+> > - [ ] Hay al menos un comentario y ningún `id` repetido.
+> > - [ ] Cada página usa `header`, `main` y `footer`.
+> > - [ ] No hay CSS ni JavaScript.
+>
+> </details>
+
+</details>
+
+---
+
+<details>
+<summary><strong>🅱️ PARTE 2 — Módulo 02: HTML para presentación (Pasos 5 a 10)</strong></summary>
+
+> Se sigue en **la misma carpeta `academia`**, partiendo de lo terminado en la Parte 1. Se modifican `estudiantes.html` y `cursos.html`, y se crea `matricula.html`.
+
+</details>
+
+---
+
+<details>
+<summary><strong>🔗 Paso 5 — Una opción más en el menú</strong></summary>
+
+> <details>
+> <summary><strong>Paso 5.1 · Agregar «Matricular»</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** en **las tres páginas** (`index.html`, `estudiantes.html` y `cursos.html`), reemplazá el `nav` por este:
 > >
 > > ```html
 > >     <nav>
@@ -463,8 +585,7 @@
 > >     </nav>
 > > ```
 > >
-> > > ⚠️ El enlace a `matricula.html` queda roto hasta el Paso 11; es normal y sirve para ver cómo falla un enlace.
-> > > Todo lo de la Parte 1 (logo, video, anclas, enlace externo) se conserva.
+> > > ⚠️ El enlace a `matricula.html` queda roto hasta el Paso 8; es normal. Todo lo de la Parte 1 (logo, video, anclas, enlace externo) se conserva.
 >
 > </details>
 
@@ -473,15 +594,14 @@
 ---
 
 <details>
-<summary><strong>📊 Paso 8 — Tabla de estudiantes (RF-2.01)</strong></summary>
+<summary><strong>📊 Paso 6 — estudiantes.html: de los article a una tabla (RF-2.01, RF-2.06)</strong></summary>
 
-> <details>
-> <summary><strong>Paso 8.1 · Del `article` a la tabla</strong></summary>
+> > 🗣️ **Se muestra la [maqueta de estudiantes.html](imagenes/maqueta-estudiantes.svg)** completa (ahora también lo ámbar). Se pregunta: ¿qué tienen en común Ana, Luis y Marta? *(Los mismos campos.)* Datos con las mismas columnas piden una tabla.
 >
-> > 🗣️ **Se pregunta:** ¿qué tienen en común Ana, Luis y Marta? *(Los mismos campos.)* Datos con las mismas columnas piden una tabla.
-> >
-> > <details>
-> > <summary><strong>📄 estudiantes.html</strong> <em>(reemplaza el contenido de `main`)</em></summary>
+> <details>
+> <summary><strong>Paso 6.1 · Reemplazar el contenido de main</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** en `estudiantes.html`, **borrá** los tres `article` y dejá en `main` esto (primero el párrafo, luego un separador `hr` y la tabla):
 > >
 > > ```html
 > >   <main>
@@ -506,7 +626,7 @@
 > >           <td><a href="mailto:ana@academia.test">ana@academia.test</a></td>
 > >           <td><a href="cursos.html#java">Java desde cero</a></td>
 > >         </tr>
-> >         <!-- Luis Gómez (31, luis@academia.test, cursos Java y HTML y CSS) y Marta Ruiz (19, marta@academia.test, curso HTML y CSS), con enlaces a `cursos.html#java` / `#web` -->
+> >         <!-- Luis Gómez y Marta Ruiz: una fila <tr> más por cada uno -->
 > >       </tbody>
 > >       <tfoot>
 > >         <tr>
@@ -517,7 +637,7 @@
 > >   </main>
 > > ```
 > >
-> > </details>
+> > Luego agregá, dentro de `tbody`, las filas de **Luis** (31, `luis@academia.test`, enlaces a `#java` y `#web`) y **Marta** (19, `marta@academia.test`, enlace a `#web`). Se completa con el [archivo terminado](codigo/academia/estudiantes.html).
 > >
 > > | Pieza | Para qué |
 > > |---|---|
@@ -526,9 +646,9 @@
 > > | `tbody` / `td` | Filas de datos |
 > > | `tfoot` + `colspan="4"` | Nota que ocupa **las cuatro** columnas |
 > >
-> > Se completan las filas de Luis y Marta ([código final](codigo/academia/estudiantes.html)).
-> >
 > > > ⚠️ **Error típico.** Una fila con tres `td` en una tabla de cuatro columnas: la tabla se «descuadra». Se cuenta por fila.
+> >
+> > > ✅ **Punto de control.** La tabla muestra tres filas y la nota al pie ocupa todo el ancho.
 >
 > </details>
 
@@ -537,15 +657,19 @@
 ---
 
 <details>
-<summary><strong>📚 Paso 9 — Cursos: listas, separadores y tabla (RF-2.02, RF-2.03, RF-2.06)</strong></summary>
+<summary><strong>📚 Paso 7 — cursos.html: lista, tabla, pasos y cita (RF-2.02 a RF-2.06)</strong></summary>
 
-> <details>
-> <summary><strong>Paso 9.1 · Oferta con sublista</strong></summary>
+> > 🗣️ **Se muestra la [maqueta de cursos.html](imagenes/maqueta-cursos.svg)** completa. Las tres secciones con `id` **se conservan**; las cuatro zonas ámbar se agregan **debajo, dentro de `main`**, cada una precedida por un `hr`.
 >
-> > En `cursos.html` se **conservan** las tres `section` de la Parte 1 (con sus `id`) y, **debajo**, se agrega:
+> <details>
+> <summary><strong>Paso 7.1 · Oferta con sublista</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** en `cursos.html`, debajo de la sección `git` y antes de `</main>`, agregá:
 > >
 > > ```html
-> >     <section id="cursos">
+> >     <hr>
+> >
+> >     <section>
 > >       <h2>Oferta de cursos</h2>
 > >       <ul>
 > >         <li>Java desde cero
@@ -558,8 +682,6 @@
 > >         <li>Git</li>
 > >       </ul>
 > >     </section>
-> >
-> >     <hr>
 > > ```
 > >
 > > > 💡 **Regla.** La sublista va **dentro** del `li` al que pertenece, no como hermana del `li`.
@@ -567,9 +689,13 @@
 > </details>
 >
 > <details>
-> <summary><strong>Paso 9.2 · Precios y cupos</strong></summary>
+> <summary><strong>Paso 7.2 · Precios y cupos</strong></summary>
 >
+> > 🧑‍🎓 **Indicación al estudiante:** debajo de la sección anterior, agregá:
+> >
 > > ```html
+> >     <hr>
+> >
 > >     <section>
 > >       <h2>Precios y cupos</h2>
 > >       <table>
@@ -587,25 +713,20 @@
 > >         </tfoot>
 > >       </table>
 > >     </section>
-> >
-> >     <hr>
 > > ```
 > >
-> > (En el [código final](codigo/academia/cursos.html) cada celda va en su propia línea, igual que en el Paso 8.)
+> > (En el [archivo terminado](codigo/academia/cursos.html) cada celda va en su propia línea, igual que en el Paso 6.)
 >
 > </details>
-
-</details>
-
----
-
-<details>
-<summary><strong>🗣️ Paso 10 — Pasos de matrícula y testimonio (RF-2.04, RF-2.05)</strong></summary>
-
-> <details>
-> <summary><strong>Paso 10.1 · Lista enumerada</strong></summary>
 >
+> <details>
+> <summary><strong>Paso 7.3 · Pasos de matrícula (RF-2.04)</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** debajo, agregá:
+> >
 > > ```html
+> >     <hr>
+> >
 > >     <section>
 > >       <h2>Cómo te matriculás</h2>
 > >       <ol>
@@ -614,8 +735,6 @@
 > >         <li>Esperá la confirmación de la Academia.</li>
 > >       </ol>
 > >     </section>
-> >
-> >     <hr>
 > > ```
 > >
 > > > 🧠 **Para preguntar:** ¿por qué acá `ol` y en la oferta `ul`? *(Los pasos tienen orden; los cursos no.)*
@@ -623,9 +742,13 @@
 > </details>
 >
 > <details>
-> <summary><strong>Paso 10.2 · Cita con fuente</strong></summary>
+> <summary><strong>Paso 7.4 · Cita con fuente (RF-2.05)</strong></summary>
 >
+> > 🧑‍🎓 **Indicación al estudiante:** debajo, y antes de `</main>`, agregá:
+> >
 > > ```html
+> >     <hr>
+> >
 > >     <section>
 > >       <h2>Lo que dicen</h2>
 > >       <blockquote cite="https://academia.test/opiniones/ana">
@@ -636,6 +759,8 @@
 > > ```
 > >
 > > > ⚠️ **Error típico.** Poner el nombre de la persona dentro de `<cite>`: esa etiqueta es para el **título de una obra**. La atribución va fuera del `blockquote`, y la dirección de la fuente, en el atributo `cite`.
+> >
+> > > ✅ **Punto de control del archivo 3 completo.** Se compara con la maqueta: tres secciones con `id`, y debajo lista, tabla, pasos y cita separadas por `hr`.
 >
 > </details>
 
@@ -644,13 +769,13 @@
 ---
 
 <details>
-<summary><strong>📝 Paso 11 — El formulario de matrícula (RF-2.07)</strong></summary>
+<summary><strong>📝 Paso 8 — Archivo 4: matricula.html (el formulario) (RF-2.07)</strong></summary>
 
-> <details>
-> <summary><strong>Paso 11.1 · De la API al formulario</strong></summary>
+> > 🗣️ **Se muestra la [maqueta de matricula.html](imagenes/maqueta-matricula.svg).** Se pregunta: para matricular a alguien, ¿qué hay que saber? *(Quién es y en qué curso.)* El formulario pide justo eso.
 >
-> > 🗣️ **Se conecta con el curso de Spring Boot:** la API recibe un `EnrollmentRequest` con quién y en qué curso. El formulario pide esos datos.
-> >
+> <details>
+> <summary><strong>Paso 8.1 · Qué campo para qué dato</strong></summary>
+>
 > > | Campo del formulario | Tipo | `name` | Valor que viaja |
 > > |---|---|---|---|
 > > | Nombre | `text` | `nombre` | lo escrito |
@@ -663,11 +788,31 @@
 > </details>
 >
 > <details>
-> <summary><strong>Paso 11.2 · Escribir la página</strong></summary>
+> <summary><strong>Paso 8.2 · Crear el archivo y la cabecera</strong></summary>
 >
-> > Se crea `matricula.html` con la estructura de siempre y, dentro de `main`:
+> > 🧑‍🎓 **Indicación al estudiante:** creá **`matricula.html`** con el esqueleto (`title`: `Academia — Matrícula`) y esta cabecera:
 > >
 > > ```html
+> >   <header>
+> >     <h1>Matricular a un estudiante</h1>
+> >     <nav>
+> >       <a href="index.html">Inicio</a> |
+> >       <a href="estudiantes.html">Estudiantes</a> |
+> >       <a href="cursos.html">Cursos</a> |
+> >       <a href="matricula.html">Matricular</a>
+> >     </nav>
+> >   </header>
+> > ```
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 8.3 · El formulario</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** debajo del `header`, escribí `main` con el formulario, **campo por campo**, verificando en el navegador cada vez que agregues uno:
+> >
+> > ```html
+> >   <main>
 > >     <p>Usá <strong>solo datos inventados</strong>: el formulario no se envía a ningún servidor.</p>
 > >
 > >     <form method="get">
@@ -701,6 +846,7 @@
 > >
 > >       <p><input type="submit" value="Matricular"></p>
 > >     </form>
+> >   </main>
 > > ```
 > >
 > > | Detalle | Por qué |
@@ -709,8 +855,21 @@
 > > | Los tres `radio` con el **mismo `name`** | Solo se elige uno |
 > > | `value="Ana Pérez"` en el nombre | Valor inicial que se puede cambiar |
 > > | Sin `action` | No sale ningún dato del equipo |
+>
+> </details>
+>
+> <details>
+> <summary><strong>Paso 8.4 · El pie</strong></summary>
+>
+> > 🧑‍🎓 **Indicación al estudiante:** debajo de `main`, el mismo pie de las otras páginas. Si querés ver todo junto, compará con [`matricula.html`](codigo/academia/matricula.html).
 > >
-> > Página completa: [`matricula.html`](codigo/academia/matricula.html).
+> > ```html
+> >   <footer>
+> >     <p>Datos inventados · <a href="#">Volver arriba</a></p>
+> >   </footer>
+> > ```
+> >
+> > > ✅ **Punto de control del archivo 4.** El formulario se ve completo y el enlace «Matricular» del menú, que estaba roto desde el Paso 5, ya funciona.
 >
 > </details>
 
@@ -719,12 +878,12 @@
 ---
 
 <details>
-<summary><strong>🧪 Paso 12 — Probar el formulario y leer la dirección</strong></summary>
+<summary><strong>🧪 Paso 9 — Probar el formulario y leer la dirección</strong></summary>
 
 > <details>
-> <summary><strong>Paso 12.1 · Primer envío</strong></summary>
+> <summary><strong>Paso 9.1 · Primer envío</strong></summary>
 >
-> > Se completa con `Luis Gómez`, `luis@academia.test`, `31`, curso **HTML y CSS**, reglamento **marcado**, y se pulsa **Matricular**. La barra de direcciones muestra algo como:
+> > 🧑‍🎓 **Indicación al estudiante:** completá con `Luis Gómez`, `luis@academia.test`, `31`, curso **HTML y CSS**, reglamento **marcado**, y pulsá **Matricular**. Mirá la barra de direcciones: debería ser algo como
 > >
 > > ```text
 > > matricula.html?nombre=Luis+G%C3%B3mez&correo=luis%40academia.test&edad=31&curso=web&acepta=si
@@ -737,22 +896,20 @@
 > > | `&` | Separa un dato del siguiente |
 > > | `+` y `%C3%B3` | Espacio y «ó» codificados para que viajen en la dirección |
 > >
-> > > 📝 Los estudiantes **anotan la dirección**: es parte del entregable.
+> > 📝 **Anotá la dirección**: es parte del entregable.
 >
 > </details>
 >
 > <details>
-> <summary><strong>Paso 12.2 · Segundo envío, sin marcar la casilla</strong></summary>
+> <summary><strong>Paso 9.2 · Segundo envío, sin marcar la casilla</strong></summary>
 >
-> > Se repite sin marcar el reglamento. La dirección queda **sin** `&acepta=si`.
-> >
-> > > 🧠 **Para preguntar:** ¿por qué falta ese dato? *(Una casilla desmarcada no envía nada: el navegador solo manda los campos activos. Lo mismo pasa con un `radio` sin elegir.)*
+> > 🧑‍🎓 **Indicación al estudiante:** repetí sin marcar el reglamento y anotá la nueva dirección. Queda **sin** `&acepta=si`:
 > >
 > > ```text
 > > matricula.html?nombre=Luis+G%C3%B3mez&correo=luis%40academia.test&edad=31&curso=web
 > > ```
 > >
-> > Esto es justo lo que la API tendrá que **validar** más adelante: que no llegue una matrícula sin aceptar el reglamento.
+> > 🧠 **Para preguntar:** ¿por qué falta ese dato? *(Una casilla desmarcada no envía nada: el navegador solo manda los campos activos. Lo mismo pasa con un `radio` sin elegir.)*
 >
 > </details>
 
@@ -761,18 +918,19 @@
 ---
 
 <details>
-<summary><strong>✅ Paso 13 — Revisión final</strong></summary>
+<summary><strong>🏁 Paso 10 — Revisión final</strong></summary>
 
 > <details>
-> <summary><strong>Paso 13.1 · Lista de verificación</strong></summary>
+> <summary><strong>Paso 10.1 · Lista de verificación</strong></summary>
 >
+> > - [ ] Las cuatro páginas abren y el menú lleva de cualquiera a las demás.
 > > - [ ] Las dos tablas tienen `caption`, `thead`, `tbody` y `tfoot`, y el `colspan` coincide con el número de columnas.
 > > - [ ] La sublista está **dentro** de un `li`.
 > > - [ ] Hay una lista enumerada y los temas de `cursos.html` están separados con `hr`.
 > > - [ ] El `blockquote` tiene `cite` y la atribución está fuera.
 > > - [ ] El formulario usa `method="get"`, sin `action`, con cinco tipos de campo.
 > > - [ ] Cada `label for` coincide con un `id`; cada campo tiene `name`.
-> > - [ ] Las dos direcciones están anotadas y la explicación del Paso 12.2 es correcta.
+> > - [ ] Las dos direcciones están anotadas y la explicación del Paso 9.2 es correcta.
 > > - [ ] No hay CSS ni JavaScript.
 > >
 > > **Verificación automática (docente):**
@@ -803,13 +961,12 @@
 > | Se pueden marcar los tres cursos | Los `radio` tienen `name` distinto | Mismo `name` en los tres |
 > | Hacer clic en el texto no activa el campo | `for` e `id` no coinciden | Igualarlos |
 > | La dirección no trae un campo | Falta su `name` o la casilla no está marcada | Revisar `name` y el estado |
-> | El enlace «Matricular» da error | Falta `matricula.html` | Crear el archivo en la misma carpeta |
 
 </details>
 
 <details>
 <summary><strong>🔭 Qué sigue</strong></summary>
 
-> En el Módulo 03 el mismo portal recibe su **primer CSS**, sin cambiar el HTML. Los datos de esta guía (tablas y formulario) son los que se estilizarán en los módulos 04 y 05.
+> En el Módulo 03 el mismo sitio recibe su **primer CSS**, sin cambiar el HTML. Las tablas y el formulario de esta guía son los que se estilizarán en los módulos 04 y 05.
 
 </details>
