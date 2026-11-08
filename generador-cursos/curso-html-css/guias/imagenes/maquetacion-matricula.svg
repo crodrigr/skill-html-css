@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1780 -70 560 840" width="560" height="840" font-family="Helvetica, Arial, sans-serif"><rect x="1780" y="-70" width="560" height="840" fill="#fff"/>
+<text x="1800" y="-31.1" font-size="22" fill="#1e1e1e" text-anchor="start" xml:space="preserve">matricula.html</text>
+<rect x="1800" y="0" width="520" height="680" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+<rect x="1800" y="0" width="520" height="26" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1"/>
+<ellipse cx="1817.0" cy="13.0" rx="5.0" ry="5.0" fill="#ef4444" stroke="#ef4444"/>
+<ellipse cx="1833.0" cy="13.0" rx="5.0" ry="5.0" fill="#f59e0b" stroke="#f59e0b"/>
+<ellipse cx="1849.0" cy="13.0" rx="5.0" ry="5.0" fill="#22c55e" stroke="#22c55e"/>
+<rect x="1870" y="4" width="430" height="18" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+<text x="1874" y="16.575" font-size="11" fill="#64748b" text-anchor="start" xml:space="preserve">academia-css/matricula.html</text>
+<rect x="1801" y="26" width="518" height="653" rx="0" fill="#eff6ff" stroke="#eff6ff" stroke-width="1"/>
+<rect x="1801" y="26" width="518" height="96" rx="0" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="1"/>
+<rect x="1816" y="36" width="100" height="34" rx="8" fill="#2f6fa8" stroke="#ffffff" stroke-width="1"/>
+<text x="1866.0" y="50.0" font-size="10" fill="#ffffff" text-anchor="middle" xml:space="preserve">logo.svg</text>
+<text x="1866.0" y="62.5" font-size="10" fill="#ffffff" text-anchor="middle" xml:space="preserve">.cabecera__logo</text>
+<text x="1930" y="60.9" font-size="22" fill="#ffffff" text-anchor="start" xml:space="preserve">Matricular a un estudiante</text>
+<rect x="1816" y="82" width="76" height="26" rx="8" fill="none" stroke="#93c5fd" stroke-width="1"/>
+<text x="1854.0" y="99.225" font-size="13" fill="#ffffff" text-anchor="middle" xml:space="preserve">Inicio</text>
+<rect x="1900" y="82" width="121" height="26" rx="8" fill="none" stroke="#93c5fd" stroke-width="1"/>
+<text x="1960.5" y="99.225" font-size="13" fill="#ffffff" text-anchor="middle" xml:space="preserve">Estudiantes</text>
+<rect x="2029" y="82" width="76" height="26" rx="8" fill="none" stroke="#93c5fd" stroke-width="1"/>
+<text x="2067.0" y="99.225" font-size="13" fill="#ffffff" text-anchor="middle" xml:space="preserve">Cursos</text>
+<rect x="2113" y="82" width="112" height="26" rx="8" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+<text x="2169.0" y="99.225" font-size="13" fill="#ffffff" text-anchor="middle" xml:space="preserve">Matricular</text>
+<rect x="2130" y="30" width="184.48000000000002" height="18" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="2222.24" y="42.575" font-size="11" fill="#2563eb" text-anchor="middle" xml:space="preserve">header.cabecera · base+cajas</text>
+<rect x="2160" y="54" width="147.52" height="18" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="2233.76" y="66.575" font-size="11" fill="#16a34a" text-anchor="middle" xml:space="preserve">nav.menu · componentes</text>
+<rect x="1820" y="138" width="480" height="470" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1"/>
+<rect x="2130" y="129" width="153.68" height="18" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1"/>
+<text x="2206.84" y="141.575" font-size="11" fill="#9333ea" text-anchor="middle" xml:space="preserve">form.formulario · cajas</text>
+<text x="1836" y="176.35" font-size="13" fill="#1e293b" text-anchor="start" xml:space="preserve">Nombre:</text>
+<rect x="1920" y="156" width="260" height="32" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="1924" y="175.9" font-size="12" fill="#334155" text-anchor="start" xml:space="preserve">Ana Pérez</text>
+<text x="1836" y="224.35" font-size="13" fill="#1e293b" text-anchor="start" xml:space="preserve">Correo:</text>
+<rect x="1920" y="204" width="260" height="32" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<text x="1836" y="272.35" font-size="13" fill="#1e293b" text-anchor="start" xml:space="preserve">Edad:</text>
+<rect x="1920" y="252" width="260" height="32" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+<rect x="2190" y="168" width="79.76" height="18" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="2229.88" y="180.575" font-size="11" fill="#16a34a" text-anchor="middle" xml:space="preserve">input:focus</text>
+<rect x="1836" y="300" width="448" height="120" rx="8" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="1846" y="317.4" font-size="12" fill="#475569" text-anchor="start" xml:space="preserve">Curso (fieldset › legend)</text>
+<ellipse cx="1859.0" cy="341.0" rx="7.0" ry="7.0" fill="none" stroke="#475569"/>
+<text x="1874" y="345.35" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Java desde cero</text>
+<ellipse cx="1859.0" cy="367.0" rx="7.0" ry="7.0" fill="none" stroke="#475569"/>
+<text x="1874" y="371.35" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">HTML y CSS</text>
+<ellipse cx="1859.0" cy="393.0" rx="7.0" ry="7.0" fill="none" stroke="#475569"/>
+<text x="1874" y="397.35" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Git</text>
+<rect x="1836" y="436" width="448" height="56" rx="8" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="6 4"/>
+<rect x="1852" y="456" width="16" height="16" rx="0" fill="none" stroke="#475569" stroke-width="1"/>
+<text x="1876" y="467.35" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Acepto el reglamento de la Academia</text>
+<rect x="2130" y="427" width="166.00000000000003" height="18" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="2213.0" y="439.575" font-size="11" fill="#16a34a" text-anchor="middle" xml:space="preserve">input:checked / :required</text>
+<rect x="1836" y="512" width="140" height="36" rx="8" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="1906.0" y="534.55" font-size="14" fill="#ffffff" text-anchor="middle" xml:space="preserve">Matricular</text>
+<rect x="1990" y="521" width="178.32000000000002" height="18" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="2079.16" y="533.575" font-size="11" fill="#16a34a" text-anchor="middle" xml:space="preserve">input.boton · :hover/:focus</text>
+<rect x="1801" y="640" width="518" height="40" rx="0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="2060.0" y="663.9" font-size="12" fill="#ffffff" text-anchor="middle" xml:space="preserve">Datos inventados · Volver arriba</text>
+<rect x="2160" y="618" width="153.68" height="18" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="2236.84" y="630.575" font-size="11" fill="#2563eb" text-anchor="middle" xml:space="preserve">footer.pie · base+cajas</text>
+<text x="1800" y="722.35" font-size="13" fill="#475569" text-anchor="start" xml:space="preserve">Formulario en una sola columna: label + input apilados</text>
+<text x="1800" y="738.6" font-size="13" fill="#475569" text-anchor="start" xml:space="preserve">con ancho fijo 260 px y relleno 8 px (RF-4.03).</text>
+</svg>

@@ -1,0 +1,188 @@
+/* cajas.css — Módulo 05 · Sesión 2: bordes, modelo de cajas, márgenes y rellenos */
+
+/* ===== Modelo de cajas: el ancho incluye relleno y borde ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== La página: ancho máximo y centrada con márgenes automáticos ===== */
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== Cabecera ===== */
+header {
+  padding: 24px;
+  margin-top: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+h1 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.cabecera__logo {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--color-blanco);
+  border-radius: 12px;
+}
+
+.menu__enlace {
+  padding: 8px 14px;
+  margin-right: 8px;
+  border-radius: 20px;
+}
+
+.atajos {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* ===== Secciones y tarjetas ===== */
+main {
+  padding: 8px 0;
+}
+
+main > section {
+  padding: 16px 24px;
+  margin: 16px 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cbd5e1;
+  border-radius: 12px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.curso {
+  border-left-width: 8px;
+  border-left-color: var(--color-principal);
+}
+
+.curso--destacado {
+  border-left-color: var(--color-acento);
+}
+
+.curso__dato {
+  margin: 0 0 8px 0;
+}
+
+/* ===== Tablas: borde, relleno y desplazamiento horizontal ===== */
+.tabla-contenedor {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.tabla {
+  width: 100%;
+  margin: 0;
+}
+
+.tabla th,
+.tabla td {
+  padding: 10px 14px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cbd5e1;
+}
+
+/* ===== Listas y cita ===== */
+ul,
+ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+blockquote {
+  margin: 16px 0 8px 0;
+  padding: 8px 20px;
+  border-left-style: solid;
+  border-left-width: 6px;
+  border-left-color: var(--color-acento);
+  background-color: var(--color-fondo);
+  border-radius: 0 12px 12px 0;
+}
+
+blockquote > p {
+  margin: 8px 0;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-suave);
+}
+
+/* ===== Bienvenida e imágenes ===== */
+video,
+iframe {
+  max-width: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--color-oscuro);
+  border-radius: 12px;
+}
+
+.accesos {
+  padding: 16px 24px;
+  margin: 16px 0;
+  border-radius: 12px;
+}
+
+.accesos p {
+  margin: 6px 0;
+}
+
+/* ===== Formulario ===== */
+.formulario {
+  padding: 24px;
+  margin: 16px 0;
+  background-color: var(--color-blanco);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cbd5e1;
+  border-radius: 12px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"] {
+  width: 260px;
+  padding: 8px 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+.formulario label {
+  margin-right: 12px;
+}
+
+.boton {
+  padding: 10px 24px;
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== Pie ===== */
+.pie {
+  padding: 16px;
+  margin: 16px 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.pie p {
+  margin: 0;
+}

@@ -1,0 +1,164 @@
+/* componentes.css — Módulo 04: selectores, BEM, combinadores, pseudoclases */
+
+/* ===== Menú (BEM: bloque menu, elemento menu__enlace, modificador --actual) ===== */
+.menu__enlace {
+  color: var(--color-blanco);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu__enlace--actual {
+  color: var(--color-oscuro);
+  background-color: var(--color-blanco);
+}
+
+/* Selector de atributo: el enlace a la matrícula se destaca por su href */
+.menu__enlace[href="matricula.html"] {
+  color: var(--color-texto);
+  background-color: var(--color-acento);
+}
+
+/* Pseudoclase de estado, pero solo para los enlaces que NO son la página actual */
+.menu__enlace:not(.menu__enlace--actual):hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.menu__enlace:focus {
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: var(--color-acento);
+}
+
+/* Dos componentes distintos comparten una regla con :is() */
+:is(.menu__enlace, .boton) {
+  cursor: pointer;
+}
+
+/* ===== Enlaces según su tipo (selectores de atributos) ===== */
+a[href^="mailto:"] {
+  color: var(--color-oscuro);
+}
+
+a[target="_blank"] {
+  color: var(--color-principal);
+  text-decoration-style: dashed;
+}
+
+/* Un enlace de contenido cambia al pasar el cursor */
+main a:hover {
+  color: var(--color-acento);
+}
+
+a:visited {
+  color: #6d28d9;
+}
+
+header a:visited {
+  color: var(--color-blanco);
+}
+
+/* ===== Secciones de contenido (combinador de hijo directo) ===== */
+main > section {
+  background-color: var(--color-blanco);
+}
+
+/* El primer párrafo después de un h2 es una entradilla (combinador adyacente) */
+h2 + p {
+  color: var(--color-oscuro);
+}
+
+/* ===== Tarjeta de curso (BEM: bloque curso) ===== */
+.curso {
+  border-color: var(--color-suave);
+  background-color: var(--color-blanco);
+}
+
+.curso__titulo {
+  color: var(--color-oscuro);
+}
+
+.curso__dato {
+  color: var(--color-principal);
+}
+
+.curso__texto {
+  color: var(--color-texto);
+}
+
+/* Modificador: el curso destacado cambia su fondo */
+.curso--destacado {
+  background-color: #fffbeb;
+  border-color: var(--color-acento);
+}
+
+/* Un curso con enlaces adentro (:has) se subraya en su título */
+.curso:has(a) .curso__titulo {
+  text-decoration-line: underline;
+}
+
+/* Resalta el curso al que se llegó con un enlace #java, #web… */
+.curso:hover {
+  background-color: var(--color-fondo);
+}
+
+/* ===== Datos: tablas y listas (pseudoclases de estructura) ===== */
+tbody tr:nth-child(even) {
+  background-color: var(--color-fondo);
+}
+
+tbody tr:hover {
+  background-color: var(--color-suave);
+}
+
+tbody td:first-child {
+  color: var(--color-oscuro);
+}
+
+/* El último paso de la lista enumerada se destaca */
+ol li:last-child {
+  color: var(--color-oscuro);
+}
+
+/* ===== Formulario ===== */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  border-color: #94a3b8;
+}
+
+input:focus {
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: var(--color-principal);
+}
+
+/* El texto de la opción marcada se destaca (hermano que sigue a un input marcado) */
+input:checked + label {
+  color: var(--color-oscuro);
+  font-weight: bold;
+}
+
+.boton {
+  color: var(--color-blanco);
+  background-color: var(--color-principal);
+}
+
+.boton:hover {
+  background-color: var(--color-oscuro);
+}
+
+.boton:active {
+  background-color: var(--color-acento);
+}
+
+/* ===== Cita y accesos ===== */
+blockquote > p {
+  color: var(--color-oscuro);
+}
+
+.accesos {
+  background-color: var(--color-suave);
+}
+
+.pie a:hover {
+  color: var(--color-blanco);
+}

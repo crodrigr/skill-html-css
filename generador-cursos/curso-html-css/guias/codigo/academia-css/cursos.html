@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Academia — Cursos</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <link rel="stylesheet" href="css/tipografia.css">
+  <link rel="stylesheet" href="css/cajas.css">
+</head>
+<body>
+  <header class="cabecera">
+    <img class="cabecera__logo" src="imagenes/logo.svg" alt="Logo de la Academia de programación" width="240" height="80">
+    <h1>Cursos</h1>
+    <nav class="menu">
+      <a class="menu__enlace" href="index.html">Inicio</a>
+      <a class="menu__enlace" href="estudiantes.html">Estudiantes</a>
+      <a class="menu__enlace menu__enlace--actual" href="cursos.html">Cursos</a>
+      <a class="menu__enlace" href="matricula.html">Matricular</a>
+    </nav>
+    <p class="atajos">Ir a: <a href="#java">Java</a> · <a href="#web">HTML y CSS</a> · <a href="#git">Git</a></p>
+  </header>
+
+  <main>
+    <!-- Se usa section porque cada curso es un tema con su propio título -->
+    <section class="curso curso--destacado" id="java">
+      <h2 class="curso__titulo">Java desde cero</h2>
+      <p class="curso__dato">Precio: $180.000 · Cupo máximo: 20 personas</p>
+      <p class="curso__texto">Variables, condicionales, ciclos y clases.</p>
+    </section>
+
+    <section class="curso" id="web">
+      <h2 class="curso__titulo">HTML y CSS</h2>
+      <p class="curso__dato">Precio: $150.000 · Cupo máximo: 25 personas</p>
+      <p class="curso__texto">Páginas con <code>HTML</code> semántico y estilo con <code>CSS</code>.</p>
+    </section>
+
+    <section class="curso" id="git">
+      <h2 class="curso__titulo">Git</h2>
+      <p class="curso__dato">Precio: $90.000 · Cupo máximo: 30 personas</p>
+      <p class="curso__texto">Control de versiones: guardar, comparar y compartir cambios.</p>
+    </section>
+
+    <hr>
+
+    <section class="oferta">
+      <h2>Oferta de cursos</h2>
+      <ul>
+        <li>Java desde cero
+          <ul>
+            <li>Variables y condicionales</li>
+            <li>Ciclos y clases</li>
+          </ul>
+        </li>
+        <li>HTML y CSS</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Precios y cupos</h2>
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <caption>Cursos de la Academia</caption>
+          <thead>
+            <tr>
+              <th>Curso</th>
+              <th>Precio</th>
+              <th>Cupo máximo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java desde cero</td>
+              <td>$180.000</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>HTML y CSS</td>
+              <td>$150.000</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Git</td>
+              <td>$90.000</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Precios en pesos. El cupo máximo es el tope de matriculados.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Cómo te matriculás</h2>
+      <ol>
+        <li>Elegí un curso de la tabla.</li>
+        <li>Completá el <a href="matricula.html">formulario de matrícula</a>.</li>
+        <li>Esperá la confirmación de la Academia.</li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Lo que dicen</h2>
+      <blockquote cite="https://academia.test/opiniones/ana">
+        <p>Entré sin saber qué era una variable y salí armando mi primera página.</p>
+      </blockquote>
+      <p class="cita-autor">— Ana Pérez, estudiante de Java desde cero</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Datos inventados · <a href="#">Volver arriba</a></p>
+  </footer>
+</body>
+</html>

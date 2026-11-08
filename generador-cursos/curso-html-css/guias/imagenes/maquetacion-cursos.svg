@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1180 -70 560 1150" width="560" height="1150" font-family="Helvetica, Arial, sans-serif"><rect x="1180" y="-70" width="560" height="1150" fill="#fff"/>
+<text x="1200" y="-31.1" font-size="22" fill="#1e1e1e" text-anchor="start" xml:space="preserve">cursos.html</text>
+<rect x="1200" y="0" width="520" height="1000" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+<rect x="1200" y="0" width="520" height="26" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1"/>
+<ellipse cx="1217.0" cy="13.0" rx="5.0" ry="5.0" fill="#ef4444" stroke="#ef4444"/>
+<ellipse cx="1233.0" cy="13.0" rx="5.0" ry="5.0" fill="#f59e0b" stroke="#f59e0b"/>
+<ellipse cx="1249.0" cy="13.0" rx="5.0" ry="5.0" fill="#22c55e" stroke="#22c55e"/>
+<rect x="1270" y="4" width="430" height="18" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+<text x="1274" y="16.575" font-size="11" fill="#64748b" text-anchor="start" xml:space="preserve">academia-css/cursos.html</text>
+<rect x="1201" y="26" width="518" height="973" rx="0" fill="#eff6ff" stroke="#eff6ff" stroke-width="1"/>
+<rect x="1201" y="26" width="518" height="96" rx="0" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="1"/>
+<rect x="1216" y="36" width="100" height="34" rx="8" fill="#2f6fa8" stroke="#ffffff" stroke-width="1"/>
+<text x="1266.0" y="50.0" font-size="10" fill="#ffffff" text-anchor="middle" xml:space="preserve">logo.svg</text>
+<text x="1266.0" y="62.5" font-size="10" fill="#ffffff" text-anchor="middle" xml:space="preserve">.cabecera__logo</text>
+<text x="1330" y="60.9" font-size="22" fill="#ffffff" text-anchor="start" xml:space="preserve">Cursos</text>
+<rect x="1216" y="82" width="76" height="26" rx="8" fill="none" stroke="#93c5fd" stroke-width="1"/>
+<text x="1254.0" y="99.225" font-size="13" fill="#ffffff" text-anchor="middle" xml:space="preserve">Inicio</text>
+<rect x="1300" y="82" width="121" height="26" rx="8" fill="none" stroke="#93c5fd" stroke-width="1"/>
+<text x="1360.5" y="99.225" font-size="13" fill="#ffffff" text-anchor="middle" xml:space="preserve">Estudiantes</text>
+<rect x="1429" y="82" width="76" height="26" rx="8" fill="#2563eb" stroke="#ffffff" stroke-width="1"/>
+<text x="1467.0" y="99.225" font-size="13" fill="#ffffff" text-anchor="middle" xml:space="preserve">Cursos</text>
+<rect x="1513" y="82" width="112" height="26" rx="8" fill="none" stroke="#f59e0b" stroke-width="1"/>
+<text x="1569.0" y="99.225" font-size="13" fill="#fcd34d" text-anchor="middle" xml:space="preserve">Matricular</text>
+<rect x="1530" y="30" width="184.48000000000002" height="18" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="1622.24" y="42.575" font-size="11" fill="#2563eb" text-anchor="middle" xml:space="preserve">header.cabecera · base+cajas</text>
+<rect x="1560" y="54" width="147.52" height="18" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="1633.76" y="66.575" font-size="11" fill="#16a34a" text-anchor="middle" xml:space="preserve">nav.menu · componentes</text>
+<rect x="1216" y="122" width="246.08" height="18" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="1339.04" y="134.575" font-size="11" fill="#16a34a" text-anchor="middle" xml:space="preserve">p.atajos: Ir a Java · HTML y CSS · Git</text>
+<rect x="1220" y="150" width="480" height="86" rx="8" fill="#fef3c7" stroke="#dc8a00" stroke-width="1"/>
+<text x="1460.0" y="189.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">Java desde cero</text>
+<text x="1460.0" y="204.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">h2.curso__titulo · .curso__dato · .curso__texto</text>
+<rect x="1400.6399999999999" y="141" width="295.36" height="18" rx="8" fill="#ffffff" stroke="#dc8a00" stroke-width="1"/>
+<text x="1548.32" y="153.575" font-size="11" fill="#dc8a00" text-anchor="middle" xml:space="preserve">section.curso.curso--destacado · borde-izq 8px</text>
+<rect x="1220" y="248" width="480" height="76" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="1460.0" y="282.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">HTML y CSS</text>
+<text x="1460.0" y="297.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">section.curso#web</text>
+<rect x="1603.92" y="239" width="92.08000000000001" height="18" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="1649.96" y="251.575" font-size="11" fill="#16a34a" text-anchor="middle" xml:space="preserve">section.curso</text>
+<rect x="1220" y="336" width="480" height="76" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+<text x="1460.0" y="370.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">Git</text>
+<text x="1460.0" y="385.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">section.curso#git</text>
+<rect x="1220" y="430" width="480" height="110" rx="8" fill="#ffffff" stroke="#ea580c" stroke-width="1"/>
+<text x="1224" y="466.4" font-size="12" fill="#1e293b" text-anchor="start" xml:space="preserve">Oferta de cursos</text>
+<text x="1224" y="481.4" font-size="12" fill="#1e293b" text-anchor="start" xml:space="preserve">• Programación</text>
+<text x="1224" y="496.4" font-size="12" fill="#1e293b" text-anchor="start" xml:space="preserve">    – Java desde cero   – HTML y CSS</text>
+<text x="1224" y="511.4" font-size="12" fill="#1e293b" text-anchor="start" xml:space="preserve">• Control de versiones – Git</text>
+<rect x="1499.2" y="421" width="196.8" height="18" rx="8" fill="#ffffff" stroke="#ea580c" stroke-width="1"/>
+<text x="1597.6000000000001" y="433.575" font-size="11" fill="#ea580c" text-anchor="middle" xml:space="preserve">ul &gt; li &gt; ul (listas anidadas)</text>
+<rect x="1220" y="554" width="480" height="150" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1" stroke-dasharray="6 4"/>
+<rect x="1530" y="545" width="184.48000000000002" height="18" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1"/>
+<text x="1622.24" y="557.575" font-size="11" fill="#9333ea" text-anchor="middle" xml:space="preserve">div.tabla-contenedor · cajas</text>
+<text x="1228" y="572.35" font-size="13" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Precios y cupos</text>
+<rect x="1228.0" y="582" width="154.66666666666666" height="26" rx="0" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="1"/>
+<text x="1305.3333333333333" y="598.575" font-size="11" fill="#ffffff" text-anchor="middle" xml:space="preserve">Curso</text>
+<rect x="1382.6666666666667" y="582" width="154.66666666666666" height="26" rx="0" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="1"/>
+<text x="1460.0" y="598.575" font-size="11" fill="#ffffff" text-anchor="middle" xml:space="preserve">Precio</text>
+<rect x="1537.3333333333333" y="582" width="154.66666666666666" height="26" rx="0" fill="#1e3a8a" stroke="#1e3a8a" stroke-width="1"/>
+<text x="1614.6666666666665" y="598.575" font-size="11" fill="#ffffff" text-anchor="middle" xml:space="preserve">Cupos</text>
+<rect x="1228.0" y="608" width="154.66666666666666" height="28" rx="0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1305.3333333333333" y="625.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1382.6666666666667" y="608" width="154.66666666666666" height="28" rx="0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1460.0" y="625.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1537.3333333333333" y="608" width="154.66666666666666" height="28" rx="0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1614.6666666666665" y="625.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1228.0" y="636" width="154.66666666666666" height="28" rx="0" fill="#dbeafe" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1305.3333333333333" y="653.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1382.6666666666667" y="636" width="154.66666666666666" height="28" rx="0" fill="#dbeafe" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1460.0" y="653.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1537.3333333333333" y="636" width="154.66666666666666" height="28" rx="0" fill="#dbeafe" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1614.6666666666665" y="653.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1228.0" y="664" width="154.66666666666666" height="28" rx="0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1305.3333333333333" y="681.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1382.6666666666667" y="664" width="154.66666666666666" height="28" rx="0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1460.0" y="681.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1537.3333333333333" y="664" width="154.66666666666666" height="28" rx="0" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1614.6666666666665" y="681.575" font-size="11" fill="#334155" text-anchor="middle" xml:space="preserve">…</text>
+<rect x="1220" y="718" width="480" height="86" rx="8" fill="#ffffff" stroke="#ea580c" stroke-width="1"/>
+<text x="1460.0" y="757.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">Cómo te matriculás</text>
+<text x="1460.0" y="772.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">1. …  2. Completá el formulario (a)  3. …</text>
+<rect x="1640.88" y="709" width="55.120000000000005" height="18" rx="8" fill="#ffffff" stroke="#ea580c" stroke-width="1"/>
+<text x="1668.44" y="721.575" font-size="11" fill="#ea580c" text-anchor="middle" xml:space="preserve">ol &gt; li</text>
+<rect x="1220" y="816" width="480" height="70" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1"/>
+<text x="1460.0" y="847.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">“Lo que dicen”  — blockquote[cite]</text>
+<text x="1460.0" y="862.4" font-size="12" fill="#1e293b" text-anchor="middle" xml:space="preserve">borde-izq 6 px · cursiva</text>
+<rect x="1622.4" y="807" width="73.60000000000001" height="18" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1"/>
+<text x="1659.2" y="819.575" font-size="11" fill="#9333ea" text-anchor="middle" xml:space="preserve">blockquote</text>
+<rect x="1201" y="960" width="518" height="40" rx="0" fill="#0f172a" stroke="#0f172a" stroke-width="1"/>
+<text x="1460.0" y="983.9" font-size="12" fill="#ffffff" text-anchor="middle" xml:space="preserve">Datos inventados · Volver arriba</text>
+<rect x="1560" y="938" width="153.68" height="18" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1"/>
+<text x="1636.84" y="950.575" font-size="11" fill="#2563eb" text-anchor="middle" xml:space="preserve">footer.pie · base+cajas</text>
+<text x="1200" y="1042.35" font-size="13" fill="#475569" text-anchor="start" xml:space="preserve">Las 3 tarjetas .curso se apilan (sin Grid): una destacada</text>
+<text x="1200" y="1058.6" font-size="13" fill="#475569" text-anchor="start" xml:space="preserve">con BEM modificador --destacado (RF-4.02).</text>
+</svg>

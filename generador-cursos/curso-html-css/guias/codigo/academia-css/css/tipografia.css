@@ -1,0 +1,116 @@
+/* tipografia.css — Módulo 05 · Sesión 1: texto y datos */
+
+/* ===== Tipografía: familia con alternativas, tamaño, peso y altura de línea ===== */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+code {
+  font-family: "Courier New", monospace;
+  background-color: var(--color-fondo);
+}
+
+/* ===== Texto: alineación, espaciado y mayúsculas ===== */
+.menu__enlace {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.curso__dato {
+  font-weight: 700;
+  font-style: italic;
+}
+
+blockquote > p {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.cita-autor {
+  text-align: right;
+  font-size: 16px;
+}
+
+.pie {
+  text-align: center;
+  font-size: 14px;
+}
+
+.atajos {
+  font-size: 15px;
+}
+
+/* ===== Decoraciones de texto ===== */
+a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.menu__enlace:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Tablas con estilo ===== */
+.tabla {
+  border-collapse: collapse;
+}
+
+.tabla caption {
+  caption-side: bottom;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.tabla th {
+  color: var(--color-blanco);
+  background-color: var(--color-oscuro);
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.tabla td:nth-child(2),
+.tabla td:nth-child(3) {
+  text-align: right;
+}
+
+.tabla tfoot td {
+  font-size: 15px;
+  font-style: italic;
+  text-align: left;
+}
+
+/* ===== Listas con estilo ===== */
+ul {
+  list-style-type: square;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+}

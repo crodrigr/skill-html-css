@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 1180 1560 400" width="1560" height="400" font-family="Helvetica, Arial, sans-serif"><rect x="-20" y="1180" width="1560" height="400" fill="#fff"/>
+<text x="0" y="1214.7" font-size="26" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Modelo de cajas aplicado (cajas.css) y orden de las hojas</text>
+<text x="0" y="1241.3" font-size="14" fill="#475569" text-anchor="start" xml:space="preserve">box-sizing: border-box · body &gt; contenedor: max-width 960px; margin: 0 auto; padding: 0 16px</text>
+<rect x="0" y="1250" width="420" height="300" rx="8" fill="#fde68a" stroke="#d97706" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="10" y="1268.35" font-size="13" fill="#92400e" text-anchor="start" xml:space="preserve">margin  (16 px)</text>
+<rect x="40" y="1284" width="340" height="232" rx="8" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="50" y="1301.4" font-size="12" fill="#991b1b" text-anchor="start" xml:space="preserve">border  (1–2 px · radius 8 px · izq 8 px en .curso--destacado)</text>
+<rect x="70" y="1316" width="280" height="168" rx="8" fill="#bbf7d0" stroke="#16a34a" stroke-width="1"/>
+<text x="80" y="1334.35" font-size="13" fill="#166534" text-anchor="start" xml:space="preserve">padding  (24 px en tarjetas)</text>
+<rect x="110" y="1356" width="200" height="88" rx="8" fill="#ffffff" stroke="#475569" stroke-width="1"/>
+<text x="210.0" y="1387.05" font-size="14" fill="#475569" text-anchor="middle" xml:space="preserve">contenido</text>
+<text x="210.0" y="1404.55" font-size="14" fill="#475569" text-anchor="middle" xml:space="preserve">(texto, imagen,</text>
+<text x="210.0" y="1422.05" font-size="14" fill="#475569" text-anchor="middle" xml:space="preserve">tabla…)</text>
+<text x="520" y="1274.25" font-size="15" fill="#1e1e1e" text-anchor="start" xml:space="preserve">Orden de enlace en cada &lt;head&gt;  (gana la última con igual especificidad)</text>
+<rect x="520" y="1300" width="220" height="90" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="630.0" y="1340.8" font-size="14" fill="#2563eb" text-anchor="middle" xml:space="preserve">base.css</text>
+<text x="630.0" y="1358.3" font-size="14" fill="#2563eb" text-anchor="middle" xml:space="preserve">variables · colores · gradiente</text>
+<line x1="740" y1="1345" x2="770" y2="1345" stroke="#475569" stroke-width="2"/>
+<path d="M770 1345 l-9 -5 v10z" fill="#475569"/>
+<rect x="770" y="1300" width="220" height="90" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+<text x="880.0" y="1340.8" font-size="14" fill="#16a34a" text-anchor="middle" xml:space="preserve">componentes.css</text>
+<text x="880.0" y="1358.3" font-size="14" fill="#16a34a" text-anchor="middle" xml:space="preserve">BEM · atributos · pseudoclases</text>
+<line x1="990" y1="1345" x2="1020" y2="1345" stroke="#475569" stroke-width="2"/>
+<path d="M1020 1345 l-9 -5 v10z" fill="#475569"/>
+<rect x="1020" y="1300" width="220" height="90" rx="8" fill="#ffffff" stroke="#ea580c" stroke-width="2"/>
+<text x="1130.0" y="1340.8" font-size="14" fill="#ea580c" text-anchor="middle" xml:space="preserve">tipografia.css</text>
+<text x="1130.0" y="1358.3" font-size="14" fill="#ea580c" text-anchor="middle" xml:space="preserve">texto · tablas · listas</text>
+<line x1="1240" y1="1345" x2="1270" y2="1345" stroke="#475569" stroke-width="2"/>
+<path d="M1270 1345 l-9 -5 v10z" fill="#475569"/>
+<rect x="1270" y="1300" width="220" height="90" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="2"/>
+<text x="1380.0" y="1340.8" font-size="14" fill="#9333ea" text-anchor="middle" xml:space="preserve">cajas.css</text>
+<text x="1380.0" y="1358.3" font-size="14" fill="#9333ea" text-anchor="middle" xml:space="preserve">bordes · márgenes · rellenos</text>
+<text x="520" y="1433.3" font-size="14" fill="#475569" text-anchor="start" xml:space="preserve">Sesiones:  P3 base → 1 h 30   ·   P4 componentes → 1 h 30   ·   P5 tipografía + cajas → 2 × 1 h 30</text>
+<text x="520" y="1463.3" font-size="14" fill="#475569" text-anchor="start" xml:space="preserve">Restricciones: solo HTML+CSS · estilos en hojas externas · colores con var(--color-…) · medidas en px</text>
+<rect x="520" y="1490" width="1000" height="60" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
+<text x="1020.0" y="1524.55" font-size="14" fill="#1e3a8a" text-anchor="middle" xml:space="preserve">Paleta (base.css):  principal #2563eb · oscuro #1e3a8a · fondo #eff6ff · texto #1f2937 · acento #f59e0b · suave #dbeafe</text>
+</svg>
